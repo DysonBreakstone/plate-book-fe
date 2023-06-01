@@ -1,24 +1,29 @@
-# README
+# Platebook
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A brief description of what this project does and who it's for.
 
-Things you may want to cover:
+## Features
 
-* Ruby version
+- Feature 1
+- Feature 2
+- Feature 3
 
-* System dependencies
+## Screenshots
 
-* Configuration
+Include logo/demo screenshot etc.
 
-* Database creation
+## Tech Stack
 
-* Database initialization
+**Client:** Tech 1, Tech 2, Tech 3
 
-* How to run the test suite
+**Server:** Tech 1, Tech 2, Tech 3
 
-* Services (job queues, cache servers, search engines, etc.)
+## Installation 
 
-* Deployment instructions
+Provide step by step series of examples to get a development env running.
 
-* ...
+```bash 
+  git clone https://github.com/your-repo/project.git
+  cd project
+  npm install
+'''

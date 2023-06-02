@@ -9,10 +9,7 @@
       zoom: 4,
     });
 
-    const locations = [
-      { lat: 39.7392, lng: -104.9903 },
-      { lat: 40.7128, lng: -74.0060 },
-    ];
+    const locations = <%= @locations.to_json.html_safe%>;
 
     for (let i = 0; i < locations.length; i++) {
       const marker = new Marker({
@@ -21,7 +18,7 @@
         title: 'Marker number ' + i,
       });
 
-      marker.addEventListener('click', () => {
+      marker.addListener('click', () => {
         window.location.href = '/users';
       });
     }
@@ -31,3 +28,6 @@
 <script async defer
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZfDOhWkYLSrKQGChFljYZgK2R_L98X08&callback=initMap">
 </script>
+
+<br>
+<h1>Popular Posts</h1>

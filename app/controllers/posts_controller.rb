@@ -1,4 +1,8 @@
 class PostsController < ApplicationController
+  def index
+    @facade = PlatebookFacade.new(params)
+  end
+
   def new
   end
 
@@ -15,10 +19,6 @@ class PostsController < ApplicationController
       user_id: session[:user_id]
     }
     PlatebookService.new.create_post(new_params)
-  end
-  
-  def index
-    @facade = PlatebookFacade.new(params)
   end
 
   private

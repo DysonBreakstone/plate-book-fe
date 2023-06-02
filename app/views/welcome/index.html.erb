@@ -1,0 +1,33 @@
+<div id="map" style="height: 400px; width: 100%;"></div>
+<script>
+  async function initMap() {
+    const { Map } = await google.maps.importLibrary("maps");
+    const { Marker } = await google.maps.importLibrary("marker");
+
+    const map = new Map(document.getElementById("map"), {
+      center: { lat: 39.7392, lng: -104.9903 },
+      zoom: 4,
+    });
+
+    const locations = [
+      { lat: 39.7392, lng: -104.9903 },
+      { lat: 40.7128, lng: -74.0060 },
+    ];
+
+    for (let i = 0; i < locations.length; i++) {
+      const marker = new Marker({
+        position: locations[i],
+        map: map,
+        title: 'Marker number ' + i,
+      });
+
+      marker.addEventListener('click', () => {
+        window.location.href = '/users';
+      });
+    }
+  }
+</script>
+
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZfDOhWkYLSrKQGChFljYZgK2R_L98X08&callback=initMap">
+</script>

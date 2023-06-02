@@ -1,24 +1,34 @@
-# README
+# Platebook
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Platebook is a platform where people from all over the country can share their advice, opinions, thoughts, memes, or criticisms for fellow drivers.
 
-Things you may want to cover:
+## Features
 
-* Ruby version
+Users can create a new message board with a topic attatched to a license plate.
+If a license plate already exists in the site, users will only have the option to add a post to the existing license plate.
+Each post acts as a message board with comments associated with that topic.
 
-* System dependencies
+## Screenshots
 
-* Configuration
+Include logo/demo screenshot etc.
 
-* Database creation
+## Tech Stack
+Bootstrap
+Docker
+AWS EC2
+AWS S3
+AWS ECS
 
-* Database initialization
+## Installation 
 
-* How to run the test suite
+## Usage 
 
-* Services (job queues, cache servers, search engines, etc.)
+Provide step by step series of examples to get a development env running.
 
-* Deployment instructions
+```bash 
+  git clone https://github.com/your-repo/project.git
+  cd project
+  bundle
+```
 
-* ...
+## Authors

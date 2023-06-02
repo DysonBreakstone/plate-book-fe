@@ -7,5 +7,5 @@ Rails.application.routes.draw do
 
   resources :users, only: [:index]
   resources :plates, only: [:index]
-
+  resources :posts, only: [:new, :create]
 end

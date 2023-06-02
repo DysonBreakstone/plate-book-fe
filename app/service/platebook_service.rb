@@ -11,6 +11,10 @@ class PlatebookService
     JSON.parse(response.body, symbolize_names: true)
   end
 
+  def post_url(url, params)
+    conn.post(url, params)
+  end
+
   def get_all_users
     get_url("/api/v1/users")
   end
@@ -18,5 +22,8 @@ class PlatebookService
   def get_all_plates
     get_url("/api/v1/plates")
   end
-  
+
+  def create_post(params)
+    post_url("api/v1/posts", params)
+  end
 end

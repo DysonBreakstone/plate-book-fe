@@ -1,12 +1,12 @@
 <div class="container">
-  <h1 class="text-center">Users</h1>
+  <h1 class="text-center">Posts</h1>
   <div class="row justify-content-center">
     <div class="col-md-6">
       <div class="list-group">
-        <% @facade.all_users.each_with_index do |user, index| %>
+        <% @facade.all_posts.each_with_index do |post, index| %>
           <div class="list-group-item <%= index.odd? ? 'bg-light' : '' %>">
-            <h5 class="mb-1"><%= link_to user.username %></h5>
-            <p class="mb-1"><%= user.email %></p>
+            <h5 class="mb-1"><%= link_to post.title %></h5>
+            <p class="mb-1"><%= post.user_id %></p>
           </div>
         <% end %>
       </div>

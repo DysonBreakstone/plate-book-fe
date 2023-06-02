@@ -18,5 +18,9 @@ class PlatebookService
   def get_all_plates
     get_url("/api/v1/plates")
   end
+
+  def get_all_posts
+    get_url("/api/v1/posts")
+  end
   
 end

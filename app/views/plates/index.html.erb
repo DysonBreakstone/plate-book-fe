@@ -5,7 +5,7 @@
       <div class="list-group">
         <% @facade.all_plates.each_with_index do |plate, index| %>
           <div class="list-group-item <%= index.odd? ? 'bg-light' : '' %>">
-            <h5 class="mb-1 text-center"><%= plate.plate_number %></h5>
+            <h5 class="mb-1 text-center"><%= link_to plate.plate_number %></h5>
           </div>
         <% end %>
       </div>

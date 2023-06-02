@@ -1,26 +1,87 @@
-# Use the latest 2.1 version of CircleCI pipeline process engine.
-# See: https://circleci.com/docs/configuration-reference
-version: 2.1
-
-# Define a job to be invoked later in a workflow.
-# See: https://circleci.com/docs/configuration-reference/#jobs
-jobs:
-  say-hello:
-    # Specify the execution environment. You can specify an image from Docker Hub or use one of our convenience images from CircleCI's Developer Hub.
-    # See: https://circleci.com/docs/configuration-reference/#executor-job
-    docker:
-      - image: cimg/base:stable
-    # Add steps to the job
-    # See: https://circleci.com/docs/configuration-reference/#steps
-    steps:
-      - checkout
+version: 2.1 # use CircleCI 2.1
+orbs:
+  node: circleci/node@5.1.0 # Needed for javascript runtime
+  ruby: circleci/ruby@2.0.1
+  docker: circleci/docker@2.2.0
+  aws-cli: circleci/aws-cli@4.0.0
+  aws-ecr: circleci/aws-ecr@8.2.1
+  aws-ecs: circleci/aws-ecs@3.2.0
+jobs: # a collection of steps
+  build-and-test: # runs not using Workflows must have a `build` job as entry point
+    docker: # run the steps with Docker
+      - image: cimg/ruby:3.1.1 # if you're using ruby version >= 3.0, use cimg/ruby:3.x.y
+        environment: # environment variables for primary container
+          BUNDLE_JOBS: 3
+          BUNDLE_RETRY: 3
+          BUNDLE_PATH: vendor/bundl
+          PGHOST: 127.0.0.1
+          PGUSER: postgres
+          RAILS_ENV: test
+    steps: # a collection of executable commands
+      - checkout # special step to check out source code to working directory
+      # Which version of bundler?
+      - node/install:
+          install-yarn: true
+          node-version: '16.13'
+      - ruby/install:
+          version: '3.1.1'
+      - docker/install-docker
+      - ruby/rspec-test
+      - docker/build:
+          image: plate-book-fe
+          debug: false
+          lint-dockerfile: false
+          treat-warnings-as-errors: false
+      - aws-cli/install:
+          override-installed: false
+          disable-aws-pager: true
+      - aws-cli/setup:
+          aws-region: AWS_DEFAULT_REGION
+          aws-access-key-id: AWS_ACCESS_KEY_ID
+          aws-secret-access-key: AWS_SECRET_ACCESS_KEY
+          configure-default-region: true
+          configure-profile-region: true
+          disable-aws-pager: true
+          override-installed: false
+      - aws-ecr/ecr-login
+      - aws-ecs/deploy-service-update:
+          cluster: arn:aws:ecs:us-east-2:623507191376:cluster/plate-book
+          family: plate-book
       - run:
-          name: "Say hello"
-          command: "echo Hello, World!"
-
-# Orchestrate jobs using workflows
-# See: https://circleci.com/docs/configuration-reference/#workflows
+          name: Force Bundler Version
+          command: |
+            echo 'export BUNDLER_VERSION=$(cat Gemfile.lock | tail -1 | tr -d " ")' >> $BASH_ENV
+            source $BASH_ENV
+            gem install bundler
+      - run:
+          name: Bundle Install
+          command: bundle install
+      - run:
+          name: Wait for DB
+          command: dockerize -wait tcp://localhost:5432 -timeout 1m
+      - run:
+          name: Run rspec in parallel
+          command: bundle exec rspec
+      # Save test results for timing analysis
+      - store_test_results: # Upload test results for display in Test Summary: https://circleci.com/docs/2.0/collect-test-data/
+          path: test_results
+      # See https://circleci.com/docs/2.0/deployment-integrations/ for example deploy configs
 workflows:
-  say-hello-workflow:
+  build-test-deploy:
+    build-and-test
     jobs:
-      - say-hello
+      - docker/publish:
+          deploy: true
+          image: plate-book-fe
+      - aws-ecr/build-and-push-image:
+          aws-secret-access-key: AWS_SECRET_ACCESS_KEY
+          aws-access-key-id: AWS_ACCESS_KEY_ID
+          assume-web-identity: false
+          attach-workspace: false
+          docker-login: false
+          create-repo: false
+          checkout: true
+          public-registry: false
+          repo: plate-book-fe
+          repo-scan-on-push: true
+          setup-remote-docker: false

@@ -11,6 +11,13 @@ class PlatebookFacade
     end
   end
 
+  def all_plates
+    json = service.get_all_plates
+    json[:data].map do |plate_data|
+      Plate.new(plate_data)
+    end
+  end
+
   private 
 
   def service

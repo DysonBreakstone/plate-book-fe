@@ -1,0 +1,21 @@
+<div class="container">
+  <h1 class="text-center">Posts</h1>
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="list-group">
+        <% @facade.all_posts.each_with_index do |post, index| %>
+          <div class="list-group-item <%= index.odd? ? 'bg-light' : '' %>">
+            <h5 class="mb-1"><%= link_to post.title %></h5>
+
+            <p class="mb-1">
+            <% post.parent_plates.each do |plate| %>
+            <%=plate[:plate_number] %>
+            <% end %>
+            </p>
+
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

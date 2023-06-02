@@ -18,6 +18,13 @@ class PlatebookFacade
     end
   end
 
+  def all_posts
+    json = service.get_all_posts
+    json[:data].map do |post_data|
+      Post.new(post_data)
+    end
+  end
+
   private 
 
   def service

@@ -16,9 +16,15 @@ class PostsController < ApplicationController
     }
     PlatebookService.new.create_post(new_params)
   end
+  
+  def index
+    @facade = PlatebookFacade.new(params)
+  end
 
   private
     def posts_params
       params.permit(:title, :body, :plate_number)
     end
+
+ 
 end

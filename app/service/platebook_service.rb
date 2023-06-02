@@ -22,7 +22,13 @@ class PlatebookService
     get_url("/api/v1/plates")
   end
 
+
   def create_post(params)
     post_url("api/v1/posts", params: params)
   end
+
+  def get_all_posts
+    get_url("/api/v1/posts")
+  end
+
 end

@@ -22,5 +22,5 @@ class PlatebookService
   def get_all_posts
     get_url("/api/v1/posts")
   end
-  
+
 end

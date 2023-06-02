@@ -7,4 +7,5 @@ Rails.application.routes.draw do
 
   resources :users, only: [:index]
   resources :search, only: [:index]
+  resources :plates, only: [:index]
 end

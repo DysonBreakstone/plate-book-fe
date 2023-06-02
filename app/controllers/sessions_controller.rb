@@ -5,12 +5,13 @@ class SessionsController < ApplicationController
     email = auth_hash['info']['email']
     token = auth_hash['credentials']['token']
     
-    user = BackendService.resgister_user(google_id, email, token)
+    user = BackendService.new.register_user(google_id, email, token)
     #
     #   user = User.find_or_create_by(email: email)
     #   user.update(google_id: google_id, token: token)
 
-    session[:user_id] = user.id
+    require 'pry'; binding.pry
+    session[:user_id] = user[:id]
     redirect_to dashboard_path
 
     #In a different controller

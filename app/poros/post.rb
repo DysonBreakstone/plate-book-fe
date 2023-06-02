@@ -5,6 +5,6 @@ class Post
     @title = data[:attributes][:title]
     @body = data[:attributes][:body]
     @user_id = data[:attributes][:user_id]
-    @parent_plates = data[:attributes][:parent_plate]
+    @parent_plates = data[:attributes][:parent_plates]
   end
 end

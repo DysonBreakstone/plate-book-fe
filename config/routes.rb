@@ -3,4 +3,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "application#home"
+  get '/auth/:provider/callback', to: 'sessions#create'
+
+  resources :users, only: [:index]
 end

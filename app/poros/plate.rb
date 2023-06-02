@@ -1,5 +1,6 @@
 class Plate
+  attr_reader :plate_number
   def initialize(data)
-    require 'pry'; binding.pry
+    @plate_number = data[:attributes][:plate_number]
   end
 end

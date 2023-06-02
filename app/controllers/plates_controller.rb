@@ -1,5 +1,5 @@
 class PlatesController < ApplicationController
   def index
-    @facade = PlatebookFacade.new
+    @facade = PlatebookFacade.new(params)
   end
 end

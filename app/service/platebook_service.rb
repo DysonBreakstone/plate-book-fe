@@ -1,6 +1,5 @@
 require 'faraday'
 
-
 class PlatebookService
   def conn
     Faraday.new(url: "http://localhost:5000")
@@ -24,6 +23,6 @@ class PlatebookService
   end
 
   def create_post(params)
-    post_url("api/v1/posts", params)
+    post_url("api/v1/posts", params: params)
   end
 end

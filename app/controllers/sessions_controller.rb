@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
     email = auth_hash['info']['email']
     token = auth_hash['credentials']['token']
     
-    user = BackendService.register_user(google_id, email, token)
+    user = BackendService.resgister_user(google_id, email, token)
     #
     #   user = User.find_or_create_by(email: email)
     #   user.update(google_id: google_id, token: token)

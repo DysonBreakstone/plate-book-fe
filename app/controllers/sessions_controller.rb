@@ -10,10 +10,10 @@ class SessionsController < ApplicationController
     #   user = User.find_or_create_by(email: email)
     #   user.update(google_id: google_id, token: token)
 
-    require 'pry'; binding.pry
-    session[:user_id] = user[:id]
+    user = JSON.parse(user.body, symbolize_names: true)[:data]
+    session[:user_id] = user[:id].to_i
     redirect_to dashboard_path
-
+    
     #In a different controller
 
     # def show

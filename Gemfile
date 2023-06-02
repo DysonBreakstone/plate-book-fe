@@ -63,6 +63,7 @@ group :development, :test do
   gem 'pry'
   gem 'rspec-rails'
   gem 'shoulda-matchers', '~> 3.1'
+  gem 'google-maps'
 end
 
 group :development do
@@ -78,7 +79,6 @@ end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
 end

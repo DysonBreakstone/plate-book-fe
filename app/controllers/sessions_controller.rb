@@ -4,7 +4,7 @@ class SessionsController < ApplicationController
     google_id = auth_hash['uid']
     email = auth_hash['info']['email']
     token = auth_hash['credentials']['token']
-    
+    require 'pry'; binding.pry
     user = BackendService.register_user(google_id, email, token)
     #
     #   user = User.find_or_create_by(email: email)

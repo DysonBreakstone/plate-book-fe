@@ -1,0 +1,25 @@
+<%= form_with(url: posts_path, method: :post, local: true,  html: { multipart: true }) do |form| %>
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :body %>
+    <%= form.text_field :body %>
+  </div>
+
+  <div class="field">
+    <%= form.label :plate_number %>
+    <%= form.text_field :plate_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :photo %>
+    <%= form.file_field :photo %>
+  </div>  
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

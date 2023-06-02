@@ -7,35 +7,33 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Home</a>
+          <a class="nav-link" href="#">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Plates</a>
         </li>
-         <li class="nav-item">
+        <li class="nav-item">
           <a class="nav-link" href="#">Posts</a>
         </li>
-         <li class="nav-item">
+        <li class="nav-item">
           <a class="nav-link" href="/users">People</a>
         </li>
         <li class="nav-item">
           <%= link_to "Login", "/auth/google_oauth2", class: "nav-link active" %>
         </li>
       </ul>
-      <div class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Category
-        </a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
-      </div>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+      <form class="form-inline my-2 my-lg-0 ml-auto customClass" action="/search" method="GET">
+        <div class="input-group">
+          <select class="custom-select" name="category">
+            <option selected>Choose category...</option>
+            <option value="plates">Plates</option>
+            <option value="posts">Posts</option>
+          </select>
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search" name="query">
+          <div class="input-group-append">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </div>
+        </div>
       </form>
     </div>
   </div>

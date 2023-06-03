@@ -6,6 +6,6 @@ RSpec.feature 'Home Page' do
   end
 
   it 'has a search button' do
-    expect(page).to have_button('Searceagr')
+    expect(page).to have_button('Search')
   end
 end

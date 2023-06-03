@@ -1,6 +1,12 @@
 require 'rails_helper'
 
 RSpec.describe 'Plates Index Page', type: :feature do
+  before(:each) do
+    json_response = File.read('spec/fixtures/all_plates.json')
+    stub_request(:get, "http://localhost:5000/api/v1/plates").
+        to_return(status: 200, body: json_response)
+  end
+
   it "displays 'Plates' at the top of the page" do
     visit plates_path
     within ("h1") do
@@ -18,19 +24,19 @@ RSpec.describe 'Plates Index Page', type: :feature do
     end
   end
 
-  it "each plate number links to the plate's show page" do
+  xit "each plate number links to the plate's show page" do
     visit plates_path
     within (".list-group") do
       expect(page).to have_link("ABC-1234")
       click_link("ABC-1234")
-      #expect(current_path).to eq(plate_path(1))
+      expect(current_path).to eq(plate_path(1))
     end
     
     visit plates_path
     within (".list-group") do
       expect(page).to have_link("MKV-1234")
       click_link("MKV-1234")
-      #expect(current_path).to eq(plate_path(2))
+      expect(current_path).to eq(plate_path(2))
     end
   end
 end

@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 text-center">
+      <h1 class="my-4" id="username">
+        <%= @facade.user.username %>
+      </h1>
+    </div>
+  </div>
+
+  <div class="row mt-5" id="plates-row">
+    <div class="col-12">
+      <h3 id="plates-title">Followed Plates</h3>
+      <% @facade.user.plates.each_with_index do |plate, index| %>
+        <div class="card my-2" id="plate-card-<%= index %>">
+          <div class="card-body">
+            <h5 class="card-title" id="plate-number-<%= index %>">
+              <%= link_to plate[:plate_number], plate_path(plate[:id]) %>
+            </h5>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="row mt-5" id="posts-row">
+    <div class="col-12">
+      <h3 id="posts-title"><%= @facade.user.username  %>'s Posts</h3>
+      <% @facade.user.posts.each_with_index do |post, index| %>
+        <div class="card my-2" id="post-card-<%= index %>">
+          <div class="card-body">
+            <h5 class="card-title" id="post-title-<%= index %>">
+              <%= link_to post[:title], post_path(post[:id]) %>
+            </h5>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="row mt-5" id="comments-row">
+    <div class="col-12">
+      <h3 id="comments-title"><%= @facade.user.username  %>'s Comments</h3>
+      <% @facade.user.comments.each_with_index do |comment, index| %>
+        <div class="card my-2" id="comment-card-<%= index %>">
+          <div class="card-body">
+            <p class="card-text" id="comment-body-<%= index %>">
+              <%= link_to comment[:body], post_path(comment[:post_id]) %>
+            </p>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

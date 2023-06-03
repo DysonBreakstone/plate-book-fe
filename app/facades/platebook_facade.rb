@@ -2,6 +2,7 @@ class PlatebookFacade
 
 
   def initialize(params)
+    @id = params[:id]
   end
 
   def all_users
@@ -23,6 +24,21 @@ class PlatebookFacade
     json[:data].map do |post_data|
       Post.new(post_data)
     end
+  end
+
+  def user
+    json = service.get_user(@id)[:data]
+    User.new(json)
+  end
+
+  def plate
+    json = service.get_plate(@id)[:data]
+    Plate.new(json)
+  end
+
+  def post
+    json = service.get_post(@id)[:data]
+    Post.new(json)
   end
 
   private 

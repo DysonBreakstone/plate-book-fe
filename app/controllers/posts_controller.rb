@@ -3,6 +3,10 @@ class PostsController < ApplicationController
     @facade = PlatebookFacade.new(params)
   end
 
+  def show
+    @facade = PlatebookFacade.new(params)
+  end
+
   def new
   end
 

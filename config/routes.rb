@@ -5,8 +5,8 @@ Rails.application.routes.draw do
   root 'welcome#index'
   get '/auth/:provider/callback', to: 'sessions#create'
 
-  resources :users, only: [:index]
-  resources :posts, only: [:new, :create, :index]
+  resources :users, only: [:index, :show]
+  resources :posts, only: [:new, :create, :index, :show]
   resources :search, only: [:index]
   resources :plates, only: [:index, :show]
 end

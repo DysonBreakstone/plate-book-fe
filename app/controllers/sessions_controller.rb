@@ -12,7 +12,7 @@ class SessionsController < ApplicationController
 
     user = JSON.parse(user.body, symbolize_names: true)[:data]
     session[:user_id] = user[:id].to_i
-    redirect_to dashboard_path
+    redirect_to root_path
     
     #In a different controller
 
@@ -21,15 +21,8 @@ class SessionsController < ApplicationController
     # end
   end
 
-    # private
-    
-    # def auth_hash
-    #   request.env['omniauth.auth']
-    # end
+  def logout
+    session.clear
+  end
 
-    # def user_params
-    #   {google_id: auth_hash['uid'], 
-    #     email: auth_hash['info']['email'], 
-    #     token: auth_hash['credentials']['token']}
-    # end
 end

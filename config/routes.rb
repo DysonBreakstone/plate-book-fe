@@ -4,9 +4,11 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root 'welcome#index'
   get '/auth/:provider/callback', to: 'sessions#create'
+  get '/logout', to: 'sessions#logout'
 
   resources :users, only: [:index]
   resources :posts, only: [:new, :create, :index]
   resources :search, only: [:index]
   resources :plates, only: [:index, :show]
+
 end

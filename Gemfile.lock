@@ -109,6 +109,8 @@ GEM
       reline (>= 0.3.1)
     diff-lcs (1.5.0)
     docile (1.4.0)
+    dockerfile-rails (1.4.1)
+      rails
     erubi (1.12.0)
     faraday (2.7.5)
       faraday-net_http (>= 2.0, < 3.1)
@@ -165,7 +167,11 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.9)
+    nokogiri (1.15.2-aarch64-linux)
+      racc (~> 1.4)
     nokogiri (1.15.2-x86_64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.15.2-x86_64-linux)
       racc (~> 1.4)
     oauth2 (2.0.9)
       faraday (>= 0.17.3, < 3.0)
@@ -250,6 +256,8 @@ GEM
       rspec-mocks (~> 3.12)
       rspec-support (~> 3.12)
     rspec-support (3.12.0)
+    rspec_junit_formatter (0.6.0)
+      rspec-core (>= 2, < 4, != 2.12.0)
     ruby-hmac (0.4.0)
     ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
@@ -275,7 +283,9 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
+    sqlite3 (1.6.3-aarch64-linux)
     sqlite3 (1.6.3-x86_64-darwin)
+    sqlite3 (1.6.3-x86_64-linux)
     stimulus-rails (1.2.1)
       railties (>= 6.0.0)
     thor (1.2.2)
@@ -305,7 +315,9 @@ GEM
     zeitwerk (2.6.8)
 
 PLATFORMS
+  aarch64-linux
   x86_64-darwin-22
+  x86_64-linux
 
 DEPENDENCIES
   aws-sdk-s3
@@ -313,6 +325,7 @@ DEPENDENCIES
   capybara
   cssbundling-rails
   debug
+  dockerfile-rails
   faraday
   figaro
   google-maps
@@ -325,6 +338,7 @@ DEPENDENCIES
   puma (~> 5.0)
   rails (~> 7.0.5)
   rspec-rails
+  rspec_junit_formatter
   selenium-webdriver
   shoulda-matchers
   simplecov

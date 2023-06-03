@@ -20,7 +20,8 @@ jobs:
           name: Precompile Assets
           command: bundle exec rails assets:precompile
       - ruby/rspec-test
-
+      - store_test_results:
+          path: test_results
 workflows:
   build_and_test:
     jobs:

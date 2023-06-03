@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-   ruby: circleci/ruby@2.0.1
+  ruby: circleci/ruby@2.0.1
 jobs:
   build:
     docker:
@@ -13,6 +13,12 @@ jobs:
     steps:
       - checkout
       - ruby/install-deps
+      - run:
+          name: Install Yarn dependencies
+          command: yarn install --check-files
+      - run:
+          name: Precompile Assets
+          command: bundle exec rails assets:precompile
       - ruby/rspec-test
 
 workflows:

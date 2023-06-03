@@ -1,6 +1,7 @@
 version: 2.1 # use CircleCI 2.1
 orbs:
    node: circleci/node@5.1.0 # Needed for javascript runtime
+   ruby: circleci/ruby@2.0.1
 jobs: # a collection of steps
   build-and-test: # runs not using Workflows must have a `build` job as entry point
     docker: # run the steps with Docker
@@ -16,22 +17,8 @@ jobs: # a collection of steps
       - node/install:
           install-yarn: true
           node-version: '14.21'
-      - run:
-          name: Force Bundler Version
-          command: |
-            echo 'export BUNDLER_VERSION=$(cat Gemfile.lock | tail -1 | tr -d " ")' >> $BASH_ENV
-            source $BASH_ENV
-            gem install bundler
-      - run:
-          name: Bundle Install
-          command: bundle install
-      - run:
-          name: Run rspec in parallel
-          command: bundle exec rspec
-      # Save test results for timing analysis
-      - store_test_results: # Upload test results for display in Test Summary: https://circleci.com/docs/2.0/collect-test-data/
-          path: test_results
-      # See https://circleci.com/docs/2.0/deployment-integrations/ for example deploy configs
+      - ruby/install-deps
+      - ruby/rspec-test
 workflows:
   build-test-deploy:
     jobs:

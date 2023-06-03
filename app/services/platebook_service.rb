@@ -18,10 +18,17 @@ class PlatebookService
     get_url("/api/v1/users")
   end
 
+  def get_user(id)
+    get_url("/api/v1/users/#{id}")
+  end
+
   def get_all_plates
     get_url("/api/v1/plates")
   end
 
+  def get_plate(id)
+    get_url("/api/v1/plates/#{id}")
+  end
 
   def create_post(params)
     post_url("api/v1/posts", params: params)
@@ -29,6 +36,10 @@ class PlatebookService
 
   def get_all_posts
     get_url("/api/v1/posts")
+  end
+
+  def get_post(id)
+    get_url("/api/v1/posts/#{id}")
   end
 
 end

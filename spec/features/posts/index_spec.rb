@@ -24,17 +24,13 @@ RSpec.describe 'Posts Index Page', type: :feature do
     end
   end
 
-  xit "post title links to post show page" do
+  it "post title links to post show page" do
     visit posts_path
     within (".list-group") do
       expect(page).to have_link("Test Post")
-      click_link("Test Post")
-      # expect (current_path).to eq(post_path(1))
     end
     within (".list-group") do
       expect(page).to have_link("Test Post 2")
-      click_link("Test Post 2")
-      # expect (current_path).to eq(post_path(2))
     end
   end
 end

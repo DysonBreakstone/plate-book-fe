@@ -16,13 +16,13 @@
           <a class="nav-link" href="/users">People</a>
         </li>
 
-        <% if @current_user %>
-            <li class="nav-item">
-                <%= link_to "Logout", "/logout", method: :delete, class: "nav-link active" %>
-            </li>
-        <% else  %>
+        <% if current_user.nil? %>
             <li class="nav-item">
                 <%= link_to "Login", "/auth/google_oauth2", class: "nav-link active" %>
+            </li>
+        <% else %>
+            <li class="nav-item">
+                <%= link_to "Logout", "/logout", method: :delete, class: "nav-link active" %>
             </li>
         <% end %>
 

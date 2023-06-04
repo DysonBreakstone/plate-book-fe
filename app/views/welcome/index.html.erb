@@ -9,17 +9,21 @@
       zoom: 4,
     });
 
-    const locations = <%= @locations.to_json.html_safe%>;
+    <% locations_array = @locations.flatten.map do |loc| 
+      {lat: loc[:attributes][:lat], lng: loc[:attributes][:lng], id: loc[:id]} 
+    end %>
+
+    const locations = <%= locations_array.to_json.html_safe %>;
 
     for (let i = 0; i < locations.length; i++) {
       const marker = new Marker({
-        position: locations[i],
+        position: { lat: locations[i].lat, lng: locations[i].lng },
         map: map,
         title: 'Marker number ' + i,
       });
 
       marker.addListener('click', () => {
-        window.location.href = '/users';
+        window.location.href = '/post/' + locations[i].id;
       });
     }
   }

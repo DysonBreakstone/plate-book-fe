@@ -42,4 +42,8 @@ class PlatebookService
     get_url("/api/v1/posts/#{id}")
   end
 
+  def get_locations
+    get_url("/api/v1/locations")
+  end
+
 end

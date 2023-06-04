@@ -87,6 +87,6 @@ group :test do
   gem 'rspec-rails'
   gem 'shoulda-matchers'
   gem 'simplecov'
-  # gem 'webmock'
+  gem 'webmock'
   gem 'rspec_junit_formatter'
 end

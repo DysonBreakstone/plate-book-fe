@@ -1,3 +1,5 @@
+require 'geocoder'
+
 class PostsController < ApplicationController
   def index
     @facade = PlatebookFacade.new(params)
@@ -8,25 +10,29 @@ class PostsController < ApplicationController
   end
 
   def new
+    @plate_number = params[:plate_number]
   end
 
   def create
-    if PostsFacade.pass_muster?(params[:title], params[:body])
-      Aws.config.update(access_key_id: ENV['AWS_ACCESS_KEY_ID'], secret_access_key: ENV['AWS_SECRET_ACCESS_KEY'])
-      bucket = Aws::S3::Resource.new.bucket(ENV['AWS_S3_BUCKET_NAME'])
-      file = bucket.object(params[:photo].original_filename)
-      file.upload_file(params[:photo], acl: 'public-read')
-      new_params = {
-        title: posts_params[:title],
-        body: posts_params[:body],
-        plate_number: posts_params[:plate_number],
-        photo_url: file.public_url,
-        user_id: session[:user_id]
-      }
-      PlatebookService.new.create_post(new_params)
-    else
-      flash[:alert] = "Either your title or body contains text which does not comply with our community guidelines."
-    end
+    Aws.config.update(access_key_id: ENV['AWS_ACCESS_KEY_ID'], secret_access_key: ENV['AWS_SECRET_ACCESS_KEY'])
+    bucket = Aws::S3::Resource.new.bucket(ENV['AWS_S3_BUCKET_NAME'])
+    file = bucket.object(params[:photo].original_filename)
+    file.upload_file(params[:photo], acl: 'public-read')
+
+    location = Geocoder.search("#{params[:street_address]} #{params[:city]} #{params[:state]}, #{params[:zipcode]}").first
+    lat = location.latitude
+    lng = location.longitude
+
+    new_params = {
+      title: posts_params[:title],
+      body: posts_params[:body],
+      plate_number: posts_params[:plate_number],
+      photo_url: file.public_url,
+      user_id: session[:user_id],
+      lat: lat,
+      lng: lng
+    }
+    PlatebookService.new.create_post(new_params)
   end
 
   private

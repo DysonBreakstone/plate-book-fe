@@ -1,0 +1,315 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://commentanalyzer.googleapis.com/v1alpha1/comments:analyze?key=AIzaSyAIgO12J6pdi6Ltu76JwujAggk5WPNvU_4
+    body:
+      encoding: UTF-8
+      string: '{"comment":{"text":"What the fuck did you just fucking say about me,
+        you little bitch? I''ll have you know I graduated top of my class in the Navy
+        Seals, and I''ve been involved in numerous secret raids on Al-Quaeda, and
+        I have over 300 confirmed kills. I am trained in gorilla warfare and I''m
+        the top sniper in the entire US armed forces. You are nothing to me but just
+        another target. I will wipe you the fuck out with precision the likes of which
+        has never been seen before on this Earth, mark my fucking words. You think
+        you can get away with saying that shit to me over the Internet? Think again,
+        fucker. As we speak I am contacting my secret network of spies across the
+        USA and your IP is being traced right now so you better prepare for the storm,
+        maggot. The storm that wipes out the pathetic little thing you call your life.
+        You''re fucking dead, kid. I can be anywhere, anytime, and I can kill you
+        in over seven hundred ways, and that''s just with my bare hands. Not only
+        am I extensively trained in unarmed combat, but I have access to the entire
+        arsenal of the United States Marine Corps and I will use it to its full extent
+        to wipe your miserable ass off the face of the continent, you little shit.
+        If only you could have known what unholy retribution your little clever comment
+        was about to bring down upon you, maybe you would have held your fucking tongue.
+        But you couldn''t, you didn''t, and now you''re paying the price, you goddamn
+        idiot. I will shit fury all over you and you will drown in it. You''re fucking
+        dead, kiddo."},"requestedAttributes":{"TOXICITY":{},"IDENTITY_ATTACK":{},"INSULT":{},"PROFANITY":{},"THREAT":{}}}'
+    headers:
+      Content-Type:
+      - application/json, AIzaSyAIgO12J6pdi6Ltu76JwujAggk5WPNvU_4
+      User-Agent:
+      - Faraday v2.7.5
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Sun, 04 Jun 2023 23:53:39 GMT
+      Server:
+      - ESF
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "attributeScores": {
+            "IDENTITY_ATTACK": {
+              "spanScores": [
+                {
+                  "begin": 0,
+                  "end": 1514,
+                  "score": {
+                    "value": 0.48915586,
+                    "type": "PROBABILITY"
+                  }
+                }
+              ],
+              "summaryScore": {
+                "value": 0.48915586,
+                "type": "PROBABILITY"
+              }
+            },
+            "THREAT": {
+              "spanScores": [
+                {
+                  "begin": 0,
+                  "end": 1514,
+                  "score": {
+                    "value": 0.7488629,
+                    "type": "PROBABILITY"
+                  }
+                }
+              ],
+              "summaryScore": {
+                "value": 0.7488629,
+                "type": "PROBABILITY"
+              }
+            },
+            "PROFANITY": {
+              "spanScores": [
+                {
+                  "begin": 0,
+                  "end": 1514,
+                  "score": {
+                    "value": 0.9421618,
+                    "type": "PROBABILITY"
+                  }
+                }
+              ],
+              "summaryScore": {
+                "value": 0.9421618,
+                "type": "PROBABILITY"
+              }
+            },
+            "TOXICITY": {
+              "spanScores": [
+                {
+                  "begin": 0,
+                  "end": 1514,
+                  "score": {
+                    "value": 0.968226,
+                    "type": "PROBABILITY"
+                  }
+                }
+              ],
+              "summaryScore": {
+                "value": 0.968226,
+                "type": "PROBABILITY"
+              }
+            },
+            "INSULT": {
+              "spanScores": [
+                {
+                  "begin": 0,
+                  "end": 1514,
+                  "score": {
+                    "value": 0.9028068,
+                    "type": "PROBABILITY"
+                  }
+                }
+              ],
+              "summaryScore": {
+                "value": 0.9028068,
+                "type": "PROBABILITY"
+              }
+            }
+          },
+          "languages": [
+            "en"
+          ],
+          "detectedLanguages": [
+            "en"
+          ]
+        }
+  recorded_at: Sun, 04 Jun 2023 23:53:39 GMT
+- request:
+    method: post
+    uri: https://commentanalyzer.googleapis.com/v1alpha1/comments:analyze?key=AIzaSyAIgO12J6pdi6Ltu76JwujAggk5WPNvU_4
+    body:
+      encoding: UTF-8
+      string: '{"comment":{"text":"What the fuck did you just fucking say about me,
+        you little bitch? I''ll have you know I graduated top of my class in the Navy
+        Seals, and I''ve been involved in numerous secret raids on Al-Quaeda, and
+        I have over 300 confirmed kills. I am trained in gorilla warfare and I''m
+        the top sniper in the entire US armed forces. You are nothing to me but just
+        another target. I will wipe you the fuck out with precision the likes of which
+        has never been seen before on this Earth, mark my fucking words. You think
+        you can get away with saying that shit to me over the Internet? Think again,
+        fucker. As we speak I am contacting my secret network of spies across the
+        USA and your IP is being traced right now so you better prepare for the storm,
+        maggot. The storm that wipes out the pathetic little thing you call your life.
+        You''re fucking dead, kid. I can be anywhere, anytime, and I can kill you
+        in over seven hundred ways, and that''s just with my bare hands. Not only
+        am I extensively trained in unarmed combat, but I have access to the entire
+        arsenal of the United States Marine Corps and I will use it to its full extent
+        to wipe your miserable ass off the face of the continent, you little shit.
+        If only you could have known what unholy retribution your little clever comment
+        was about to bring down upon you, maybe you would have held your fucking tongue.
+        But you couldn''t, you didn''t, and now you''re paying the price, you goddamn
+        idiot. I will shit fury all over you and you will drown in it. You''re fucking
+        dead, kiddo."},"requestedAttributes":{"TOXICITY":{},"IDENTITY_ATTACK":{},"INSULT":{},"PROFANITY":{},"THREAT":{}}}'
+    headers:
+      Content-Type:
+      - application/json, AIzaSyAIgO12J6pdi6Ltu76JwujAggk5WPNvU_4
+      User-Agent:
+      - Faraday v2.7.5
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Sun, 04 Jun 2023 23:53:39 GMT
+      Server:
+      - ESF
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "attributeScores": {
+            "IDENTITY_ATTACK": {
+              "spanScores": [
+                {
+                  "begin": 0,
+                  "end": 1514,
+                  "score": {
+                    "value": 0.48915586,
+                    "type": "PROBABILITY"
+                  }
+                }
+              ],
+              "summaryScore": {
+                "value": 0.48915586,
+                "type": "PROBABILITY"
+              }
+            },
+            "TOXICITY": {
+              "spanScores": [
+                {
+                  "begin": 0,
+                  "end": 1514,
+                  "score": {
+                    "value": 0.968226,
+                    "type": "PROBABILITY"
+                  }
+                }
+              ],
+              "summaryScore": {
+                "value": 0.968226,
+                "type": "PROBABILITY"
+              }
+            },
+            "PROFANITY": {
+              "spanScores": [
+                {
+                  "begin": 0,
+                  "end": 1514,
+                  "score": {
+                    "value": 0.9421618,
+                    "type": "PROBABILITY"
+                  }
+                }
+              ],
+              "summaryScore": {
+                "value": 0.9421618,
+                "type": "PROBABILITY"
+              }
+            },
+            "THREAT": {
+              "spanScores": [
+                {
+                  "begin": 0,
+                  "end": 1514,
+                  "score": {
+                    "value": 0.7488629,
+                    "type": "PROBABILITY"
+                  }
+                }
+              ],
+              "summaryScore": {
+                "value": 0.7488629,
+                "type": "PROBABILITY"
+              }
+            },
+            "INSULT": {
+              "spanScores": [
+                {
+                  "begin": 0,
+                  "end": 1514,
+                  "score": {
+                    "value": 0.9028068,
+                    "type": "PROBABILITY"
+                  }
+                }
+              ],
+              "summaryScore": {
+                "value": 0.9028068,
+                "type": "PROBABILITY"
+              }
+            }
+          },
+          "languages": [
+            "en"
+          ],
+          "detectedLanguages": [
+            "en"
+          ]
+        }
+  recorded_at: Sun, 04 Jun 2023 23:53:39 GMT
+recorded_with: VCR 6.1.0

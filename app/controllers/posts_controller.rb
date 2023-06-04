@@ -1,3 +1,5 @@
+require 'geocoder'
+
 class PostsController < ApplicationController
   def index
     @facade = PlatebookFacade.new(params)
@@ -16,12 +18,19 @@ class PostsController < ApplicationController
     bucket = Aws::S3::Resource.new.bucket(ENV['AWS_S3_BUCKET_NAME'])
     file = bucket.object(params[:photo].original_filename)
     file.upload_file(params[:photo], acl: 'public-read')
+
+    location = Geocoder.search("#{params[:street_address]} #{params[:city]} #{params[:state]}, #{params[:zipcode]}").first
+    lat = location.latitude
+    lng = location.longitude
+
     new_params = {
       title: posts_params[:title],
       body: posts_params[:body],
       plate_number: posts_params[:plate_number],
       photo_url: file.public_url,
-      user_id: session[:user_id]
+      user_id: session[:user_id],
+      lat: lat,
+      lng: lng
     }
     PlatebookService.new.create_post(new_params)
   end

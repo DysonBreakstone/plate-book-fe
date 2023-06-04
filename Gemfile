@@ -57,6 +57,7 @@ gem "aws-sdk-s3"
 gem 'faraday'
 gem 'figaro'
 gem 'dockerfile-rails'
+gem 'geocoder'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -64,7 +65,6 @@ group :development, :test do
   gem 'pry'
   gem 'pry-byebug'
   gem 'google-maps'
-  gem 'capybara'
 end
 
 group :development do

@@ -11,7 +11,9 @@ class SessionsController < ApplicationController
     #   user.update(google_id: google_id, token: token)
 
     user = JSON.parse(user.body, symbolize_names: true)[:data]
+
     session[:user_id] = user[:id].to_i
+
     redirect_to root_path
     
     #In a different controller

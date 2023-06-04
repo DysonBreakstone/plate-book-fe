@@ -11,34 +11,6 @@ class PostsController < ApplicationController
   end
 
   def create
-    class PerspectiveApiService
-  BASE_URL = 'https://commentanalyzer.googleapis.com/v1alpha1'.freeze
-  API_KEY = 'YOUR_API_KEY'.freeze
-
-  def self.analyze_comment(comment)
-    url = "#{BASE_URL}/comments:analyze"
-    headers = {
-      'Content-Type' => 'application/json'
-    }
-    body = {
-      comment: {
-        text: comment
-      },
-      requestedAttributes: {
-        TOXICITY: {}
-      }
-    }
-
-    response = Faraday.post(url) do |req|
-      req.headers = headers
-      req.params['key'] = API_KEY
-      req.body = body.to_json
-    end
-
-    JSON.parse(response.body)
-  end
-end
-
     Aws.config.update(access_key_id: ENV['AWS_ACCESS_KEY_ID'], secret_access_key: ENV['AWS_SECRET_ACCESS_KEY'])
     bucket = Aws::S3::Resource.new.bucket(ENV['AWS_S3_BUCKET_NAME'])
     file = bucket.object(params[:photo].original_filename)

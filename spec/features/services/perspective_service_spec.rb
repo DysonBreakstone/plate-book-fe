@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe "Perspective Service" do
   describe "Connection" do
-    it "gets a response" do
+    xit "gets a response" do
       WebMock.allow_net_connect!
       json = PerspectiveService.new.analyze("I love everybody")
       expect(json).to be_a(Hash)

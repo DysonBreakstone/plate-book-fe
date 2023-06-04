@@ -1,0 +1,29 @@
+{
+  "data": {
+      "id": "1",
+      "type": "plate",
+      "attributes": {
+          "plate_number": "ABC-1234",
+          "created_at": "2023-06-03T21:07:58.282Z",
+          "updated_at": "2023-06-03T21:07:58.282Z",
+          "posts": [
+              {
+                  "id": 1,
+                  "title": "Test Post",
+                  "created_at": "9:07 PM 06/03/2023",
+                  "username": "test",
+                  "user_id": 1,
+                  "comment_count": 1
+              },
+              {
+                  "id": 2,
+                  "title": "Test Post 2",
+                  "created_at": "9:07 PM 06/03/2023",
+                  "username": "test2",
+                  "user_id": 2,
+                  "comment_count": 0
+              }
+          ]
+      }
+  }
+}

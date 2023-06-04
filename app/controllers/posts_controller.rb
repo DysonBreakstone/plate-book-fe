@@ -8,6 +8,7 @@ class PostsController < ApplicationController
   end
 
   def new
+    @plate_number = params[:plate_number]
   end
 
   def create

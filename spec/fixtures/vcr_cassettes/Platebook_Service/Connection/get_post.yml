@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/posts/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.5
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"a3441ffba33e74c7be344051f519cb05"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 044fd702-b7c8-4c28-933b-e42c2393dad8
+      X-Runtime:
+      - '0.012268'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.07, sql.active_record;dur=3.57, instantiation.active_record;dur=0.19,
+        process_action.action_controller;dur=6.74
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
+        Post","body":"This is a test post","user_id":1,"created_at":"2023-06-05T21:38:22.210Z","updated_at":"2023-06-05T21:38:22.210Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
+        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"9:38
+        PM 06/05/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"9:38
+        PM 06/05/2023"}}}'
+  recorded_at: Mon, 05 Jun 2023 23:33:35 GMT
+recorded_with: VCR 6.1.0

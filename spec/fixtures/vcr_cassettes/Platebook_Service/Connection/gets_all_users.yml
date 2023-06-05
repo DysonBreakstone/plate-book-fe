@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.5
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"b194b19f2c8545fb142c23828a9ee9f7"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - fc3eca2b-fca1-4ba2-8b96-e85c858a71e6
+      X-Runtime:
+      - '0.037966'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.15, sql.active_record;dur=13.03,
+        instantiation.active_record;dur=0.61, process_action.action_controller;dur=25.31
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"user","attributes":{"id":1,"username":"test","email":"somethingcrazy@gmail.com","uid":"1234","token":"1234","created_at":"2023-06-05T21:38:22.174Z","updated_at":"2023-06-05T21:38:22.174Z","comments":[],"posts":[{"id":1,"title":"Test
+        Post"},{"id":2,"title":"Test Post 2"}],"plates":[]}},{"id":"2","type":"user","attributes":{"id":2,"username":"test2","email":"anotheremail@gmail.com","uid":"5678","token":"5678","created_at":"2023-06-05T21:38:22.178Z","updated_at":"2023-06-05T21:38:22.178Z","comments":[],"posts":[{"id":3,"title":"Test
+        Post 3"},{"id":4,"title":"Test Post 4"}],"plates":[]}},{"id":"3","type":"user","attributes":{"id":3,"username":"User
+        Show Test","email":"usershow@gmail.com","uid":"12345","token":"12345","created_at":"2023-06-05T21:38:22.181Z","updated_at":"2023-06-05T21:38:22.181Z","comments":[{"id":1,"body":"This
+        is a test comment","post_id":1}],"posts":[{"id":5,"title":"Test Post 5"}],"plates":[{"id":3,"plate_number":"ABCD-1234"}]}},{"id":"4","type":"user","attributes":{"id":4,"username":"105461524932862999397","email":"bleeandchip@gmail.com","uid":"105461524932862999397","token":"ya29.a0AWY7Ckn-CEMzCRaFFVGCQwvDylq3IqAgMVSrchE6KZhoUqv0ifHaPRior_oiggGnT4Ed9Lc6sO0j9fzIfyDJLAPd7gjUxg9irADfOlDqMLDIrtkg53mOqSjtc4wm_iWI3m1YZlUyr2sOYL8fJF2Ys9QZK1PVaCgYKAfcSAQ8SFQG1tDrpCs0mCmiyJoxWUiarvKdFtQ0163","created_at":"2023-06-05T21:50:43.415Z","updated_at":"2023-06-05T21:51:07.103Z","comments":[],"posts":[{"id":6,"title":"no
+        photo"},{"id":7,"title":"yes photo"},{"id":8,"title":"YOLO"},{"id":9,"title":"YOLO"},{"id":10,"title":"TEST"},{"id":11,"title":"IM
+        A PIRATE"},{"id":12,"title":"PLEASE WORK"},{"id":13,"title":"OKAY IM SORRY"}],"plates":[]}},{"id":"5","type":"user","attributes":{"id":5,"username":"234923492","email":"tester@gmail.com","uid":"234923492","token":"234u23u","created_at":"2023-06-05T23:22:04.946Z","updated_at":"2023-06-05T23:22:04.959Z","comments":[],"posts":[],"plates":[]}}]}'
+  recorded_at: Mon, 05 Jun 2023 23:33:35 GMT
+recorded_with: VCR 6.1.0

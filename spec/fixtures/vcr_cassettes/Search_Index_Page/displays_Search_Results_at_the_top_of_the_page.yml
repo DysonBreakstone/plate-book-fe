@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:5000/api/v1/search?category=plates&query=X
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.5
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"875c31866e143195ea0349f1ac45d6b0"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - e6922e98-511b-4fbd-aed3-897b0a624bde
+      X-Runtime:
+      - '0.047121'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.25, sql.active_record;dur=15.00,
+        instantiation.active_record;dur=0.86, process_action.action_controller;dur=31.85
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"4","type":"plate","attributes":{"plate_number":"000XXX","created_at":"2023-06-05T22:00:38.643Z","updated_at":"2023-06-05T22:00:38.643Z","posts":[{"id":6,"title":"no
+        photo","created_at":"10:00 PM 06/05/2023","username":"105461524932862999397","user_id":4,"comment_count":0}]}},{"id":"7","type":"plate","attributes":{"plate_number":"XXXX","created_at":"2023-06-05T22:18:34.934Z","updated_at":"2023-06-05T22:18:34.934Z","posts":[{"id":10,"title":"TEST","created_at":"10:18
+        PM 06/05/2023","username":"105461524932862999397","user_id":4,"comment_count":0}]}},{"id":"8","type":"plate","attributes":{"plate_number":"XXX111","created_at":"2023-06-05T22:21:41.084Z","updated_at":"2023-06-05T22:21:41.084Z","posts":[{"id":11,"title":"IM
+        A PIRATE","created_at":"10:21 PM 06/05/2023","username":"105461524932862999397","user_id":4,"comment_count":0}]}}]}'
+  recorded_at: Mon, 05 Jun 2023 23:39:05 GMT
+recorded_with: VCR 6.1.0

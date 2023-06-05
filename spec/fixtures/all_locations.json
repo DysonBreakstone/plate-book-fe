@@ -1,0 +1,36 @@
+{
+  "data": [
+      {
+          "id": "1",
+          "type": "location",
+          "attributes": {
+              "lat": 39.70304444897959,
+              "lng": -104.79646724489795
+          }
+      },
+      {
+          "id": "2",
+          "type": "location",
+          "attributes": {
+              "lat": 34.056793408163266,
+              "lng": -118.30425706122449
+          }
+      },
+      {
+          "id": "3",
+          "type": "location",
+          "attributes": {
+              "lat": 44.325782,
+              "lng": -72.52738
+          }
+      },
+      {
+          "id": "4",
+          "type": "location",
+          "attributes": {
+              "lat": 40.102555,
+              "lng": -105.3632079
+          }
+      }
+  ]
+}

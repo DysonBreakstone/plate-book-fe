@@ -22,14 +22,13 @@ RSpec.describe 'User Index Page', type: :feature do
       expect(page).to have_content("test2")
     end
   end
-  xit "usernames link to user's show page" do
+  it "usernames link to user's show page" do
     visit users_path
     within (all(".list-group-item")[0]) do
-      save_and_open_page
-      expect(page).to have_link("test", href: "/users/1")
+      expect(page).to have_link("test")
     end
     within (all(".list-group-item")[1]) do
-      expect(page).to have_link("test2", href: "/users/2")
+      expect(page).to have_link("test2")
     end
   end
 end

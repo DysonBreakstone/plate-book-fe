@@ -1,0 +1,62 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 text-center">
+      <h1 class="my-4">
+        <%= @facade.post.plate %>
+      </h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <span class="font-weight-normal">User: <%= @facade.post.user %></span>
+      <span class="float-end"><%= @facade.post.created_at %></span>
+    </div>
+  </div>
+
+  <div class="row mt-5">
+    <div class="col-12 text-center">
+      <h3><%= @facade.post.title %></h3>
+      <%= image_tag(@facade.post.photo, class: 'img-fluid') if @facade.post.photo.present? %>
+      <p class="mt-2"><%= @facade.post.body %></p>
+    </div>
+  </div>
+
+  <div class="row mt-5" id="comments-row">
+    <div class="col-12">
+      <h5>Comments:</h5>
+      <% @facade.post.comments.each_with_index do |comment, index| %>
+        <div class="card my-2 <%= index.even? ? 'bg-light' : 'bg-secondary' %>" id="comment-card-<%= index %>">
+          <div class="card-body">
+            <span class="font-weight-normal"><%= comment[:username] %></span>
+            <span class="float-end"><%= comment[:created_at] %></span>
+            <p class="card-text mt-2">
+              <%= comment[:body] %>
+            </p>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+  <div class="row mt-5" id="comment-form-row">
+    <div class="col-12">
+      <% if current_user.nil? %>
+        <div class="d-flex justify-content-center">
+          <%= link_to "Login to Add Comment", "/auth/google_oauth2", class: "btn btn-primary" %>
+        </div>
+      <% else %>
+        <%= form_with url: comments_path, method: :post, local: true,  html: { multipart: true } do |form| %>
+          <%= form.hidden_field :user_id, value: current_user %>
+          <%= form.hidden_field :post_id, value: @facade.post.id %>
+          <div class="mb-3">
+            <%= form.label :comment, class: "form-label" %>
+            <%= form.text_area :body, class: "form-control", placeholder: "Add a comment..." %>
+          </div>
+          <%= form.submit "Submit", class: "btn btn-primary" %>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>

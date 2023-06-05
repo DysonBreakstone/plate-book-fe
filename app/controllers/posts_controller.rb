@@ -29,7 +29,7 @@ class PostsController < ApplicationController
         body: posts_params[:body],
         plate_number: posts_params[:plate_number],
         photo_url: file.public_url,
-        user_id: session[:user_id],
+        user_id: session[:user_id].to_i,
         lat: lat,
         lng: lng
       }

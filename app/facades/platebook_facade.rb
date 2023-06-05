@@ -1,7 +1,6 @@
 class PlatebookFacade
-
-
   def initialize(params)
+    @params = params
     @id = params[:id]
   end
 
@@ -39,6 +38,19 @@ class PlatebookFacade
   def post
     json = service.get_post(@id)[:data]
     Post.new(json)
+  end
+
+  def search
+    json = service.get_all_search(@params)
+    if @params[:category] == "plates"
+      json[:data].map do |plate_data|
+        Plate.new(plate_data)
+      end
+    else
+      json[:data].map do |post_data|
+        Post.new(post_data)
+      end
+    end
   end
 
   private 

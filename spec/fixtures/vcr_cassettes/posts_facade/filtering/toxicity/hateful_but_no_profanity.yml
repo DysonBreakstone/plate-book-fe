@@ -2,14 +2,14 @@
 http_interactions:
 - request:
     method: post
-    uri: https://commentanalyzer.googleapis.com/v1alpha1/comments:analyze?key=AIzaSyAIgO12J6pdi6Ltu76JwujAggk5WPNvU_4
+    uri: https://commentanalyzer.googleapis.com/v1alpha1/comments:analyze?key=DONT_SHARE_MY_DATA_7
     body:
       encoding: UTF-8
       string: '{"comment":{"text":"You''re a real tool. I hope your day is horrible,
         you monster."},"requestedAttributes":{"TOXICITY":{},"IDENTITY_ATTACK":{},"INSULT":{},"PROFANITY":{},"THREAT":{}}}'
     headers:
       Content-Type:
-      - application/json, AIzaSyAIgO12J6pdi6Ltu76JwujAggk5WPNvU_4
+      - application/json, DONT_SHARE_MY_DATA_7
       User-Agent:
       - Faraday v2.7.5
       Accept-Encoding:
@@ -28,7 +28,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Sun, 04 Jun 2023 23:25:46 GMT
+      - Mon, 05 Jun 2023 00:46:58 GMT
       Server:
       - ESF
       Cache-Control:
@@ -64,35 +64,19 @@ http_interactions:
                 "type": "PROBABILITY"
               }
             },
-            "IDENTITY_ATTACK": {
+            "PROFANITY": {
               "spanScores": [
                 {
                   "begin": 0,
                   "end": 61,
                   "score": {
-                    "value": 0.05794714,
+                    "value": 0.39409557,
                     "type": "PROBABILITY"
                   }
                 }
               ],
               "summaryScore": {
-                "value": 0.05794714,
-                "type": "PROBABILITY"
-              }
-            },
-            "THREAT": {
-              "spanScores": [
-                {
-                  "begin": 0,
-                  "end": 61,
-                  "score": {
-                    "value": 0.43785736,
-                    "type": "PROBABILITY"
-                  }
-                }
-              ],
-              "summaryScore": {
-                "value": 0.43785736,
+                "value": 0.39409557,
                 "type": "PROBABILITY"
               }
             },
@@ -112,19 +96,35 @@ http_interactions:
                 "type": "PROBABILITY"
               }
             },
-            "PROFANITY": {
+            "THREAT": {
               "spanScores": [
                 {
                   "begin": 0,
                   "end": 61,
                   "score": {
-                    "value": 0.39409557,
+                    "value": 0.43785736,
                     "type": "PROBABILITY"
                   }
                 }
               ],
               "summaryScore": {
-                "value": 0.39409557,
+                "value": 0.43785736,
+                "type": "PROBABILITY"
+              }
+            },
+            "IDENTITY_ATTACK": {
+              "spanScores": [
+                {
+                  "begin": 0,
+                  "end": 61,
+                  "score": {
+                    "value": 0.05794714,
+                    "type": "PROBABILITY"
+                  }
+                }
+              ],
+              "summaryScore": {
+                "value": 0.05794714,
                 "type": "PROBABILITY"
               }
             }
@@ -136,17 +136,17 @@ http_interactions:
             "en"
           ]
         }
-  recorded_at: Sun, 04 Jun 2023 23:25:46 GMT
+  recorded_at: Mon, 05 Jun 2023 00:46:58 GMT
 - request:
     method: post
-    uri: https://commentanalyzer.googleapis.com/v1alpha1/comments:analyze?key=AIzaSyAIgO12J6pdi6Ltu76JwujAggk5WPNvU_4
+    uri: https://commentanalyzer.googleapis.com/v1alpha1/comments:analyze?key=DONT_SHARE_MY_DATA_7
     body:
       encoding: UTF-8
       string: '{"comment":{"text":"You''re a real tool. I hope your day is horrible,
         you monster."},"requestedAttributes":{"TOXICITY":{},"IDENTITY_ATTACK":{},"INSULT":{},"PROFANITY":{},"THREAT":{}}}'
     headers:
       Content-Type:
-      - application/json, AIzaSyAIgO12J6pdi6Ltu76JwujAggk5WPNvU_4
+      - application/json, DONT_SHARE_MY_DATA_7
       User-Agent:
       - Faraday v2.7.5
       Accept-Encoding:
@@ -165,7 +165,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Sun, 04 Jun 2023 23:25:47 GMT
+      - Mon, 05 Jun 2023 00:46:58 GMT
       Server:
       - ESF
       Cache-Control:
@@ -201,6 +201,22 @@ http_interactions:
                 "type": "PROBABILITY"
               }
             },
+            "IDENTITY_ATTACK": {
+              "spanScores": [
+                {
+                  "begin": 0,
+                  "end": 61,
+                  "score": {
+                    "value": 0.05794714,
+                    "type": "PROBABILITY"
+                  }
+                }
+              ],
+              "summaryScore": {
+                "value": 0.05794714,
+                "type": "PROBABILITY"
+              }
+            },
             "INSULT": {
               "spanScores": [
                 {
@@ -233,22 +249,6 @@ http_interactions:
                 "type": "PROBABILITY"
               }
             },
-            "IDENTITY_ATTACK": {
-              "spanScores": [
-                {
-                  "begin": 0,
-                  "end": 61,
-                  "score": {
-                    "value": 0.05794714,
-                    "type": "PROBABILITY"
-                  }
-                }
-              ],
-              "summaryScore": {
-                "value": 0.05794714,
-                "type": "PROBABILITY"
-              }
-            },
             "TOXICITY": {
               "spanScores": [
                 {
@@ -273,5 +273,5 @@ http_interactions:
             "en"
           ]
         }
-  recorded_at: Sun, 04 Jun 2023 23:25:47 GMT
+  recorded_at: Mon, 05 Jun 2023 00:46:58 GMT
 recorded_with: VCR 6.1.0

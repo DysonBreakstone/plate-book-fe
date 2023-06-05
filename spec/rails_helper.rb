@@ -81,7 +81,15 @@ VCR.configure do |config|
   config.cassette_library_dir = "spec/fixtures/vcr_cassettes"
   config.hook_into :webmock
   config.filter_sensitive_data('<MOVIEDB_AUTHORIZATION_TOKEN>') { ENV["MOVIEDB_AUTHORIZATION_TOKEN"] }
-  config.default_cassette_options = { re_record_interval: 7.days }
+  config.default_cassette_options = { re_record_interval: 3.months }
   config.configure_rspec_metadata!
   config.default_cassette_options = { allow_playback_repeats: true }
+  config.filter_sensitive_data('DONT_SHARE_MY_DATA_1') { ENV['GOOGLE_CLIENT_ID'] }
+  config.filter_sensitive_data('DONT_SHARE_MY_DATA_2') { ENV['GOOGLE_CLIENT_SECRET'] }
+  config.filter_sensitive_data('DONT_SHARE_MY_DATA_3') { ENV['GOOGLE_MAPS_API_KEY'] }
+  config.filter_sensitive_data('DONT_SHARE_MY_DATA_4') { ENV['AWS_ACCESS_KEY_ID'] }
+  config.filter_sensitive_data('DONT_SHARE_MY_DATA_5') { ENV['AWS_SECRET_ACCESS_KEY'] }
+  config.filter_sensitive_data('DONT_SHARE_MY_DATA_6') { ENV['AWS_S3_BUCKET_NAME'] }
+  config.filter_sensitive_data('DONT_SHARE_MY_DATA_7') { ENV['GOOGLE_CLOUD_API_KEY'] }
+  config.filter_sensitive_data('DONT_SHARE_MY_DATA_8') { ENV['GOOGLE_CLIENT_ID'] }
 end

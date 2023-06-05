@@ -2,13 +2,13 @@
 http_interactions:
 - request:
     method: post
-    uri: https://commentanalyzer.googleapis.com/v1alpha1/comments:analyze?key=AIzaSyAIgO12J6pdi6Ltu76JwujAggk5WPNvU_4
+    uri: https://commentanalyzer.googleapis.com/v1alpha1/comments:analyze?key=DONT_SHARE_MY_DATA_7
     body:
       encoding: UTF-8
-      string: '{"comment":{"text":"Trans athletes should not be allowed to perform."},"requestedAttributes":{"TOXICITY":{},"IDENTITY_ATTACK":{},"INSULT":{},"PROFANITY":{},"THREAT":{}}}'
+      string: '{"comment":{"text":"I don''t trust trans people."},"requestedAttributes":{"TOXICITY":{},"IDENTITY_ATTACK":{},"INSULT":{},"PROFANITY":{},"THREAT":{}}}'
     headers:
       Content-Type:
-      - application/json, AIzaSyAIgO12J6pdi6Ltu76JwujAggk5WPNvU_4
+      - application/json, DONT_SHARE_MY_DATA_7
       User-Agent:
       - Faraday v2.7.5
       Accept-Encoding:
@@ -27,7 +27,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Sun, 04 Jun 2023 23:36:30 GMT
+      - Mon, 05 Jun 2023 00:46:59 GMT
       Server:
       - ESF
       Cache-Control:
@@ -47,19 +47,35 @@ http_interactions:
       string: |
         {
           "attributeScores": {
-            "IDENTITY_ATTACK": {
+            "PROFANITY": {
               "spanScores": [
                 {
                   "begin": 0,
-                  "end": 48,
+                  "end": 27,
                   "score": {
-                    "value": 0.6853638,
+                    "value": 0.2347036,
                     "type": "PROBABILITY"
                   }
                 }
               ],
               "summaryScore": {
-                "value": 0.6853638,
+                "value": 0.2347036,
+                "type": "PROBABILITY"
+              }
+            },
+            "IDENTITY_ATTACK": {
+              "spanScores": [
+                {
+                  "begin": 0,
+                  "end": 27,
+                  "score": {
+                    "value": 0.6990888,
+                    "type": "PROBABILITY"
+                  }
+                }
+              ],
+              "summaryScore": {
+                "value": 0.6990888,
                 "type": "PROBABILITY"
               }
             },
@@ -67,47 +83,15 @@ http_interactions:
               "spanScores": [
                 {
                   "begin": 0,
-                  "end": 48,
+                  "end": 27,
                   "score": {
-                    "value": 0.60254884,
+                    "value": 0.62702215,
                     "type": "PROBABILITY"
                   }
                 }
               ],
               "summaryScore": {
-                "value": 0.60254884,
-                "type": "PROBABILITY"
-              }
-            },
-            "PROFANITY": {
-              "spanScores": [
-                {
-                  "begin": 0,
-                  "end": 48,
-                  "score": {
-                    "value": 0.22572558,
-                    "type": "PROBABILITY"
-                  }
-                }
-              ],
-              "summaryScore": {
-                "value": 0.22572558,
-                "type": "PROBABILITY"
-              }
-            },
-            "INSULT": {
-              "spanScores": [
-                {
-                  "begin": 0,
-                  "end": 48,
-                  "score": {
-                    "value": 0.36798462,
-                    "type": "PROBABILITY"
-                  }
-                }
-              ],
-              "summaryScore": {
-                "value": 0.36798462,
+                "value": 0.62702215,
                 "type": "PROBABILITY"
               }
             },
@@ -115,15 +99,31 @@ http_interactions:
               "spanScores": [
                 {
                   "begin": 0,
-                  "end": 48,
+                  "end": 27,
                   "score": {
-                    "value": 0.13700877,
+                    "value": 0.012026439,
                     "type": "PROBABILITY"
                   }
                 }
               ],
               "summaryScore": {
-                "value": 0.13700877,
+                "value": 0.012026439,
+                "type": "PROBABILITY"
+              }
+            },
+            "INSULT": {
+              "spanScores": [
+                {
+                  "begin": 0,
+                  "end": 27,
+                  "score": {
+                    "value": 0.37166002,
+                    "type": "PROBABILITY"
+                  }
+                }
+              ],
+              "summaryScore": {
+                "value": 0.37166002,
                 "type": "PROBABILITY"
               }
             }
@@ -135,16 +135,16 @@ http_interactions:
             "en"
           ]
         }
-  recorded_at: Sun, 04 Jun 2023 23:36:30 GMT
+  recorded_at: Mon, 05 Jun 2023 00:46:59 GMT
 - request:
     method: post
-    uri: https://commentanalyzer.googleapis.com/v1alpha1/comments:analyze?key=AIzaSyAIgO12J6pdi6Ltu76JwujAggk5WPNvU_4
+    uri: https://commentanalyzer.googleapis.com/v1alpha1/comments:analyze?key=DONT_SHARE_MY_DATA_7
     body:
       encoding: UTF-8
-      string: '{"comment":{"text":"Trans athletes should not be allowed to perform."},"requestedAttributes":{"TOXICITY":{},"IDENTITY_ATTACK":{},"INSULT":{},"PROFANITY":{},"THREAT":{}}}'
+      string: '{"comment":{"text":"I don''t trust trans people."},"requestedAttributes":{"TOXICITY":{},"IDENTITY_ATTACK":{},"INSULT":{},"PROFANITY":{},"THREAT":{}}}'
     headers:
       Content-Type:
-      - application/json, AIzaSyAIgO12J6pdi6Ltu76JwujAggk5WPNvU_4
+      - application/json, DONT_SHARE_MY_DATA_7
       User-Agent:
       - Faraday v2.7.5
       Accept-Encoding:
@@ -163,7 +163,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Sun, 04 Jun 2023 23:36:31 GMT
+      - Mon, 05 Jun 2023 00:47:00 GMT
       Server:
       - ESF
       Cache-Control:
@@ -183,19 +183,19 @@ http_interactions:
       string: |
         {
           "attributeScores": {
-            "THREAT": {
+            "IDENTITY_ATTACK": {
               "spanScores": [
                 {
                   "begin": 0,
-                  "end": 48,
+                  "end": 27,
                   "score": {
-                    "value": 0.13700877,
+                    "value": 0.6990888,
                     "type": "PROBABILITY"
                   }
                 }
               ],
               "summaryScore": {
-                "value": 0.13700877,
+                "value": 0.6990888,
                 "type": "PROBABILITY"
               }
             },
@@ -203,15 +203,15 @@ http_interactions:
               "spanScores": [
                 {
                   "begin": 0,
-                  "end": 48,
+                  "end": 27,
                   "score": {
-                    "value": 0.36798462,
+                    "value": 0.37166002,
                     "type": "PROBABILITY"
                   }
                 }
               ],
               "summaryScore": {
-                "value": 0.36798462,
+                "value": 0.37166002,
                 "type": "PROBABILITY"
               }
             },
@@ -219,31 +219,15 @@ http_interactions:
               "spanScores": [
                 {
                   "begin": 0,
-                  "end": 48,
+                  "end": 27,
                   "score": {
-                    "value": 0.60254884,
+                    "value": 0.62702215,
                     "type": "PROBABILITY"
                   }
                 }
               ],
               "summaryScore": {
-                "value": 0.60254884,
-                "type": "PROBABILITY"
-              }
-            },
-            "IDENTITY_ATTACK": {
-              "spanScores": [
-                {
-                  "begin": 0,
-                  "end": 48,
-                  "score": {
-                    "value": 0.6853638,
-                    "type": "PROBABILITY"
-                  }
-                }
-              ],
-              "summaryScore": {
-                "value": 0.6853638,
+                "value": 0.62702215,
                 "type": "PROBABILITY"
               }
             },
@@ -251,15 +235,31 @@ http_interactions:
               "spanScores": [
                 {
                   "begin": 0,
-                  "end": 48,
+                  "end": 27,
                   "score": {
-                    "value": 0.22572558,
+                    "value": 0.2347036,
                     "type": "PROBABILITY"
                   }
                 }
               ],
               "summaryScore": {
-                "value": 0.22572558,
+                "value": 0.2347036,
+                "type": "PROBABILITY"
+              }
+            },
+            "THREAT": {
+              "spanScores": [
+                {
+                  "begin": 0,
+                  "end": 27,
+                  "score": {
+                    "value": 0.012026439,
+                    "type": "PROBABILITY"
+                  }
+                }
+              ],
+              "summaryScore": {
+                "value": 0.012026439,
                 "type": "PROBABILITY"
               }
             }
@@ -271,5 +271,5 @@ http_interactions:
             "en"
           ]
         }
-  recorded_at: Sun, 04 Jun 2023 23:36:31 GMT
+  recorded_at: Mon, 05 Jun 2023 00:47:00 GMT
 recorded_with: VCR 6.1.0

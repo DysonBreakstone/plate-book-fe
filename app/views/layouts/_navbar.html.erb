@@ -16,6 +16,12 @@
           <a class="nav-link" href="/users">People</a>
         </li>
 
+        <% if current_user %>
+        <li class="nav-item">
+          <%= link_to "New Post", new_post_path, class: "nav-link" %>
+        </li>
+        <% end %>
+
         <% if current_user.nil? %>
             <li class="nav-item">
                 <%= link_to "Login", "/auth/google_oauth2", class: "nav-link active" %>
@@ -42,3 +48,4 @@
     </div>
   </div>
 </nav>
+

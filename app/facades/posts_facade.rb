@@ -10,12 +10,12 @@ class PostsFacade
     scores = results.map{ |result| simplify(result) }
     scores.each do |score|
       return false if (score[:insult] > 0.6) ||
-        score[:identity_attack] > 0.5 ||
-        score[:threat] > 0.5
+      score[:identity_attack] > 0.5 ||
+      score[:threat] > 0.5
     end
     true
   end
-
+  
   def simplify(text)
     {
       toxicity: text[:attributeScores][:TOXICITY][:summaryScore][:value],

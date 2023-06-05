@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe "Platebook Service" do
   describe "Connection" do
-    it "gets all users" do
+    xit "gets all users" do
       WebMock.allow_net_connect!
       json = PlatebookService.new.get_all_users
       expect(json).to be_a(Hash)
@@ -16,7 +16,7 @@ RSpec.describe "Platebook Service" do
       expect(json[:data].first[:attributes]).to have_key(:uid)
       WebMock.disable_net_connect!
     end
-    it "get user" do
+    xit "get user" do
       WebMock.allow_net_connect!
       json = PlatebookService.new.get_user(1)
       expect(json).to be_a(Hash)
@@ -30,7 +30,7 @@ RSpec.describe "Platebook Service" do
       expect(json[:data][:attributes]).to have_key(:uid)
       WebMock.disable_net_connect!
     end
-    it "get all plates" do
+    xit "get all plates" do
       WebMock.allow_net_connect!
       json = PlatebookService.new.get_all_plates
       expect(json).to be_a(Hash)
@@ -42,7 +42,7 @@ RSpec.describe "Platebook Service" do
       expect(json[:data].first[:attributes]).to have_key(:plate_number)
       WebMock.disable_net_connect!
     end
-    it "get plate" do
+    xit "get plate" do
       WebMock.allow_net_connect!
       json = PlatebookService.new.get_plate(1)
       expect(json).to be_a(Hash)
@@ -53,7 +53,7 @@ RSpec.describe "Platebook Service" do
       expect(json[:data][:attributes]).to have_key(:plate_number)
       WebMock.disable_net_connect!
     end
-    it "get all posts" do
+    xit "get all posts" do
       WebMock.allow_net_connect!
       json = PlatebookService.new.get_all_posts
       expect(json).to be_a(Hash)
@@ -69,7 +69,7 @@ RSpec.describe "Platebook Service" do
       expect(json[:data].first[:attributes]).to have_key(:parent_plates)
       WebMock.disable_net_connect!
     end
-    it "get post" do
+    xit "get post" do
       WebMock.allow_net_connect!
       json = PlatebookService.new.get_post(1) 
       expect(json).to be_a(Hash)
@@ -84,7 +84,7 @@ RSpec.describe "Platebook Service" do
       expect(json[:data][:attributes]).to have_key(:parent_plates)
       WebMock.disable_net_connect!
     end
-    it "get locations" do
+    xit "get locations" do
       WebMock.allow_net_connect!
       json = PlatebookService.new.get_locations
       expect(json).to be_a(Hash)

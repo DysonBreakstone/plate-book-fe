@@ -46,4 +46,8 @@ class PlatebookService
     get_url("/api/v1/locations")
   end
 
+  def get_all_search(params)
+    get_url("/api/v1/search?category=#{params[:category]}&query=#{params[:query]}")
+  end
+
 end

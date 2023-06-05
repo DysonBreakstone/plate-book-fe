@@ -11,5 +11,6 @@ Rails.application.routes.draw do
   resources :posts, only: [:new, :create, :index, :show]
   resources :search, only: [:index]
   resources :plates, only: [:index, :show]
+  resources :comments, only: [:create]
 
 end

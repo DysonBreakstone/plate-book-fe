@@ -26,7 +26,7 @@
     <div class="col-12">
       <h5>Comments:</h5>
       <% @facade.post.comments.each_with_index do |comment, index| %>
-        <div class="card my-2 <%= index.even? ? 'bg-light' : 'bg-secondary' %>" id="comment-card-<%= index %>">
+        <div class="card my-2 <%= index.even? ? 'bg-light' : '' %>" id="comment-card-<%= index %>">
           <div class="card-body">
             <span class="font-weight-normal"><%= link_to comment[:username], user_path(comment[:user_id]) %></span>
             <span class="float-end"><%= comment[:created_at] %></span>

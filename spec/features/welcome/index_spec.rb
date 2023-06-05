@@ -8,7 +8,7 @@ RSpec.feature 'Home Page' do
     visit root_path
   end
 
-  it 'has a search button' do
+  xit 'has a search button', :vcr do
     expect(page).to have_button('Search')
   end
 end

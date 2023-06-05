@@ -65,6 +65,7 @@ group :development, :test do
   gem 'pry'
   gem 'pry-byebug'
   gem 'google-maps'
+  gem 'vcr'
 end
 
 group :development do

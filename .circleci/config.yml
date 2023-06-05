@@ -19,6 +19,12 @@ jobs:
       - run:
           name: Precompile Assets
           command: bundle exec rails assets:precompile
+      - run:
+          name: Re-record VCR cassettes
+          command: |
+            mkdir -p tmp/cassettes
+            rm -f tmp/cassettes/*.yml
+            bundle exec rspec --tag vcr
       - ruby/rspec-test
       - store_test_results:
           path: test_results

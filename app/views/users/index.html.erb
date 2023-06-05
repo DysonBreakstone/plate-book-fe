@@ -5,7 +5,7 @@
       <div class="list-group">
         <% @facade.all_users.each_with_index do |user, index| %>
           <div class="list-group-item <%= index.odd? ? 'bg-light' : '' %>">
-            <h5 class="mb-1"><%= link_to user.username %></h5>
+            <h5 class="mb-1"><%= link_to user.username, user_path(user.id)%></h5>
             <p class="mb-1"><%= user.email %></p>
           </div>
         <% end %>

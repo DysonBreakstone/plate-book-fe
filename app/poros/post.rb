@@ -12,18 +12,5 @@ class Post
     @comments = data[:attributes][:comments]
     @user = data[:attributes][:username]
     @photo = data[:attributes][:plate_posts][0][:photo_url]
-  
-end
-
-
-# def initialize(data)
-#   @title = data[:attributes][:title]
-#   @body = data[:attributes][:body]
-#   @user_id = data[:attributes][:user_id]
-#   @plate = data[:attributes][:parent_plates][0][:plate_number]
-#   @created_at = data[:attributes][:formatted_created_at]
-#   @comments = data[:attributes][:comments]
-#   @user = data[:attributes][:username]
-#   @photo = data[:attributes][:plate_posts][0][:photo_url]
-# end
+  end
 end

@@ -25,7 +25,6 @@ RSpec.describe 'User Index Page', type: :feature do
   it "usernames link to user's show page" do
     visit users_path
     within (all(".list-group-item")[0]) do
-      save_and_open_page
       expect(page).to have_link("test")
     end
     within (all(".list-group-item")[1]) do

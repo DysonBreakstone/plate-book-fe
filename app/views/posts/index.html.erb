@@ -5,7 +5,7 @@
       <div class="list-group">
         <% @facade.all_posts.each_with_index do |post, index| %>
           <div class="list-group-item <%= index.odd? ? 'bg-light' : '' %>">
-            <h5 class="mb-1"><%= link_to post.title %></h5>
+            <h5 class="mb-1"><%= link_to post.title, post_path(post.id) %></h5>
 
             <p class="mb-1">
             <% post.parent_plates.each do |plate| %>

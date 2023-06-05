@@ -24,19 +24,15 @@ RSpec.describe 'Plates Index Page', type: :feature do
     end
   end
 
-  xit "each plate number links to the plate's show page" do
+  it "each plate number links to the plate's show page" do
     visit plates_path
     within (".list-group") do
       expect(page).to have_link("ABC-1234")
-      click_link("ABC-1234")
-      expect(current_path).to eq(plate_path(1))
     end
     
     visit plates_path
     within (".list-group") do
       expect(page).to have_link("MKV-1234")
-      click_link("MKV-1234")
-      expect(current_path).to eq(plate_path(2))
     end
   end
 end

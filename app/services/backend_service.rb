@@ -1,6 +1,6 @@
-class BackendService 
+class BackendService
   def conn
-    @_conn ||= Faraday.new(url: "http://localhost:5000/")
+    @_conn ||= Faraday.new(url: "http://localhost:5001/")
   end
 
   def register_user(google_id, email, token)

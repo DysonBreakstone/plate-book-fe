@@ -1,9 +1,9 @@
 require 'rails_helper'
 
-RSpec.describe 'User Show Page', type: :feature do
+RSpec.describe 'User Show Page', type: :feature, vcr: { record: :new_episodes } do
   before(:each) do
     json_response = File.read('spec/fixtures/single_user.json')
-    stub_request(:get, "http://localhost:5000/api/v1/users/3").
+    stub_request(:get, "http://localhost:5001/api/v1/users/3").
         to_return(status: 200, body: json_response)
   end
 
@@ -17,7 +17,7 @@ RSpec.describe 'User Show Page', type: :feature do
 
   it "displays the user's followed plates" do
     visit user_path(3)
-  
+
     within ("#plates-row") do
       expect(page).to have_content("ABCD-1234")
     end

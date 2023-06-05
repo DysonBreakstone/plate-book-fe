@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "Platebook Service" do
+RSpec.describe "Platebook Service", vcr: { record: :new_episodes } do
   describe "Connection" do
     xit "gets all users" do
       WebMock.allow_net_connect!
@@ -71,7 +71,7 @@ RSpec.describe "Platebook Service" do
     end
     xit "get post" do
       WebMock.allow_net_connect!
-      json = PlatebookService.new.get_post(1) 
+      json = PlatebookService.new.get_post(1)
       expect(json).to be_a(Hash)
       expect(json).to have_key(:data)
       expect(json[:data]).to have_key(:id)

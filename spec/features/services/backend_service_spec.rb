@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "Backend Service" do
+RSpec.describe "Backend Service", vcr: { record: :new_episodes } do
   describe "Connection" do
     xit "can register a user" do
       WebMock.allow_net_connect!

@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "create post" do
+RSpec.describe "create post", vcr: { record: :new_episodes } do
   describe "sad path" do
     it "rejects inappropriate posts", :vcr do
       visit new_post_path

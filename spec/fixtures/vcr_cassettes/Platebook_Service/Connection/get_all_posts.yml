@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:5001/api/v1/posts
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.5
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"166cac8c4252e4b0e6a6b75766201397"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - fdd83506-c12d-40d4-8a8a-a687ec572487
+      X-Runtime:
+      - '0.022494'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=11.49,
+        instantiation.active_record;dur=0.57, process_action.action_controller;dur=19.78
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"post","attributes":{"id":1,"title":"Test
+        Post","body":"This is a test post","user_id":1,"created_at":"2023-06-06T17:30:30.455Z","updated_at":"2023-06-06T17:30:30.455Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
+        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"11:30
+        AM 06/06/2023"},{"id":2,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:31
+        AM 06/06/2023"},{"id":3,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:57
+        AM 06/06/2023"},{"id":4,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"3:34
+        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"11:30
+        AM 06/06/2023"}},{"id":"2","type":"post","attributes":{"id":2,"title":"Test
+        Post 2","body":"This is a test post 2","user_id":1,"created_at":"2023-06-06T17:30:30.458Z","updated_at":"2023-06-06T17:30:30.458Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"11:30
+        AM 06/06/2023"}},{"id":"3","type":"post","attributes":{"id":3,"title":"Test
+        Post 3","body":"This is a test post 3","user_id":2,"created_at":"2023-06-06T17:30:30.459Z","updated_at":"2023-06-06T17:30:30.459Z","plate_posts":[{"photo_url":null}],"username":"test2","comments":[],"parent_plates":[{"plate_number":"MKV-1234"}],"formatted_created_at":"11:30
+        AM 06/06/2023"}},{"id":"4","type":"post","attributes":{"id":4,"title":"Test
+        Post 4","body":"This is a test post 4","user_id":2,"created_at":"2023-06-06T17:30:30.461Z","updated_at":"2023-06-06T17:30:30.461Z","plate_posts":[{"photo_url":null}],"username":"test2","comments":[],"parent_plates":[{"plate_number":"MKV-1234"}],"formatted_created_at":"11:30
+        AM 06/06/2023"}},{"id":"5","type":"post","attributes":{"id":5,"title":"Test
+        Post 5","body":"This is a test post 5","user_id":3,"created_at":"2023-06-06T17:30:30.463Z","updated_at":"2023-06-06T17:30:30.463Z","plate_posts":[{"photo_url":null}],"username":"User
+        Show Test","comments":[],"parent_plates":[{"plate_number":"ABCD-1234"}],"formatted_created_at":"11:30
+        AM 06/06/2023"}},{"id":"6","type":"post","attributes":{"id":6,"title":"I have
+        a post","body":"Here it is!","user_id":5,"created_at":"2023-06-06T19:32:52.775Z","updated_at":"2023-06-06T19:32:52.775Z","plate_posts":[{"photo_url":"https://DONT_SHARE_MY_DATA_6.s3.amazonaws.com/law%20ad.jpeg"}],"username":"110159103651724049339","comments":[],"parent_plates":[{"plate_number":"555EEE"}],"formatted_created_at":"1:32
+        PM 06/06/2023"}}]}'
+  recorded_at: Tue, 06 Jun 2023 21:34:31 GMT
+recorded_with: VCR 6.1.0

@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:5001/api/v1/plates
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.5
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"d6329a28f23195a1cedd7bbcf641e206"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - '095a115d-ced8-46c0-94ae-f15f66d47fbd'
+      X-Runtime:
+      - '0.021128'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.05, sql.active_record;dur=9.13, instantiation.active_record;dur=0.21,
+        process_action.action_controller;dur=16.98
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"plate","attributes":{"plate_number":"ABC-1234","created_at":"2023-06-06T17:30:30.436Z","updated_at":"2023-06-06T17:30:30.436Z","posts":[{"id":1,"title":"Test
+        Post","created_at":"11:30 AM 06/06/2023","username":"test","user_id":1,"comment_count":4},{"id":2,"title":"Test
+        Post 2","created_at":"11:30 AM 06/06/2023","username":"test","user_id":1,"comment_count":0}]}},{"id":"2","type":"plate","attributes":{"plate_number":"MKV-1234","created_at":"2023-06-06T17:30:30.439Z","updated_at":"2023-06-06T17:30:30.439Z","posts":[{"id":3,"title":"Test
+        Post 3","created_at":"11:30 AM 06/06/2023","username":"test2","user_id":2,"comment_count":0},{"id":4,"title":"Test
+        Post 4","created_at":"11:30 AM 06/06/2023","username":"test2","user_id":2,"comment_count":0}]}},{"id":"3","type":"plate","attributes":{"plate_number":"ABCD-1234","created_at":"2023-06-06T17:30:30.442Z","updated_at":"2023-06-06T17:30:30.442Z","posts":[{"id":5,"title":"Test
+        Post 5","created_at":"11:30 AM 06/06/2023","username":"User Show Test","user_id":3,"comment_count":0}]}},{"id":"4","type":"plate","attributes":{"plate_number":"555EEE","created_at":"2023-06-06T19:32:52.828Z","updated_at":"2023-06-06T19:32:52.828Z","posts":[{"id":6,"title":"I
+        have a post","created_at":"1:32 PM 06/06/2023","username":"110159103651724049339","user_id":5,"comment_count":0}]}}]}'
+  recorded_at: Tue, 06 Jun 2023 21:34:25 GMT
+recorded_with: VCR 6.1.0

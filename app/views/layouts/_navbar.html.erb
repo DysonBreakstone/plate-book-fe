@@ -22,6 +22,12 @@
         </li>
         <% end %>
 
+        <% if current_user %>
+        <li class="nav-item">
+          <%= link_to "Dashboard", user_path(current_user), class: "nav-link" %>
+        </li>
+        <% end %>
+
         <% if current_user.nil? %>
             <li class="nav-item">
                 <%= link_to "Login", "/auth/google_oauth2", class: "nav-link active" %>

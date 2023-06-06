@@ -10,8 +10,7 @@ RSpec.describe "create post" do
       fill_in("plate_number", with: "777 TTT")
       fill_in("street_address", with: "9464 County Road")
       fill_in("city", with: "Calais")
-      fill_in("state", with: "VT")
-      fill_in("zipcode", with: "05648")
+      select('Vermont', from: 'state')
       click_on("Save")
 
       expect(current_path).to eq(new_post_path)

@@ -14,7 +14,13 @@ class PostsController < ApplicationController
   end
 
   def create
-    location = geocode_location
+    location = Geocoder.search([
+      params[:street_address],
+      params[:city],
+      params[:state],
+      params[:zipcode]
+    ].join(' ')).first
+
     return redirect_with_alert(new_post_path, 'Please enter a valid location.') unless location
   
     unless PostsFacade.new.pass_muster?(posts_params[:title], posts_params[:body])
@@ -28,15 +34,6 @@ class PostsController < ApplicationController
   private
     def posts_params
       params.permit(:title, :body, :plate_number)
-    end
-
-    def geocode_location
-      Geocoder.search([
-        params[:street_address],
-        params[:city],
-        params[:state],
-        params[:zipcode]
-      ].join(' ')).first
     end
     
     def create_post(location)

@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:5000/api/v1/users
+    body:
+      encoding: UTF-8
+      string: email=tester%40gmail.com&token=234u23u&uid=234923492
+    headers:
+      User-Agent:
+      - Faraday v2.7.5
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"aaf899380ceca0fdcfe0ea3fa41a1182"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 4223590e-659e-4b3e-9066-b88b45ea31c4
+      X-Runtime:
+      - '0.025334'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.08, sql.active_record;dur=18.77,
+        instantiation.active_record;dur=0.06, process_action.action_controller;dur=22.38
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"5","type":"user","attributes":{"id":5,"username":"234923492","email":"tester@gmail.com","uid":"234923492","token":"234u23u","created_at":"2023-06-06T17:43:17.611Z","updated_at":"2023-06-06T17:43:17.616Z","comments":[],"posts":[],"plates":[]}}}'
+  recorded_at: Tue, 06 Jun 2023 18:11:59 GMT
+recorded_with: VCR 6.1.0

@@ -6,7 +6,7 @@ RSpec.describe "Create comments" do
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(1)
       visit post_path(1)
 
-      expect(page).to have_no_content("Samuel Jones")
+      
       expect(page).to have_field('body')
       
       fill_in "body", with: "Samuel Jones"

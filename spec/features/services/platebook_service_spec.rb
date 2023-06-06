@@ -5,6 +5,7 @@ RSpec.describe "Platebook Service", vcr: { record: :new_episodes } do
     it "gets all users" do
 
       json = PlatebookService.new.get_all_users
+
       expect(json).to be_a(Hash)
       expect(json).to have_key(:data)
       expect(json[:data]).to be_an(Array)
@@ -99,7 +100,7 @@ RSpec.describe "Platebook Service", vcr: { record: :new_episodes } do
     end
 
     it "gets search results" do
-      params = {category: "plates", query: "X"}
+      params = {category: "plates", query: "ABC"}
       json = PlatebookService.new.get_all_search(params)
       expect(json).to be_a(Hash)
       expect(json).to have_key(:data)

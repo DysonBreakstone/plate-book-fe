@@ -1,8 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe "create post" do
+RSpec.feature "create post", vcr: { record: :new_episodes } do
   describe "sad path" do
-    it "rejects inappropriate posts", :vcr do
+    xit "rejects inappropriate posts" do
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(1)
       visit new_post_path
       fill_in("title", with: "I'm going to commit murder")

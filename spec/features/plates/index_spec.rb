@@ -1,9 +1,9 @@
 require 'rails_helper'
 
-RSpec.describe 'Plates Index Page', type: :feature do
+RSpec.feature 'Plates Index Page', vcr: { record: :new_episodes } do
   before(:each) do
     json_response = File.read('spec/fixtures/all_plates.json')
-    stub_request(:get, "http://localhost:5000/api/v1/plates").
+    stub_request(:get, "http://#{ENV['BACK_END_DOMAIN']}:5001/api/v1/plates").
         to_return(status: 200, body: json_response)
   end
 
@@ -29,7 +29,7 @@ RSpec.describe 'Plates Index Page', type: :feature do
     within (".list-group") do
       expect(page).to have_link("ABC-1234")
     end
-    
+
     visit plates_path
     within (".list-group") do
       expect(page).to have_link("MKV-1234")

@@ -1,8 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe "Backend Service" do
+RSpec.feature "Backend Service", vcr: { record: :new_episodes } do
   describe "Connection" do
-    it "can register a user", :vcr do
+    it "can register a user" do
       json = BackendService.new.register_user(234923492,"tester@gmail.com","234u23u")
       response = JSON.parse(json.body, symbolize_names: true)
       expect(response).to be_a(Hash)

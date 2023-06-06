@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:5000/api/v1/search?category=plates&query=X
+    uri: http://localhost:5000/api/v1/search?category=plates&query=ABC
     body:
       encoding: US-ASCII
       string: ''
@@ -35,23 +35,23 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"875c31866e143195ea0349f1ac45d6b0"
+      - W/"3494a206fae43a3351cb08612cef9d5d"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 53f4f438-101e-4dcb-ae1e-2a3feb450fad
+      - 69b56965-527d-4188-a67b-4a5bc5e7b025
       X-Runtime:
-      - '0.026358'
+      - '0.009997'
       Server-Timing:
-      - start_processing.action_controller;dur=0.16, sql.active_record;dur=9.01, instantiation.active_record;dur=0.33,
-        process_action.action_controller;dur=18.12
+      - start_processing.action_controller;dur=0.06, sql.active_record;dur=3.99, instantiation.active_record;dur=0.13,
+        process_action.action_controller;dur=6.91
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"4","type":"plate","attributes":{"plate_number":"000XXX","created_at":"2023-06-05T22:00:38.643Z","updated_at":"2023-06-05T22:00:38.643Z","posts":[{"id":6,"title":"no
-        photo","created_at":"10:00 PM 06/05/2023","username":"105461524932862999397","user_id":4,"comment_count":0}]}},{"id":"7","type":"plate","attributes":{"plate_number":"XXXX","created_at":"2023-06-05T22:18:34.934Z","updated_at":"2023-06-05T22:18:34.934Z","posts":[{"id":10,"title":"TEST","created_at":"10:18
-        PM 06/05/2023","username":"105461524932862999397","user_id":4,"comment_count":0}]}},{"id":"8","type":"plate","attributes":{"plate_number":"XXX111","created_at":"2023-06-05T22:21:41.084Z","updated_at":"2023-06-05T22:21:41.084Z","posts":[{"id":11,"title":"IM
-        A PIRATE","created_at":"10:21 PM 06/05/2023","username":"105461524932862999397","user_id":4,"comment_count":0}]}}]}'
-  recorded_at: Tue, 06 Jun 2023 01:09:02 GMT
+      string: '{"data":[{"id":"1","type":"plate","attributes":{"plate_number":"ABC-1234","created_at":"2023-06-05T21:00:11.712Z","updated_at":"2023-06-05T21:00:11.712Z","posts":[{"id":1,"title":"Test
+        Post","created_at":"3:00 PM 06/05/2023","username":"test","user_id":1,"comment_count":8},{"id":2,"title":"Test
+        Post 2","created_at":"3:00 PM 06/05/2023","username":"test","user_id":1,"comment_count":0}]}},{"id":"3","type":"plate","attributes":{"plate_number":"ABCD-1234","created_at":"2023-06-05T21:00:11.717Z","updated_at":"2023-06-05T21:00:11.717Z","posts":[{"id":5,"title":"Test
+        Post 5","created_at":"3:00 PM 06/05/2023","username":"User Show Test","user_id":3,"comment_count":0}]}}]}'
+  recorded_at: Tue, 06 Jun 2023 18:11:59 GMT
 recorded_with: VCR 6.1.0

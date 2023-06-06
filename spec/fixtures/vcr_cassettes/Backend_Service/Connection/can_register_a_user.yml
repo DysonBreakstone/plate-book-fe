@@ -53,4 +53,57 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":{"id":"5","type":"user","attributes":{"id":5,"username":"234923492","email":"tester@gmail.com","uid":"234923492","token":"234u23u","created_at":"2023-06-06T17:43:17.611Z","updated_at":"2023-06-06T17:43:17.616Z","comments":[],"posts":[],"plates":[]}}}'
   recorded_at: Tue, 06 Jun 2023 18:11:59 GMT
+- request:
+    method: post
+    uri: http://localhost:5001/api/v1/users
+    body:
+      encoding: UTF-8
+      string: email=tester%40gmail.com&token=234u23u&uid=234923492
+    headers:
+      User-Agent:
+      - Faraday v2.7.5
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"a12c86534fd8ec6537d66e26a115b8fc"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 52d261a2-4e01-476d-8dfd-306504889d0a
+      X-Runtime:
+      - '0.030873'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.55, sql.active_record;dur=9.75, instantiation.active_record;dur=0.12,
+        process_action.action_controller;dur=18.91
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"4","type":"user","attributes":{"id":4,"username":"234923492","email":"tester@gmail.com","uid":"234923492","token":"234u23u","created_at":"2023-06-06T17:04:29.412Z","updated_at":"2023-06-06T17:04:29.417Z","comments":[],"posts":[],"plates":[]}}}'
+  recorded_at: Tue, 06 Jun 2023 20:32:31 GMT
 recorded_with: VCR 6.1.0

@@ -51,4 +51,55 @@ http_interactions:
       encoding: UTF-8
       string: '{"data":[{"id":"1","type":"location","attributes":{"lat":null,"lng":null}},{"id":"2","type":"location","attributes":{"lat":null,"lng":null}},{"id":"3","type":"location","attributes":{"lat":null,"lng":null}},{"id":"4","type":"location","attributes":{"lat":null,"lng":null}},{"id":"5","type":"location","attributes":{"lat":null,"lng":null}}]}'
   recorded_at: Tue, 06 Jun 2023 18:12:00 GMT
+- request:
+    method: get
+    uri: http://localhost:5001/api/v1/locations
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.5
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"ee2193021d4292b1dcb8c46a3b4fc0d3"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 0d2b90c2-709b-4cd9-ba27-4934601b3a7e
+      X-Runtime:
+      - '0.009620'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.05, sql.active_record;dur=0.67, instantiation.active_record;dur=0.05,
+        process_action.action_controller;dur=5.77
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"location","attributes":{"lat":39.7392,"lng":104.9903}},{"id":"2","type":"location","attributes":{"lat":47.6062,"lng":122.3321}},{"id":"3","type":"location","attributes":{"lat":37.7749,"lng":122.4194}},{"id":"4","type":"location","attributes":{"lat":40.7128,"lng":74.006}},{"id":"5","type":"location","attributes":{"lat":32.7767,"lng":96.797}}]}'
+  recorded_at: Tue, 06 Jun 2023 20:31:22 GMT
 recorded_with: VCR 6.1.0

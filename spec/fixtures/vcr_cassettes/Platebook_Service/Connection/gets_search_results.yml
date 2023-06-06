@@ -54,4 +54,58 @@ http_interactions:
         Post 2","created_at":"3:00 PM 06/05/2023","username":"test","user_id":1,"comment_count":0}]}},{"id":"3","type":"plate","attributes":{"plate_number":"ABCD-1234","created_at":"2023-06-05T21:00:11.717Z","updated_at":"2023-06-05T21:00:11.717Z","posts":[{"id":5,"title":"Test
         Post 5","created_at":"3:00 PM 06/05/2023","username":"User Show Test","user_id":3,"comment_count":0}]}}]}'
   recorded_at: Tue, 06 Jun 2023 18:12:00 GMT
+- request:
+    method: get
+    uri: http://localhost:5001/api/v1/search?category=plates&query=ABC
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.5
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"b16230c4837d4a9c3840453e3aeafc4f"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 686881fc-13c3-48dc-91ab-9851127a6360
+      X-Runtime:
+      - '0.013401'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.07, sql.active_record;dur=6.36, instantiation.active_record;dur=0.14,
+        process_action.action_controller;dur=9.88
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"plate","attributes":{"plate_number":"ABC-1234","created_at":"2023-06-06T17:03:12.748Z","updated_at":"2023-06-06T17:03:12.748Z","posts":[{"id":1,"title":"Test
+        Post","created_at":"5:03 PM 06/06/2023","username":"test","user_id":1,"comment_count":2},{"id":2,"title":"Test
+        Post 2","created_at":"5:03 PM 06/06/2023","username":"test","user_id":1,"comment_count":0}]}},{"id":"3","type":"plate","attributes":{"plate_number":"ABCD-1234","created_at":"2023-06-06T17:03:12.763Z","updated_at":"2023-06-06T17:03:12.763Z","posts":[{"id":5,"title":"Test
+        Post 5","created_at":"5:03 PM 06/06/2023","username":"User Show Test","user_id":3,"comment_count":0}]}}]}'
+  recorded_at: Tue, 06 Jun 2023 20:31:22 GMT
 recorded_with: VCR 6.1.0

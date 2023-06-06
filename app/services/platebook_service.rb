@@ -14,6 +14,14 @@ class PlatebookService
     conn.post(url, params)
   end
 
+  def find_url(url, params)
+    conn.get(url, params)
+  end
+
+  def destroy_url(url)
+    conn.delete(url)
+  end
+
   def get_all_users
     get_url("/api/v1/users")
   end
@@ -52,6 +60,18 @@ class PlatebookService
 
   def get_all_search(params)
     get_url("/api/v1/search?category=#{params[:category]}&query=#{params[:query]}")
+  end
+
+  def create_user_plate(params)
+    post_url("/api/v1/user_plates", params: { user_id: params[:user_id], plate_id: params[:plate_id] })
+  end
+
+  def delete_user_plate(params)
+    destroy_url("/api/v1/user_plates/#{params[:user_plate_id]}")
+  end
+
+  def get_user_plate(params)
+    find_url("/api/v1/userplate", params: { user_id: params[:user_id], plate_id: params[:plate_id] })
   end
 
 end

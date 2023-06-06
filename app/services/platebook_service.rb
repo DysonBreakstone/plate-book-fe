@@ -34,6 +34,10 @@ class PlatebookService
     post_url("api/v1/posts", params: params)
   end
 
+  def create_comment(params)
+    post_url("api/v1/posts/#{params[:post_id]}/comments", params: params)
+  end
+
   def get_all_posts
     get_url("/api/v1/posts")
   end
@@ -44,6 +48,10 @@ class PlatebookService
 
   def get_locations
     get_url("/api/v1/locations")
+  end
+
+  def get_all_search(params)
+    get_url("/api/v1/search?category=#{params[:category]}&query=#{params[:query]}")
   end
 
 end

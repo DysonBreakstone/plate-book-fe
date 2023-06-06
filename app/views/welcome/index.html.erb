@@ -23,7 +23,7 @@
       });
 
       marker.addListener('click', () => {
-        window.location.href = '/post/' + locations[i].id;
+        window.location.href = '/posts/' + locations[i].id;
       });
     }
   }
@@ -32,6 +32,8 @@
 <script async defer
 src="https://maps.googleapis.com/maps/api/js?key=<%=ENV["GOOGLE_MAPS_API_KEY"]%>&callback=initMap">
 </script>
+
+
 
 <br>
 <h1>Popular Posts</h1>

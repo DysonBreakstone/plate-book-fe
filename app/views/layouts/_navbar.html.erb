@@ -16,6 +16,12 @@
           <a class="nav-link" href="/users">People</a>
         </li>
 
+        <% if current_user %>
+        <li class="nav-item">
+          <%= link_to "New Post", new_post_path, class: "nav-link" %>
+        </li>
+        <% end %>
+
         <% if current_user.nil? %>
             <li class="nav-item">
                 <%= link_to "Login", "/auth/google_oauth2", class: "nav-link active" %>
@@ -30,8 +36,7 @@
       <form class="form-inline my-2 my-lg-0 ml-auto customClass" action="/search" method="GET">
         <div class="input-group">
           <select class="custom-select" name="category">
-            <option selected>Choose category...</option>
-            <option value="plates">Plates</option>
+            <option selected value="plates">Plates</option>
             <option value="posts">Posts</option>
           </select>
           <input class="form-control" type="search" placeholder="Search" aria-label="Search" name="query">
@@ -43,3 +48,4 @@
     </div>
   </div>
 </nav>
+

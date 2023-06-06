@@ -2,8 +2,7 @@ require 'rails_helper'
 
 RSpec.describe "Backend Service", vcr: { record: :new_episodes } do
   describe "Connection" do
-    xit "can register a user" do
-      WebMock.allow_net_connect!
+    it "can register a user", :vcr do
       json = BackendService.new.register_user(234923492,"tester@gmail.com","234u23u")
       response = JSON.parse(json.body, symbolize_names: true)
       expect(response).to be_a(Hash)
@@ -17,7 +16,6 @@ RSpec.describe "Backend Service", vcr: { record: :new_episodes } do
       expect(response[:data][:attributes][:email]).to eq("tester@gmail.com")
       expect(response[:data][:attributes][:token]).to eq("234u23u")
       expect(response[:data][:attributes][:uid]).to eq("234923492")
-      WebMock.disable_net_connect!
     end
   end
 end

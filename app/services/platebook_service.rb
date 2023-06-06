@@ -2,7 +2,7 @@ require 'faraday'
 
 class PlatebookService
   def conn
-    Faraday.new(url: "http://localhost:5001")
+    Faraday.new(url: "http://#{ENV['BACK_END_DOMAIN']}:5001")
   end
 
   def get_url(url)

@@ -2,56 +2,6 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:5000/api/v1/search?category=plates&query=X
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.7.5
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"8fe32e407a1038ee38753b70e5374b3a"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 49d8748b-ce5e-467d-848f-0f827b5e3fe1
-      X-Runtime:
-      - '0.004090'
-      Server-Timing:
-      - start_processing.action_controller;dur=0.16, sql.active_record;dur=0.64, process_action.action_controller;dur=1.29
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":[]}'
-  recorded_at: Tue, 06 Jun 2023 18:09:03 GMT
-- request:
-    method: get
     uri: http://localhost:5000/api/v1/search?category=plates&query=ABC
     body:
       encoding: US-ASCII
@@ -85,23 +35,23 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"845fd8c4f7b52dbd1c925bc4438ebb49"
+      - W/"3494a206fae43a3351cb08612cef9d5d"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 6cde71b5-a7ff-4926-a928-25229a3a910f
+      - cbd5dcb3-bc0d-4221-9219-1e5282c50dce
       X-Runtime:
-      - '0.048941'
+      - '0.010558'
       Server-Timing:
-      - start_processing.action_controller;dur=0.18, sql.active_record;dur=11.84,
-        instantiation.active_record;dur=0.62, process_action.action_controller;dur=41.53
+      - start_processing.action_controller;dur=0.08, sql.active_record;dur=4.29, instantiation.active_record;dur=0.13,
+        process_action.action_controller;dur=7.24
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":[{"id":"1","type":"plate","attributes":{"plate_number":"ABC-1234","created_at":"2023-06-05T21:00:11.712Z","updated_at":"2023-06-05T21:00:11.712Z","posts":[{"id":1,"title":"Test
-        Post","created_at":"3:00 PM 06/05/2023","username":"test","user_id":1,"comment_count":7},{"id":2,"title":"Test
+        Post","created_at":"3:00 PM 06/05/2023","username":"test","user_id":1,"comment_count":8},{"id":2,"title":"Test
         Post 2","created_at":"3:00 PM 06/05/2023","username":"test","user_id":1,"comment_count":0}]}},{"id":"3","type":"plate","attributes":{"plate_number":"ABCD-1234","created_at":"2023-06-05T21:00:11.717Z","updated_at":"2023-06-05T21:00:11.717Z","posts":[{"id":5,"title":"Test
         Post 5","created_at":"3:00 PM 06/05/2023","username":"User Show Test","user_id":3,"comment_count":0}]}}]}'
-  recorded_at: Tue, 06 Jun 2023 18:10:22 GMT
+  recorded_at: Tue, 06 Jun 2023 18:12:00 GMT
 recorded_with: VCR 6.1.0

@@ -39,16 +39,16 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 360167f8-fdf9-4f87-a291-cf84dcbda6f1
+      - 1920ed4c-42fc-44c7-9960-8280d2f6b022
       X-Runtime:
-      - '0.004103'
+      - '0.005930'
       Server-Timing:
-      - start_processing.action_controller;dur=0.04, sql.active_record;dur=0.79, instantiation.active_record;dur=0.04,
-        process_action.action_controller;dur=1.54
+      - start_processing.action_controller;dur=0.06, sql.active_record;dur=1.05, instantiation.active_record;dur=0.05,
+        process_action.action_controller;dur=2.88
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":[{"id":"1","type":"location","attributes":{"lat":null,"lng":null}},{"id":"2","type":"location","attributes":{"lat":null,"lng":null}},{"id":"3","type":"location","attributes":{"lat":null,"lng":null}},{"id":"4","type":"location","attributes":{"lat":null,"lng":null}},{"id":"5","type":"location","attributes":{"lat":null,"lng":null}}]}'
-  recorded_at: Tue, 06 Jun 2023 18:09:03 GMT
+  recorded_at: Tue, 06 Jun 2023 18:12:00 GMT
 recorded_with: VCR 6.1.0

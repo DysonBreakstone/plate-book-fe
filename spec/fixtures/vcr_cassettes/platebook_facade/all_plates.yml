@@ -35,25 +35,25 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"0b6f2efeda0651852172874702e6d8f6"
+      - W/"d488afd6684ce22038e2b4455b32ebbd"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - ed6ad31e-a913-482d-9d9f-da9881ba74fe
+      - 4d408987-432e-4eb4-8740-706c5d71fe5a
       X-Runtime:
-      - '0.027350'
+      - '0.013081'
       Server-Timing:
-      - start_processing.action_controller;dur=0.04, sql.active_record;dur=18.83,
-        instantiation.active_record;dur=0.28, process_action.action_controller;dur=24.79
+      - start_processing.action_controller;dur=0.05, sql.active_record;dur=5.90, instantiation.active_record;dur=0.18,
+        process_action.action_controller;dur=10.14
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":[{"id":"1","type":"plate","attributes":{"plate_number":"ABC-1234","created_at":"2023-06-05T21:00:11.712Z","updated_at":"2023-06-05T21:00:11.712Z","posts":[{"id":1,"title":"Test
-        Post","created_at":"3:00 PM 06/05/2023","username":"test","user_id":1,"comment_count":7},{"id":2,"title":"Test
+        Post","created_at":"3:00 PM 06/05/2023","username":"test","user_id":1,"comment_count":8},{"id":2,"title":"Test
         Post 2","created_at":"3:00 PM 06/05/2023","username":"test","user_id":1,"comment_count":0}]}},{"id":"2","type":"plate","attributes":{"plate_number":"MKV-1234","created_at":"2023-06-05T21:00:11.715Z","updated_at":"2023-06-05T21:00:11.715Z","posts":[{"id":3,"title":"Test
         Post 3","created_at":"3:00 PM 06/05/2023","username":"test2","user_id":2,"comment_count":0},{"id":4,"title":"Test
         Post 4","created_at":"3:00 PM 06/05/2023","username":"test2","user_id":2,"comment_count":3}]}},{"id":"3","type":"plate","attributes":{"plate_number":"ABCD-1234","created_at":"2023-06-05T21:00:11.717Z","updated_at":"2023-06-05T21:00:11.717Z","posts":[{"id":5,"title":"Test
         Post 5","created_at":"3:00 PM 06/05/2023","username":"User Show Test","user_id":3,"comment_count":0}]}}]}'
-  recorded_at: Tue, 06 Jun 2023 18:09:12 GMT
+  recorded_at: Tue, 06 Jun 2023 18:11:51 GMT
 recorded_with: VCR 6.1.0

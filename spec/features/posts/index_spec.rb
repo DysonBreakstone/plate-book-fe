@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'Posts Index Page', type: :feature, vcr: { record: :new_episodes } do
   before(:each) do
     json_response = File.read('spec/fixtures/all_posts.json')
-    stub_request(:get, "http://localhost:5001/api/v1/posts").
+    stub_request(:get, "http://#{ENV['BACK_END_DOMAIN']}:5001/api/v1/posts").
         to_return(status: 200, body: json_response)
   end
 

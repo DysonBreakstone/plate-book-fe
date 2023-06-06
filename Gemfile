@@ -65,7 +65,6 @@ group :development, :test do
   gem 'pry'
   gem 'pry-byebug'
   gem 'google-maps'
-  gem 'vcr'
 end
 
 group :development do
@@ -89,5 +88,6 @@ group :test do
   gem 'shoulda-matchers'
   gem 'simplecov'
   gem 'webmock'
+  gem 'vcr'
   gem 'rspec_junit_formatter'
 end

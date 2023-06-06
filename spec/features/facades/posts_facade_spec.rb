@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "posts_facade" do
+RSpec.feature "posts_facade", vcr: { record: :new_episodes } do
   describe "filtering" do
     describe "toxicity" do
       it "very hateful", :vcr do

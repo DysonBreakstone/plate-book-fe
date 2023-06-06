@@ -1,10 +1,10 @@
 require 'rails_helper'
 
-RSpec.describe "platebook_facade", :vcr do
+RSpec.feature "platebook_facade", vcr: { record: :new_episodes } do
   it "all_users" do
     params = {}
     response = PlatebookFacade.new(params).all_users
-    expect(response).to be_a(Array) 
+    expect(response).to be_a(Array)
     expect(response.first).to be_an_instance_of(User)
   end
 

@@ -1,9 +1,9 @@
 require 'rails_helper'
 
-RSpec.describe 'Search Index Page', vcr: { record: :new_episodes } do
+RSpec.feature 'Search Index Page', vcr: { record: :new_episodes } do
   it "displays Search Results at the top of the page" do
     visit "/search?category=plates&query=ABC"
-  
+
     expect(page).to have_content("Search Results")
     expect(page).to have_content("ABC-1234")
   end

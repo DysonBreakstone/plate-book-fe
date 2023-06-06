@@ -35,16 +35,16 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"833d2171005f3c948871dd3fd440496d"
+      - W/"2ddd32080ff330b04799e7fa3d6429f7"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 1ca17f1f-5722-40eb-a668-287b65749bd9
+      - c4ceab74-3356-4321-be1c-b136fe37199c
       X-Runtime:
-      - '0.007537'
+      - '0.009861'
       Server-Timing:
-      - start_processing.action_controller;dur=0.07, sql.active_record;dur=2.61, instantiation.active_record;dur=0.18,
-        process_action.action_controller;dur=4.89
+      - start_processing.action_controller;dur=0.06, sql.active_record;dur=3.93, instantiation.active_record;dur=0.25,
+        process_action.action_controller;dur=7.27
       Transfer-Encoding:
       - chunked
     body:
@@ -53,7 +53,11 @@ http_interactions:
         Post","body":"This is a test post","user_id":1,"created_at":"2023-06-05T21:00:11.728Z","updated_at":"2023-06-05T21:00:11.728Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
         is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"3:00
         PM 06/05/2023"},{"id":5,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:43
-        AM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"3:00
+        AM 06/06/2023"},{"id":6,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:56
+        AM 06/06/2023"},{"id":7,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:58
+        AM 06/06/2023"},{"id":8,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:00
+        PM 06/06/2023"},{"id":9,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:02
+        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"3:00
         PM 06/05/2023"}}}'
-  recorded_at: Tue, 06 Jun 2023 17:43:17 GMT
+  recorded_at: Tue, 06 Jun 2023 18:09:03 GMT
 recorded_with: VCR 6.1.0

@@ -35,22 +35,24 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"6734cd9531d9e487c736367dc4784f20"
+      - W/"44d7be85813494ed2de5c8e940f916b5"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d1a0969d-62a6-4755-82f3-7a53c5a8b564
+      - bd30b7f9-f233-497b-9483-ca38c94b4ed9
       X-Runtime:
-      - '0.006527'
+      - '0.006393'
       Server-Timing:
-      - start_processing.action_controller;dur=0.06, sql.active_record;dur=1.87, instantiation.active_record;dur=0.12,
-        process_action.action_controller;dur=3.85
+      - start_processing.action_controller;dur=0.07, sql.active_record;dur=1.58, instantiation.active_record;dur=0.15,
+        process_action.action_controller;dur=3.49
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"id":1,"username":"test","email":"somethingcrazy@gmail.com","uid":"1234","token":"1234","created_at":"2023-06-05T21:00:11.700Z","updated_at":"2023-06-05T21:00:11.700Z","comments":[{"id":5,"body":"Samuel
-        Jones","post_id":1}],"posts":[{"id":1,"title":"Test Post"},{"id":2,"title":"Test
-        Post 2"}],"plates":[]}}}'
-  recorded_at: Tue, 06 Jun 2023 17:43:05 GMT
+        Jones","post_id":1},{"id":6,"body":"Samuel Jones","post_id":1},{"id":7,"body":"Samuel
+        Jones","post_id":1},{"id":8,"body":"Samuel Jones","post_id":1},{"id":9,"body":"Samuel
+        Jones","post_id":1},{"id":10,"body":"Samuel Jones","post_id":1}],"posts":[{"id":1,"title":"Test
+        Post"},{"id":2,"title":"Test Post 2"}],"plates":[]}}}'
+  recorded_at: Tue, 06 Jun 2023 18:09:12 GMT
 recorded_with: VCR 6.1.0

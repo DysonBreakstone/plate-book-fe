@@ -35,20 +35,20 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"ee2193021d4292b1dcb8c46a3b4fc0d3"
+      - W/"d5cbaa32ab8fbbc81e1e9c3260156fc6"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - fe224cc7-b01e-4c3f-8678-3e0b48540234
+      - ab3025db-647b-4cc2-bcb4-2890ef916f56
       X-Runtime:
-      - '0.014596'
+      - '0.006861'
       Server-Timing:
-      - start_processing.action_controller;dur=0.18, sql.active_record;dur=1.66, instantiation.active_record;dur=0.06,
-        process_action.action_controller;dur=4.36
+      - start_processing.action_controller;dur=0.06, sql.active_record;dur=0.69, instantiation.active_record;dur=0.04,
+        process_action.action_controller;dur=2.39
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"1","type":"location","attributes":{"lat":39.7392,"lng":104.9903}},{"id":"2","type":"location","attributes":{"lat":47.6062,"lng":122.3321}},{"id":"3","type":"location","attributes":{"lat":37.7749,"lng":122.4194}},{"id":"4","type":"location","attributes":{"lat":40.7128,"lng":74.006}},{"id":"5","type":"location","attributes":{"lat":32.7767,"lng":96.797}}]}'
-  recorded_at: Tue, 06 Jun 2023 20:44:53 GMT
+      string: '{"data":[{"id":"1","type":"location","attributes":{"lat":null,"lng":null}},{"id":"2","type":"location","attributes":{"lat":null,"lng":null}},{"id":"3","type":"location","attributes":{"lat":null,"lng":null}},{"id":"4","type":"location","attributes":{"lat":null,"lng":null}},{"id":"5","type":"location","attributes":{"lat":null,"lng":null}},{"id":"6","type":"location","attributes":{"lat":44.325782,"lng":-72.52738}}]}'
+  recorded_at: Tue, 06 Jun 2023 21:34:31 GMT
 recorded_with: VCR 6.1.0

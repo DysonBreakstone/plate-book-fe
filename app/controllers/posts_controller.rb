@@ -14,12 +14,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    location = Geocoder.search([
-      params[:street_address],
-      params[:city],
-      params[:state],
-      params[:zipcode]
-    ].join(' ')).first
+    location = Geocoder.search("#{params[:street_address]} #{params[:city]} #{params[:state]}").first
 
     return redirect_with_alert(new_post_path, 'Please enter a valid location.') unless location
   

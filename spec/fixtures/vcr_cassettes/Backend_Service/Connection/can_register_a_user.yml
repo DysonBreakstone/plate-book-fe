@@ -37,20 +37,20 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"a12c86534fd8ec6537d66e26a115b8fc"
+      - W/"bb806c8855d5d0f6a45eae7d5c5853f4"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - ec32da79-07ab-4dfe-afeb-2a32fb1d278e
+      - b491678c-ee43-4e93-9d77-23188de240f5
       X-Runtime:
-      - '0.017358'
+      - '0.012077'
       Server-Timing:
-      - start_processing.action_controller;dur=0.12, sql.active_record;dur=4.32, instantiation.active_record;dur=0.06,
-        process_action.action_controller;dur=11.31
+      - start_processing.action_controller;dur=0.08, sql.active_record;dur=3.90, instantiation.active_record;dur=0.05,
+        process_action.action_controller;dur=8.88
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"4","type":"user","attributes":{"id":4,"username":"234923492","email":"tester@gmail.com","uid":"234923492","token":"234u23u","created_at":"2023-06-06T17:04:29.412Z","updated_at":"2023-06-06T17:04:29.417Z","comments":[],"posts":[],"plates":[]}}}'
-  recorded_at: Tue, 06 Jun 2023 20:44:52 GMT
+      string: '{"data":{"id":"4","type":"user","attributes":{"id":4,"username":"234923492","email":"tester@gmail.com","uid":"234923492","token":"234u23u","created_at":"2023-06-06T17:31:44.835Z","updated_at":"2023-06-06T17:31:44.860Z","comments":[],"posts":[],"plates":[]}}}'
+  recorded_at: Tue, 06 Jun 2023 21:34:30 GMT
 recorded_with: VCR 6.1.0

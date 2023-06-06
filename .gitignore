@@ -42,6 +42,10 @@ coverage
 
 # Ignore application configuration
 /config/application.yml
+<<<<<<< HEAD
 
 /config/credentials/production.key
 /config/secrets.yml
+=======
+/fixtures/vcr_cassettes
+>>>>>>> a7a5856db539b4d9a88c848418157d8d26bd76b8

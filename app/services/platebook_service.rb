@@ -35,7 +35,7 @@ class PlatebookService
   end
 
   def create_comment(params)
-    post_url("api/v1/comments", params: params)
+    post_url("api/v1/posts/#{params[:post_id]}/comments", params: params)
   end
 
   def get_all_posts

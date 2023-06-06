@@ -1,14 +1,13 @@
 class PostsFacade
-  def pass_muster?(title, body)
+  def pass_muster?(*texts)
     service = PerspectiveService.new
-    
-    x = service.analyze(title)
-    y = service.analyze(body)
-    if y[:error] || x[:error]
-      return false
+    results = texts.map{ |text| service.analyze(text) }
+
+    results.each do |result|
+      return false if result[:error]
     end
 
-    scores = [simplify(x), simplify(y)]
+    scores = results.map{ |result| simplify(result) }
     scores.each do |score|
       return false if (score[:insult] > 0.6) ||
       score[:identity_attack] > 0.5 ||

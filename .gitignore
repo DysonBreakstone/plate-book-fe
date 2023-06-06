@@ -39,6 +39,6 @@
 
 /node_modules
 coverage
-/spec/fixtures/vcr_cassettes
+
 # Ignore application configuration
 /config/application.yml

@@ -27,7 +27,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Tue, 06 Jun 2023 20:04:10 GMT
+      - Tue, 06 Jun 2023 22:43:33 GMT
       Server:
       - ESF
       Cache-Control:
@@ -63,19 +63,19 @@ http_interactions:
                 "type": "PROBABILITY"
               }
             },
-            "TOXICITY": {
+            "INSULT": {
               "spanScores": [
                 {
                   "begin": 0,
                   "end": 30,
                   "score": {
-                    "value": 0.05354243,
+                    "value": 0.019096779,
                     "type": "PROBABILITY"
                   }
                 }
               ],
               "summaryScore": {
-                "value": 0.05354243,
+                "value": 0.019096779,
                 "type": "PROBABILITY"
               }
             },
@@ -95,19 +95,19 @@ http_interactions:
                 "type": "PROBABILITY"
               }
             },
-            "INSULT": {
+            "TOXICITY": {
               "spanScores": [
                 {
                   "begin": 0,
                   "end": 30,
                   "score": {
-                    "value": 0.019096779,
+                    "value": 0.05354243,
                     "type": "PROBABILITY"
                   }
                 }
               ],
               "summaryScore": {
-                "value": 0.019096779,
+                "value": 0.05354243,
                 "type": "PROBABILITY"
               }
             },
@@ -135,7 +135,7 @@ http_interactions:
             "en"
           ]
         }
-  recorded_at: Tue, 06 Jun 2023 20:04:09 GMT
+  recorded_at: Tue, 06 Jun 2023 22:43:33 GMT
 - request:
     method: post
     uri: https://commentanalyzer.googleapis.com/v1alpha1/comments:analyze?key=DONT_SHARE_MY_DATA_7
@@ -163,7 +163,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Tue, 06 Jun 2023 20:04:10 GMT
+      - Tue, 06 Jun 2023 22:43:33 GMT
       Server:
       - ESF
       Cache-Control:
@@ -199,19 +199,19 @@ http_interactions:
                 "type": "PROBABILITY"
               }
             },
-            "INSULT": {
+            "THREAT": {
               "spanScores": [
                 {
                   "begin": 0,
                   "end": 30,
                   "score": {
-                    "value": 0.019096779,
+                    "value": 0.008336896,
                     "type": "PROBABILITY"
                   }
                 }
               ],
               "summaryScore": {
-                "value": 0.019096779,
+                "value": 0.008336896,
                 "type": "PROBABILITY"
               }
             },
@@ -231,22 +231,6 @@ http_interactions:
                 "type": "PROBABILITY"
               }
             },
-            "THREAT": {
-              "spanScores": [
-                {
-                  "begin": 0,
-                  "end": 30,
-                  "score": {
-                    "value": 0.008336896,
-                    "type": "PROBABILITY"
-                  }
-                }
-              ],
-              "summaryScore": {
-                "value": 0.008336896,
-                "type": "PROBABILITY"
-              }
-            },
             "PROFANITY": {
               "spanScores": [
                 {
@@ -262,6 +246,22 @@ http_interactions:
                 "value": 0.028230323,
                 "type": "PROBABILITY"
               }
+            },
+            "INSULT": {
+              "spanScores": [
+                {
+                  "begin": 0,
+                  "end": 30,
+                  "score": {
+                    "value": 0.019096779,
+                    "type": "PROBABILITY"
+                  }
+                }
+              ],
+              "summaryScore": {
+                "value": 0.019096779,
+                "type": "PROBABILITY"
+              }
             }
           },
           "languages": [
@@ -271,5 +271,5 @@ http_interactions:
             "en"
           ]
         }
-  recorded_at: Tue, 06 Jun 2023 20:04:10 GMT
+  recorded_at: Tue, 06 Jun 2023 22:43:33 GMT
 recorded_with: VCR 6.1.0

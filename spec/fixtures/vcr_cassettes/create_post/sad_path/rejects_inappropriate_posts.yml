@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Tue, 06 Jun 2023 20:04:15 GMT
+      - Tue, 06 Jun 2023 22:43:37 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Transfer-Encoding:
@@ -38,7 +38,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         W3sicGxhY2VfaWQiOjM2Mjk1MDM1NiwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJ3YXkiLCJvc21faWQiOjE5NzI0MjQ5LCJib3VuZGluZ2JveCI6WyI0NC40MDUxOTMiLCI0NC40MTk0NDQiLCItNzIuNDgzNzQ0IiwiLTcyLjQ3NDc1Il0sImxhdCI6IjQ0LjQxMzI3NyIsImxvbiI6Ii03Mi40ODA2NjEiLCJkaXNwbGF5X25hbWUiOiJDb3VudHkgUm9hZCwgQ2FsYWlzLCBXYXNoaW5ndG9uIENvdW50eSwgVmVybW9udCwgMDU2NTAsIFVuaXRlZCBTdGF0ZXMiLCJjbGFzcyI6ImhpZ2h3YXkiLCJ0eXBlIjoidGVydGlhcnkiLCJpbXBvcnRhbmNlIjowLjQxMDAxLCJhZGRyZXNzIjp7InJvYWQiOiJDb3VudHkgUm9hZCIsInRvd24iOiJDYWxhaXMiLCJjb3VudHkiOiJXYXNoaW5ndG9uIENvdW50eSIsInN0YXRlIjoiVmVybW9udCIsIklTTzMxNjYtMi1sdmw0IjoiVVMtVlQiLCJwb3N0Y29kZSI6IjA1NjUwIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9fSx7InBsYWNlX2lkIjozNTQ5MjI1NjYsImxpY2VuY2UiOiJEYXRhIMKpIE9wZW5TdHJlZXRNYXAgY29udHJpYnV0b3JzLCBPRGJMIDEuMC4gaHR0cHM6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoid2F5Iiwib3NtX2lkIjoxOTcyNDI1MiwiYm91bmRpbmdib3giOlsiNDQuMjczOTUxIiwiNDQuMzc0NzMxIiwiLTcyLjU1NDcyOSIsIi03Mi40OTUzMTgiXSwibGF0IjoiNDQuMzI1NzgyIiwibG9uIjoiLTcyLjUyNzM4IiwiZGlzcGxheV9uYW1lIjoiQ291bnR5IFJvYWQsIEVhc3QgTW9udHBlbGllciwgV2FzaGluZ3RvbiBDb3VudHksIFZlcm1vbnQsIDA1NjQ4LCBVbml0ZWQgU3RhdGVzIiwiY2xhc3MiOiJoaWdod2F5IiwidHlwZSI6InRlcnRpYXJ5IiwiaW1wb3J0YW5jZSI6MC4zMDAwMDk5OTk5OTk5OTk5NCwiYWRkcmVzcyI6eyJyb2FkIjoiQ291bnR5IFJvYWQiLCJ0b3duIjoiRWFzdCBNb250cGVsaWVyIiwiY291bnR5IjoiV2FzaGluZ3RvbiBDb3VudHkiLCJzdGF0ZSI6IlZlcm1vbnQiLCJJU08zMTY2LTItbHZsNCI6IlVTLVZUIiwicG9zdGNvZGUiOiIwNTY0OCIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifX1d
-  recorded_at: Tue, 06 Jun 2023 20:04:14 GMT
+  recorded_at: Tue, 06 Jun 2023 22:43:37 GMT
 - request:
     method: post
     uri: https://commentanalyzer.googleapis.com/v1alpha1/comments:analyze?key=DONT_SHARE_MY_DATA_7
@@ -66,7 +66,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Tue, 06 Jun 2023 20:04:15 GMT
+      - Tue, 06 Jun 2023 22:43:38 GMT
       Server:
       - ESF
       Cache-Control:
@@ -86,19 +86,35 @@ http_interactions:
       string: |
         {
           "attributeScores": {
-            "PROFANITY": {
+            "INSULT": {
               "spanScores": [
                 {
                   "begin": 0,
                   "end": 26,
                   "score": {
-                    "value": 0.3158166,
+                    "value": 0.1087965,
                     "type": "PROBABILITY"
                   }
                 }
               ],
               "summaryScore": {
-                "value": 0.3158166,
+                "value": 0.1087965,
+                "type": "PROBABILITY"
+              }
+            },
+            "IDENTITY_ATTACK": {
+              "spanScores": [
+                {
+                  "begin": 0,
+                  "end": 26,
+                  "score": {
+                    "value": 0.10221587,
+                    "type": "PROBABILITY"
+                  }
+                }
+              ],
+              "summaryScore": {
+                "value": 0.10221587,
                 "type": "PROBABILITY"
               }
             },
@@ -118,19 +134,19 @@ http_interactions:
                 "type": "PROBABILITY"
               }
             },
-            "INSULT": {
+            "PROFANITY": {
               "spanScores": [
                 {
                   "begin": 0,
                   "end": 26,
                   "score": {
-                    "value": 0.1087965,
+                    "value": 0.3158166,
                     "type": "PROBABILITY"
                   }
                 }
               ],
               "summaryScore": {
-                "value": 0.1087965,
+                "value": 0.3158166,
                 "type": "PROBABILITY"
               }
             },
@@ -149,22 +165,6 @@ http_interactions:
                 "value": 0.718943,
                 "type": "PROBABILITY"
               }
-            },
-            "IDENTITY_ATTACK": {
-              "spanScores": [
-                {
-                  "begin": 0,
-                  "end": 26,
-                  "score": {
-                    "value": 0.10221587,
-                    "type": "PROBABILITY"
-                  }
-                }
-              ],
-              "summaryScore": {
-                "value": 0.10221587,
-                "type": "PROBABILITY"
-              }
             }
           },
           "languages": [
@@ -174,7 +174,7 @@ http_interactions:
             "en"
           ]
         }
-  recorded_at: Tue, 06 Jun 2023 20:04:15 GMT
+  recorded_at: Tue, 06 Jun 2023 22:43:38 GMT
 - request:
     method: post
     uri: https://commentanalyzer.googleapis.com/v1alpha1/comments:analyze?key=DONT_SHARE_MY_DATA_7
@@ -202,7 +202,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Tue, 06 Jun 2023 20:04:15 GMT
+      - Tue, 06 Jun 2023 22:43:38 GMT
       Server:
       - ESF
       Cache-Control:
@@ -310,5 +310,5 @@ http_interactions:
             "en"
           ]
         }
-  recorded_at: Tue, 06 Jun 2023 20:04:15 GMT
+  recorded_at: Tue, 06 Jun 2023 22:43:38 GMT
 recorded_with: VCR 6.1.0

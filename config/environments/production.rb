@@ -4,8 +4,7 @@ Rails.application.configure do
   config.serve_static_files = true
   config.active_record.sqlite3_production_warning=false
   # Settings specified here will take precedence over those in config/application.rb.
-  config.force_ssl = false
-  config.ssl_options = { redirect: { exclude: -> request { request.path =~ /healthcheck/ } } }
+  config.force_ssl = true
 
   # Code is not reloaded between requests.
   config.cache_classes = true

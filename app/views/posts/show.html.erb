@@ -1,26 +1,25 @@
 <div class="container">
   <div class="row">
-    <div class="col-12 text-center">
-      <h1 class="my-4">
-        <%= @facade.post.plate %>
-      </h1>
-    </div>
-  </div>
-
-  <div class="row">
     <div class="col-12">
-      <span class="font-weight-normal">User: <%= link_to @facade.post.user, user_path(@facade.post.user_id) %></span>
-      <span class="float-end"><%= @facade.post.created_at %></span>
+      <div class="card my-2" id="post-card">
+        <div class="card-body">
+          <span class="font-weight-normal">User: <%= link_to @facade.post.user, user_path(@facade.post.user_id) %></span>
+          <span class="float-end"><%= @facade.post.created_at %></span>
+        </div>
+        <div class="card-body text-center">
+          <h1 class="my-4">
+            <%= @facade.post.plate %>
+          </h1>
+        </div>
+        <div class="card-body text-center">
+          <h3><%= @facade.post.title %></h3>
+          <%= image_tag(@facade.post.photo, class: 'img-fluid') if @facade.post.photo.present? %>
+          <p class="mt-2"><%= @facade.post.body %></p>
+        </div>
+      </div>
     </div>
   </div>
-
-  <div class="row mt-5">
-    <div class="col-12 text-center">
-      <h3><%= @facade.post.title %></h3>
-      <%= image_tag(@facade.post.photo, class: 'img-fluid') if @facade.post.photo.present? %>
-      <p class="mt-2"><%= @facade.post.body %></p>
-    </div>
-  </div>
+</div>
 
   <div class="row mt-5" id="comments-row">
     <div class="col-12">
@@ -38,7 +37,6 @@
       <% end %>
     </div>
   </div>
-</div>
 
   <div class="row mt-5" id="comment-form-row">
     <div class="col-12">

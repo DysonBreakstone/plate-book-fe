@@ -10,8 +10,7 @@ RSpec.describe "Create comments" do
       expect(page).to have_field('body')
       
       fill_in "body", with: "Samuel Jones"
-      click_on("commit")
-      
+      click_on("Submit")
       expect(page).to have_content("Samuel Jones")
     end
   end

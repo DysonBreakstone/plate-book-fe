@@ -35,23 +35,23 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"ee313e347fccb1a22042e2963c9435bc"
+      - W/"acb238f13ae241ddd0213ea9cd2079ab"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - b490ac8d-eef6-47bb-9433-6be86ae6863b
+      - '0455186a-872c-47b9-9a50-7384f6d7a9ef'
       X-Runtime:
-      - '0.024953'
+      - '0.021854'
       Server-Timing:
-      - start_processing.action_controller;dur=0.09, sql.active_record;dur=17.64,
-        instantiation.active_record;dur=0.15, process_action.action_controller;dur=21.37
+      - start_processing.action_controller;dur=0.16, sql.active_record;dur=8.33, instantiation.active_record;dur=0.23,
+        process_action.action_controller;dur=14.29
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"1","type":"plate","attributes":{"plate_number":"ABC-1234","created_at":"2023-06-06T17:30:30.436Z","updated_at":"2023-06-06T17:30:30.436Z","posts":[{"id":1,"title":"Test
-        Post","created_at":"11:30 AM 06/06/2023","username":"test","user_id":1,"comment_count":4},{"id":2,"title":"Test
-        Post 2","created_at":"11:30 AM 06/06/2023","username":"test","user_id":1,"comment_count":0}]}},{"id":"3","type":"plate","attributes":{"plate_number":"ABCD-1234","created_at":"2023-06-06T17:30:30.442Z","updated_at":"2023-06-06T17:30:30.442Z","posts":[{"id":5,"title":"Test
-        Post 5","created_at":"11:30 AM 06/06/2023","username":"User Show Test","user_id":3,"comment_count":0}]}}]}'
-  recorded_at: Tue, 06 Jun 2023 21:34:30 GMT
+      string: '{"data":[{"id":"1","type":"plate","attributes":{"plate_number":"ABC-1234","created_at":"2023-06-06T21:16:35.654Z","updated_at":"2023-06-06T21:16:35.654Z","posts":[{"id":1,"title":"Test
+        Post","created_at":"3:16 PM 06/06/2023","username":"test","user_id":1,"comment_count":5},{"id":2,"title":"Test
+        Post 2","created_at":"3:16 PM 06/06/2023","username":"test","user_id":1,"comment_count":0}]}},{"id":"3","type":"plate","attributes":{"plate_number":"ABCD-1234","created_at":"2023-06-06T21:16:35.660Z","updated_at":"2023-06-06T21:16:35.660Z","posts":[{"id":5,"title":"Test
+        Post 5","created_at":"3:16 PM 06/06/2023","username":"User Show Test","user_id":3,"comment_count":0}]}}]}'
+  recorded_at: Tue, 06 Jun 2023 22:55:43 GMT
 recorded_with: VCR 6.1.0

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:5001/api/v1/locations
+    uri: http://localhost:5001/api/v1/userplate?params%5Bplate_id%5D=1&params%5Buser_id%5D
     body:
       encoding: US-ASCII
       string: ''
@@ -15,8 +15,8 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 200
-      message: OK
+      code: 404
+      message: Not Found
     headers:
       X-Frame-Options:
       - SAMEORIGIN
@@ -34,21 +34,18 @@ http_interactions:
       - application/json; charset=utf-8
       Vary:
       - Accept
-      Etag:
-      - W/"f2609706ea7583834effc1d4c9f774b0"
       Cache-Control:
-      - max-age=0, private, must-revalidate
+      - no-cache
       X-Request-Id:
-      - b76a39b5-9269-4608-b1ff-33ffbc16240f
+      - 7f039bba-ed8f-491b-8511-ab8b1c621430
       X-Runtime:
-      - '0.009558'
+      - '0.014952'
       Server-Timing:
-      - start_processing.action_controller;dur=0.04, sql.active_record;dur=1.34, instantiation.active_record;dur=0.07,
-        process_action.action_controller;dur=3.01
+      - start_processing.action_controller;dur=0.20, sql.active_record;dur=1.20, process_action.action_controller;dur=2.72
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"1","type":"location","attributes":{"lat":null,"lng":null}},{"id":"2","type":"location","attributes":{"lat":null,"lng":null}},{"id":"3","type":"location","attributes":{"lat":null,"lng":null}},{"id":"4","type":"location","attributes":{"lat":null,"lng":null}},{"id":"5","type":"location","attributes":{"lat":null,"lng":null}}]}'
-  recorded_at: Tue, 06 Jun 2023 22:55:44 GMT
+      string: '{"errors":"Not found"}'
+  recorded_at: Tue, 06 Jun 2023 22:55:43 GMT
 recorded_with: VCR 6.1.0

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:5000/api/v1/posts/1
+    uri: http://localhost:5001/api/v1/posts/1
     body:
       encoding: US-ASCII
       string: ''
@@ -35,35 +35,31 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"cbec2373111f8260d3640c527e508392"
+      - W/"6c93c75fb1720232f7a444980e3eb3e7"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 838fa8f8-ed9f-41b8-81fe-6bf7e8d355d5
+      - 3441d733-e333-462c-8db5-ec672d919e02
       X-Runtime:
-      - '0.037247'
+      - '0.265034'
       Server-Timing:
-      - start_processing.action_controller;dur=0.15, sql.active_record;dur=6.82, instantiation.active_record;dur=0.62,
-        process_action.action_controller;dur=29.52
+      - sql.active_record;dur=120.34, start_processing.action_controller;dur=0.14,
+        instantiation.active_record;dur=18.87, process_action.action_controller;dur=143.33
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
-        Post","body":"This is a test post","user_id":1,"created_at":"2023-06-05T21:00:11.728Z","updated_at":"2023-06-05T21:00:11.728Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
-        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"3:00
-        PM 06/05/2023"},{"id":5,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:43
-        AM 06/06/2023"},{"id":6,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:56
-        AM 06/06/2023"},{"id":7,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:58
-        AM 06/06/2023"},{"id":8,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:00
-        PM 06/06/2023"},{"id":9,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:02
-        PM 06/06/2023"},{"id":10,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:09
-        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"3:00
-        PM 06/05/2023"}}}'
-  recorded_at: Tue, 06 Jun 2023 18:11:48 GMT
+        Post","body":"This is a test post","user_id":1,"created_at":"2023-06-06T17:03:12.799Z","updated_at":"2023-06-06T17:03:12.799Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
+        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"12:03
+        PM 06/06/2023"},{"id":2,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:04
+        PM 06/06/2023"},{"id":3,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"3:32
+        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"12:03
+        PM 06/06/2023"}}}'
+  recorded_at: Tue, 06 Jun 2023 20:44:42 GMT
 - request:
     method: get
-    uri: http://localhost:5000/api/v1/posts/1
+    uri: http://localhost:5001/api/v1/posts/1
     body:
       encoding: US-ASCII
       string: ''
@@ -96,35 +92,31 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"cbec2373111f8260d3640c527e508392"
+      - W/"6c93c75fb1720232f7a444980e3eb3e7"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 7a4178a4-067c-4d3c-baf8-69e3c0797e21
+      - aafa8755-0cb0-4be2-b3a3-d3061b27a1e7
       X-Runtime:
-      - '0.012956'
+      - '0.039652'
       Server-Timing:
-      - start_processing.action_controller;dur=0.07, sql.active_record;dur=4.76, instantiation.active_record;dur=0.29,
-        process_action.action_controller;dur=9.28
+      - start_processing.action_controller;dur=0.23, sql.active_record;dur=27.28,
+        instantiation.active_record;dur=0.59, process_action.action_controller;dur=34.85
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
-        Post","body":"This is a test post","user_id":1,"created_at":"2023-06-05T21:00:11.728Z","updated_at":"2023-06-05T21:00:11.728Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
-        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"3:00
-        PM 06/05/2023"},{"id":5,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:43
-        AM 06/06/2023"},{"id":6,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:56
-        AM 06/06/2023"},{"id":7,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:58
-        AM 06/06/2023"},{"id":8,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:00
-        PM 06/06/2023"},{"id":9,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:02
-        PM 06/06/2023"},{"id":10,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:09
-        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"3:00
-        PM 06/05/2023"}}}'
-  recorded_at: Tue, 06 Jun 2023 18:11:48 GMT
+        Post","body":"This is a test post","user_id":1,"created_at":"2023-06-06T17:03:12.799Z","updated_at":"2023-06-06T17:03:12.799Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
+        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"12:03
+        PM 06/06/2023"},{"id":2,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:04
+        PM 06/06/2023"},{"id":3,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"3:32
+        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"12:03
+        PM 06/06/2023"}}}'
+  recorded_at: Tue, 06 Jun 2023 20:44:42 GMT
 - request:
     method: get
-    uri: http://localhost:5000/api/v1/posts/1
+    uri: http://localhost:5001/api/v1/posts/1
     body:
       encoding: US-ASCII
       string: ''
@@ -157,35 +149,31 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"cbec2373111f8260d3640c527e508392"
+      - W/"6c93c75fb1720232f7a444980e3eb3e7"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 1388cd47-aba8-46e6-a405-5781e1ac607b
+      - b2c56053-4d1b-42cd-b486-3564e462fdfd
       X-Runtime:
-      - '0.011995'
+      - '0.009799'
       Server-Timing:
-      - start_processing.action_controller;dur=0.09, sql.active_record;dur=4.48, instantiation.active_record;dur=0.60,
-        process_action.action_controller;dur=8.49
+      - start_processing.action_controller;dur=0.10, sql.active_record;dur=3.71, instantiation.active_record;dur=0.21,
+        process_action.action_controller;dur=6.67
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
-        Post","body":"This is a test post","user_id":1,"created_at":"2023-06-05T21:00:11.728Z","updated_at":"2023-06-05T21:00:11.728Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
-        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"3:00
-        PM 06/05/2023"},{"id":5,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:43
-        AM 06/06/2023"},{"id":6,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:56
-        AM 06/06/2023"},{"id":7,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:58
-        AM 06/06/2023"},{"id":8,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:00
-        PM 06/06/2023"},{"id":9,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:02
-        PM 06/06/2023"},{"id":10,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:09
-        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"3:00
-        PM 06/05/2023"}}}'
-  recorded_at: Tue, 06 Jun 2023 18:11:48 GMT
+        Post","body":"This is a test post","user_id":1,"created_at":"2023-06-06T17:03:12.799Z","updated_at":"2023-06-06T17:03:12.799Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
+        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"12:03
+        PM 06/06/2023"},{"id":2,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:04
+        PM 06/06/2023"},{"id":3,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"3:32
+        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"12:03
+        PM 06/06/2023"}}}'
+  recorded_at: Tue, 06 Jun 2023 20:44:42 GMT
 - request:
     method: get
-    uri: http://localhost:5000/api/v1/posts/1
+    uri: http://localhost:5001/api/v1/posts/1
     body:
       encoding: US-ASCII
       string: ''
@@ -218,35 +206,31 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"cbec2373111f8260d3640c527e508392"
+      - W/"6c93c75fb1720232f7a444980e3eb3e7"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 01d41cea-05ce-4af3-af5c-c5b3bb80e027
+      - 7b3f1c10-9e84-4db1-924c-71d5e25acc73
       X-Runtime:
-      - '0.010484'
+      - '0.010163'
       Server-Timing:
-      - start_processing.action_controller;dur=0.36, sql.active_record;dur=4.22, instantiation.active_record;dur=0.27,
-        process_action.action_controller;dur=7.60
+      - start_processing.action_controller;dur=0.06, sql.active_record;dur=4.21, instantiation.active_record;dur=0.22,
+        process_action.action_controller;dur=7.17
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
-        Post","body":"This is a test post","user_id":1,"created_at":"2023-06-05T21:00:11.728Z","updated_at":"2023-06-05T21:00:11.728Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
-        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"3:00
-        PM 06/05/2023"},{"id":5,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:43
-        AM 06/06/2023"},{"id":6,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:56
-        AM 06/06/2023"},{"id":7,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:58
-        AM 06/06/2023"},{"id":8,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:00
-        PM 06/06/2023"},{"id":9,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:02
-        PM 06/06/2023"},{"id":10,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:09
-        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"3:00
-        PM 06/05/2023"}}}'
-  recorded_at: Tue, 06 Jun 2023 18:11:49 GMT
+        Post","body":"This is a test post","user_id":1,"created_at":"2023-06-06T17:03:12.799Z","updated_at":"2023-06-06T17:03:12.799Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
+        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"12:03
+        PM 06/06/2023"},{"id":2,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:04
+        PM 06/06/2023"},{"id":3,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"3:32
+        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"12:03
+        PM 06/06/2023"}}}'
+  recorded_at: Tue, 06 Jun 2023 20:44:42 GMT
 - request:
     method: get
-    uri: http://localhost:5000/api/v1/posts/1
+    uri: http://localhost:5001/api/v1/posts/1
     body:
       encoding: US-ASCII
       string: ''
@@ -279,35 +263,31 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"cbec2373111f8260d3640c527e508392"
+      - W/"6c93c75fb1720232f7a444980e3eb3e7"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 8d7dd6f0-b3f7-4b45-898a-f25eace2d009
+      - 9bb7e7b5-ffe3-4877-984e-dd6737cd9f65
       X-Runtime:
-      - '0.021608'
+      - '0.010577'
       Server-Timing:
-      - start_processing.action_controller;dur=0.05, sql.active_record;dur=15.37,
-        instantiation.active_record;dur=0.26, process_action.action_controller;dur=18.84
+      - start_processing.action_controller;dur=0.07, sql.active_record;dur=4.72, instantiation.active_record;dur=0.21,
+        process_action.action_controller;dur=7.59
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
-        Post","body":"This is a test post","user_id":1,"created_at":"2023-06-05T21:00:11.728Z","updated_at":"2023-06-05T21:00:11.728Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
-        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"3:00
-        PM 06/05/2023"},{"id":5,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:43
-        AM 06/06/2023"},{"id":6,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:56
-        AM 06/06/2023"},{"id":7,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:58
-        AM 06/06/2023"},{"id":8,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:00
-        PM 06/06/2023"},{"id":9,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:02
-        PM 06/06/2023"},{"id":10,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:09
-        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"3:00
-        PM 06/05/2023"}}}'
-  recorded_at: Tue, 06 Jun 2023 18:11:49 GMT
+        Post","body":"This is a test post","user_id":1,"created_at":"2023-06-06T17:03:12.799Z","updated_at":"2023-06-06T17:03:12.799Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
+        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"12:03
+        PM 06/06/2023"},{"id":2,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:04
+        PM 06/06/2023"},{"id":3,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"3:32
+        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"12:03
+        PM 06/06/2023"}}}'
+  recorded_at: Tue, 06 Jun 2023 20:44:42 GMT
 - request:
     method: get
-    uri: http://localhost:5000/api/v1/posts/1
+    uri: http://localhost:5001/api/v1/posts/1
     body:
       encoding: US-ASCII
       string: ''
@@ -340,35 +320,31 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"cbec2373111f8260d3640c527e508392"
+      - W/"6c93c75fb1720232f7a444980e3eb3e7"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - eb606a14-bb3f-4ee7-b830-d64f58df0b85
+      - f5509d3f-1965-4ae0-b4b1-68d83136e46a
       X-Runtime:
-      - '0.073978'
+      - '0.019043'
       Server-Timing:
-      - start_processing.action_controller;dur=0.06, sql.active_record;dur=47.95,
-        instantiation.active_record;dur=6.61, process_action.action_controller;dur=71.44
+      - start_processing.action_controller;dur=0.11, sql.active_record;dur=6.72, instantiation.active_record;dur=0.43,
+        process_action.action_controller;dur=14.62
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
-        Post","body":"This is a test post","user_id":1,"created_at":"2023-06-05T21:00:11.728Z","updated_at":"2023-06-05T21:00:11.728Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
-        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"3:00
-        PM 06/05/2023"},{"id":5,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:43
-        AM 06/06/2023"},{"id":6,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:56
-        AM 06/06/2023"},{"id":7,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:58
-        AM 06/06/2023"},{"id":8,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:00
-        PM 06/06/2023"},{"id":9,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:02
-        PM 06/06/2023"},{"id":10,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:09
-        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"3:00
-        PM 06/05/2023"}}}'
-  recorded_at: Tue, 06 Jun 2023 18:11:49 GMT
+        Post","body":"This is a test post","user_id":1,"created_at":"2023-06-06T17:03:12.799Z","updated_at":"2023-06-06T17:03:12.799Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
+        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"12:03
+        PM 06/06/2023"},{"id":2,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:04
+        PM 06/06/2023"},{"id":3,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"3:32
+        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"12:03
+        PM 06/06/2023"}}}'
+  recorded_at: Tue, 06 Jun 2023 20:44:43 GMT
 - request:
     method: get
-    uri: http://localhost:5000/api/v1/posts/1
+    uri: http://localhost:5001/api/v1/posts/1
     body:
       encoding: US-ASCII
       string: ''
@@ -401,35 +377,31 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"cbec2373111f8260d3640c527e508392"
+      - W/"6c93c75fb1720232f7a444980e3eb3e7"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - b76285d1-aa47-4c5b-924c-fea5a0958278
+      - b9618dbf-e7b1-4568-8c84-645ab2a75dc0
       X-Runtime:
-      - '0.023411'
+      - '0.009173'
       Server-Timing:
-      - start_processing.action_controller;dur=0.07, sql.active_record;dur=7.25, instantiation.active_record;dur=0.29,
-        process_action.action_controller;dur=11.41
+      - start_processing.action_controller;dur=0.07, sql.active_record;dur=3.30, instantiation.active_record;dur=0.20,
+        process_action.action_controller;dur=6.05
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
-        Post","body":"This is a test post","user_id":1,"created_at":"2023-06-05T21:00:11.728Z","updated_at":"2023-06-05T21:00:11.728Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
-        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"3:00
-        PM 06/05/2023"},{"id":5,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:43
-        AM 06/06/2023"},{"id":6,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:56
-        AM 06/06/2023"},{"id":7,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:58
-        AM 06/06/2023"},{"id":8,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:00
-        PM 06/06/2023"},{"id":9,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:02
-        PM 06/06/2023"},{"id":10,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:09
-        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"3:00
-        PM 06/05/2023"}}}'
-  recorded_at: Tue, 06 Jun 2023 18:11:49 GMT
+        Post","body":"This is a test post","user_id":1,"created_at":"2023-06-06T17:03:12.799Z","updated_at":"2023-06-06T17:03:12.799Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
+        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"12:03
+        PM 06/06/2023"},{"id":2,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:04
+        PM 06/06/2023"},{"id":3,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"3:32
+        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"12:03
+        PM 06/06/2023"}}}'
+  recorded_at: Tue, 06 Jun 2023 20:44:43 GMT
 - request:
     method: get
-    uri: http://localhost:5000/api/v1/posts/1
+    uri: http://localhost:5001/api/v1/posts/1
     body:
       encoding: US-ASCII
       string: ''
@@ -462,35 +434,31 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"cbec2373111f8260d3640c527e508392"
+      - W/"6c93c75fb1720232f7a444980e3eb3e7"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 2be86811-495e-4306-8460-3d034d51787d
+      - 5eb5abe8-d978-4bb6-a0ae-1e25aea285e4
       X-Runtime:
-      - '0.013442'
+      - '0.010969'
       Server-Timing:
-      - start_processing.action_controller;dur=0.06, sql.active_record;dur=4.04, instantiation.active_record;dur=0.28,
-        process_action.action_controller;dur=10.89
+      - start_processing.action_controller;dur=0.11, sql.active_record;dur=3.04, instantiation.active_record;dur=0.20,
+        process_action.action_controller;dur=5.89
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
-        Post","body":"This is a test post","user_id":1,"created_at":"2023-06-05T21:00:11.728Z","updated_at":"2023-06-05T21:00:11.728Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
-        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"3:00
-        PM 06/05/2023"},{"id":5,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:43
-        AM 06/06/2023"},{"id":6,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:56
-        AM 06/06/2023"},{"id":7,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:58
-        AM 06/06/2023"},{"id":8,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:00
-        PM 06/06/2023"},{"id":9,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:02
-        PM 06/06/2023"},{"id":10,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:09
-        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"3:00
-        PM 06/05/2023"}}}'
-  recorded_at: Tue, 06 Jun 2023 18:11:49 GMT
+        Post","body":"This is a test post","user_id":1,"created_at":"2023-06-06T17:03:12.799Z","updated_at":"2023-06-06T17:03:12.799Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
+        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"12:03
+        PM 06/06/2023"},{"id":2,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:04
+        PM 06/06/2023"},{"id":3,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"3:32
+        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"12:03
+        PM 06/06/2023"}}}'
+  recorded_at: Tue, 06 Jun 2023 20:44:43 GMT
 - request:
     method: get
-    uri: http://localhost:5000/api/v1/posts/1
+    uri: http://localhost:5001/api/v1/posts/1
     body:
       encoding: US-ASCII
       string: ''
@@ -523,32 +491,28 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"cbec2373111f8260d3640c527e508392"
+      - W/"6c93c75fb1720232f7a444980e3eb3e7"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9a4c6d0a-1745-4f79-a7da-5e783a3f3b85
+      - 2bead32a-2552-4f58-8c28-2c21c0b6e6b6
       X-Runtime:
-      - '0.012450'
+      - '0.011851'
       Server-Timing:
-      - start_processing.action_controller;dur=0.07, sql.active_record;dur=5.10, instantiation.active_record;dur=0.33,
-        process_action.action_controller;dur=9.27
+      - start_processing.action_controller;dur=0.09, sql.active_record;dur=3.06, instantiation.active_record;dur=0.20,
+        process_action.action_controller;dur=5.81
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
-        Post","body":"This is a test post","user_id":1,"created_at":"2023-06-05T21:00:11.728Z","updated_at":"2023-06-05T21:00:11.728Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
-        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"3:00
-        PM 06/05/2023"},{"id":5,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:43
-        AM 06/06/2023"},{"id":6,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:56
-        AM 06/06/2023"},{"id":7,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:58
-        AM 06/06/2023"},{"id":8,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:00
-        PM 06/06/2023"},{"id":9,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:02
-        PM 06/06/2023"},{"id":10,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:09
-        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"3:00
-        PM 06/05/2023"}}}'
-  recorded_at: Tue, 06 Jun 2023 18:11:49 GMT
+        Post","body":"This is a test post","user_id":1,"created_at":"2023-06-06T17:03:12.799Z","updated_at":"2023-06-06T17:03:12.799Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
+        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"12:03
+        PM 06/06/2023"},{"id":2,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:04
+        PM 06/06/2023"},{"id":3,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"3:32
+        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"12:03
+        PM 06/06/2023"}}}'
+  recorded_at: Tue, 06 Jun 2023 20:44:43 GMT
 - request:
     method: post
     uri: https://commentanalyzer.googleapis.com/v1alpha1/comments:analyze?key=DONT_SHARE_MY_DATA_7
@@ -576,7 +540,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Tue, 06 Jun 2023 18:11:49 GMT
+      - Tue, 06 Jun 2023 20:44:43 GMT
       Server:
       - ESF
       Cache-Control:
@@ -596,19 +560,19 @@ http_interactions:
       string: |
         {
           "attributeScores": {
-            "IDENTITY_ATTACK": {
+            "INSULT": {
               "spanScores": [
                 {
                   "begin": 0,
                   "end": 12,
                   "score": {
-                    "value": 0.0023863618,
+                    "value": 0.007132874,
                     "type": "PROBABILITY"
                   }
                 }
               ],
               "summaryScore": {
-                "value": 0.0023863618,
+                "value": 0.007132874,
                 "type": "PROBABILITY"
               }
             },
@@ -628,19 +592,19 @@ http_interactions:
                 "type": "PROBABILITY"
               }
             },
-            "INSULT": {
+            "THREAT": {
               "spanScores": [
                 {
                   "begin": 0,
                   "end": 12,
                   "score": {
-                    "value": 0.007132874,
+                    "value": 0.006874025,
                     "type": "PROBABILITY"
                   }
                 }
               ],
               "summaryScore": {
-                "value": 0.007132874,
+                "value": 0.006874025,
                 "type": "PROBABILITY"
               }
             },
@@ -660,19 +624,19 @@ http_interactions:
                 "type": "PROBABILITY"
               }
             },
-            "THREAT": {
+            "IDENTITY_ATTACK": {
               "spanScores": [
                 {
                   "begin": 0,
                   "end": 12,
                   "score": {
-                    "value": 0.006874025,
+                    "value": 0.0023863618,
                     "type": "PROBABILITY"
                   }
                 }
               ],
               "summaryScore": {
-                "value": 0.006874025,
+                "value": 0.0023863618,
                 "type": "PROBABILITY"
               }
             }
@@ -685,1123 +649,7 @@ http_interactions:
             "en"
           ]
         }
-  recorded_at: Tue, 06 Jun 2023 18:11:49 GMT
-- request:
-    method: post
-    uri: http://localhost:5000/api/v1/posts/1/comments
-    body:
-      encoding: UTF-8
-      string: params%5Bbody%5D=Samuel+Jones&params%5Bpost_id%5D=1&params%5Buser_id%5D=1
-    headers:
-      User-Agent:
-      - Faraday v2.7.5
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"5d92a6856546bbe2961718d7b65ac4df"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 8967d040-5a72-41bc-a4ee-6b984793befb
-      X-Runtime:
-      - '0.010734'
-      Server-Timing:
-      - start_processing.action_controller;dur=0.11, sql.active_record;dur=5.06, instantiation.active_record;dur=0.05,
-        process_action.action_controller;dur=7.08
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"11","type":"comment","attributes":{"id":11,"body":"Samuel
-        Jones","user_id":1,"post_id":1,"created_at":"2023-06-06T18:11:49.591Z","updated_at":"2023-06-06T18:11:49.591Z"}}}'
-  recorded_at: Tue, 06 Jun 2023 18:11:49 GMT
-- request:
-    method: get
-    uri: http://localhost:5000/api/v1/posts/1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.7.5
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"c4598bf8600d973938fc3e38a85bebc5"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - dc77a87d-2da0-4b2d-88e3-fe968958c95f
-      X-Runtime:
-      - '0.011910'
-      Server-Timing:
-      - start_processing.action_controller;dur=0.07, sql.active_record;dur=4.84, instantiation.active_record;dur=0.30,
-        process_action.action_controller;dur=8.89
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
-        Post","body":"This is a test post","user_id":1,"created_at":"2023-06-05T21:00:11.728Z","updated_at":"2023-06-05T21:00:11.728Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
-        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"3:00
-        PM 06/05/2023"},{"id":5,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:43
-        AM 06/06/2023"},{"id":6,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:56
-        AM 06/06/2023"},{"id":7,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:58
-        AM 06/06/2023"},{"id":8,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:00
-        PM 06/06/2023"},{"id":9,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:02
-        PM 06/06/2023"},{"id":10,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:09
-        PM 06/06/2023"},{"id":11,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:11
-        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"3:00
-        PM 06/05/2023"}}}'
-  recorded_at: Tue, 06 Jun 2023 18:11:49 GMT
-- request:
-    method: get
-    uri: http://localhost:5000/api/v1/posts/1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.7.5
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"c4598bf8600d973938fc3e38a85bebc5"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 5c23b46a-52f4-4206-b9ad-f41d6ff19586
-      X-Runtime:
-      - '0.010535'
-      Server-Timing:
-      - start_processing.action_controller;dur=0.08, sql.active_record;dur=4.12, instantiation.active_record;dur=0.30,
-        process_action.action_controller;dur=7.86
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
-        Post","body":"This is a test post","user_id":1,"created_at":"2023-06-05T21:00:11.728Z","updated_at":"2023-06-05T21:00:11.728Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
-        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"3:00
-        PM 06/05/2023"},{"id":5,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:43
-        AM 06/06/2023"},{"id":6,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:56
-        AM 06/06/2023"},{"id":7,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:58
-        AM 06/06/2023"},{"id":8,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:00
-        PM 06/06/2023"},{"id":9,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:02
-        PM 06/06/2023"},{"id":10,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:09
-        PM 06/06/2023"},{"id":11,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:11
-        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"3:00
-        PM 06/05/2023"}}}'
-  recorded_at: Tue, 06 Jun 2023 18:11:49 GMT
-- request:
-    method: get
-    uri: http://localhost:5000/api/v1/posts/1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.7.5
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"c4598bf8600d973938fc3e38a85bebc5"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 022a685f-1106-4f5a-b633-3074e9ac2f38
-      X-Runtime:
-      - '0.010222'
-      Server-Timing:
-      - start_processing.action_controller;dur=0.06, sql.active_record;dur=4.15, instantiation.active_record;dur=0.27,
-        process_action.action_controller;dur=7.69
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
-        Post","body":"This is a test post","user_id":1,"created_at":"2023-06-05T21:00:11.728Z","updated_at":"2023-06-05T21:00:11.728Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
-        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"3:00
-        PM 06/05/2023"},{"id":5,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:43
-        AM 06/06/2023"},{"id":6,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:56
-        AM 06/06/2023"},{"id":7,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:58
-        AM 06/06/2023"},{"id":8,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:00
-        PM 06/06/2023"},{"id":9,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:02
-        PM 06/06/2023"},{"id":10,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:09
-        PM 06/06/2023"},{"id":11,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:11
-        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"3:00
-        PM 06/05/2023"}}}'
-  recorded_at: Tue, 06 Jun 2023 18:11:49 GMT
-- request:
-    method: get
-    uri: http://localhost:5000/api/v1/posts/1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.7.5
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"c4598bf8600d973938fc3e38a85bebc5"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 6fe430f3-7bdd-43ad-88f7-305f4764e2a5
-      X-Runtime:
-      - '0.010611'
-      Server-Timing:
-      - start_processing.action_controller;dur=0.06, sql.active_record;dur=4.36, instantiation.active_record;dur=0.28,
-        process_action.action_controller;dur=7.88
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
-        Post","body":"This is a test post","user_id":1,"created_at":"2023-06-05T21:00:11.728Z","updated_at":"2023-06-05T21:00:11.728Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
-        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"3:00
-        PM 06/05/2023"},{"id":5,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:43
-        AM 06/06/2023"},{"id":6,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:56
-        AM 06/06/2023"},{"id":7,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:58
-        AM 06/06/2023"},{"id":8,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:00
-        PM 06/06/2023"},{"id":9,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:02
-        PM 06/06/2023"},{"id":10,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:09
-        PM 06/06/2023"},{"id":11,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:11
-        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"3:00
-        PM 06/05/2023"}}}'
-  recorded_at: Tue, 06 Jun 2023 18:11:49 GMT
-- request:
-    method: get
-    uri: http://localhost:5000/api/v1/posts/1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.7.5
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"c4598bf8600d973938fc3e38a85bebc5"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 01cd813a-b839-45a7-8226-b71c76fb0447
-      X-Runtime:
-      - '0.010542'
-      Server-Timing:
-      - start_processing.action_controller;dur=0.07, sql.active_record;dur=4.07, instantiation.active_record;dur=0.29,
-        process_action.action_controller;dur=7.87
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
-        Post","body":"This is a test post","user_id":1,"created_at":"2023-06-05T21:00:11.728Z","updated_at":"2023-06-05T21:00:11.728Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
-        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"3:00
-        PM 06/05/2023"},{"id":5,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:43
-        AM 06/06/2023"},{"id":6,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:56
-        AM 06/06/2023"},{"id":7,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:58
-        AM 06/06/2023"},{"id":8,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:00
-        PM 06/06/2023"},{"id":9,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:02
-        PM 06/06/2023"},{"id":10,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:09
-        PM 06/06/2023"},{"id":11,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:11
-        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"3:00
-        PM 06/05/2023"}}}'
-  recorded_at: Tue, 06 Jun 2023 18:11:49 GMT
-- request:
-    method: get
-    uri: http://localhost:5000/api/v1/posts/1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.7.5
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"c4598bf8600d973938fc3e38a85bebc5"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - d668f781-c57e-4b6b-b41c-9235b3d5b005
-      X-Runtime:
-      - '0.011137'
-      Server-Timing:
-      - start_processing.action_controller;dur=0.08, sql.active_record;dur=4.71, instantiation.active_record;dur=0.28,
-        process_action.action_controller;dur=8.50
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
-        Post","body":"This is a test post","user_id":1,"created_at":"2023-06-05T21:00:11.728Z","updated_at":"2023-06-05T21:00:11.728Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
-        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"3:00
-        PM 06/05/2023"},{"id":5,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:43
-        AM 06/06/2023"},{"id":6,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:56
-        AM 06/06/2023"},{"id":7,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:58
-        AM 06/06/2023"},{"id":8,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:00
-        PM 06/06/2023"},{"id":9,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:02
-        PM 06/06/2023"},{"id":10,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:09
-        PM 06/06/2023"},{"id":11,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:11
-        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"3:00
-        PM 06/05/2023"}}}'
-  recorded_at: Tue, 06 Jun 2023 18:11:49 GMT
-- request:
-    method: get
-    uri: http://localhost:5000/api/v1/posts/1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.7.5
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"c4598bf8600d973938fc3e38a85bebc5"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - '0585572a-bfbb-4806-ac91-7394fc46d165'
-      X-Runtime:
-      - '0.013185'
-      Server-Timing:
-      - start_processing.action_controller;dur=0.08, sql.active_record;dur=6.01, instantiation.active_record;dur=0.36,
-        process_action.action_controller;dur=10.05
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
-        Post","body":"This is a test post","user_id":1,"created_at":"2023-06-05T21:00:11.728Z","updated_at":"2023-06-05T21:00:11.728Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
-        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"3:00
-        PM 06/05/2023"},{"id":5,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:43
-        AM 06/06/2023"},{"id":6,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:56
-        AM 06/06/2023"},{"id":7,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:58
-        AM 06/06/2023"},{"id":8,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:00
-        PM 06/06/2023"},{"id":9,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:02
-        PM 06/06/2023"},{"id":10,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:09
-        PM 06/06/2023"},{"id":11,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:11
-        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"3:00
-        PM 06/05/2023"}}}'
-  recorded_at: Tue, 06 Jun 2023 18:11:49 GMT
-- request:
-    method: get
-    uri: http://localhost:5000/api/v1/posts/1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.7.5
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"c4598bf8600d973938fc3e38a85bebc5"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - bad9577e-2e83-49e7-86ce-576981842b5b
-      X-Runtime:
-      - '0.011247'
-      Server-Timing:
-      - start_processing.action_controller;dur=0.07, sql.active_record;dur=4.61, instantiation.active_record;dur=0.29,
-        process_action.action_controller;dur=8.46
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
-        Post","body":"This is a test post","user_id":1,"created_at":"2023-06-05T21:00:11.728Z","updated_at":"2023-06-05T21:00:11.728Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
-        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"3:00
-        PM 06/05/2023"},{"id":5,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:43
-        AM 06/06/2023"},{"id":6,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:56
-        AM 06/06/2023"},{"id":7,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:58
-        AM 06/06/2023"},{"id":8,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:00
-        PM 06/06/2023"},{"id":9,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:02
-        PM 06/06/2023"},{"id":10,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:09
-        PM 06/06/2023"},{"id":11,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:11
-        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"3:00
-        PM 06/05/2023"}}}'
-  recorded_at: Tue, 06 Jun 2023 18:11:49 GMT
-- request:
-    method: get
-    uri: http://localhost:5000/api/v1/posts/1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.7.5
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"c4598bf8600d973938fc3e38a85bebc5"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 8dcd7488-46d8-447c-b484-febbc66626de
-      X-Runtime:
-      - '0.011056'
-      Server-Timing:
-      - start_processing.action_controller;dur=0.06, sql.active_record;dur=4.79, instantiation.active_record;dur=0.30,
-        process_action.action_controller;dur=8.32
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
-        Post","body":"This is a test post","user_id":1,"created_at":"2023-06-05T21:00:11.728Z","updated_at":"2023-06-05T21:00:11.728Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
-        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"3:00
-        PM 06/05/2023"},{"id":5,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:43
-        AM 06/06/2023"},{"id":6,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:56
-        AM 06/06/2023"},{"id":7,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:58
-        AM 06/06/2023"},{"id":8,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:00
-        PM 06/06/2023"},{"id":9,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:02
-        PM 06/06/2023"},{"id":10,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:09
-        PM 06/06/2023"},{"id":11,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:11
-        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"3:00
-        PM 06/05/2023"}}}'
-  recorded_at: Tue, 06 Jun 2023 18:11:49 GMT
-- request:
-    method: get
-    uri: http://localhost:5001/api/v1/posts/1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.7.5
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"48b9799314c438eafca8a60d1ab097ad"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - c260daa4-0c3f-4e1c-b34d-b4365e6c2b79
-      X-Runtime:
-      - '0.081449'
-      Server-Timing:
-      - start_processing.action_controller;dur=0.17, sql.active_record;dur=48.17,
-        instantiation.active_record;dur=4.58, process_action.action_controller;dur=62.59
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
-        Post","body":"This is a test post","user_id":1,"created_at":"2023-06-06T17:03:12.799Z","updated_at":"2023-06-06T17:03:12.799Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
-        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"5:03
-        PM 06/06/2023"},{"id":2,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"5:04
-        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"5:03
-        PM 06/06/2023"}}}'
-  recorded_at: Tue, 06 Jun 2023 20:32:27 GMT
-- request:
-    method: get
-    uri: http://localhost:5001/api/v1/posts/1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.7.5
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"48b9799314c438eafca8a60d1ab097ad"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - a22d84a6-3726-4786-aad9-9508d59f20eb
-      X-Runtime:
-      - '0.019649'
-      Server-Timing:
-      - start_processing.action_controller;dur=0.19, sql.active_record;dur=7.95, instantiation.active_record;dur=0.21,
-        process_action.action_controller;dur=14.87
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
-        Post","body":"This is a test post","user_id":1,"created_at":"2023-06-06T17:03:12.799Z","updated_at":"2023-06-06T17:03:12.799Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
-        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"5:03
-        PM 06/06/2023"},{"id":2,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"5:04
-        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"5:03
-        PM 06/06/2023"}}}'
-  recorded_at: Tue, 06 Jun 2023 20:32:27 GMT
-- request:
-    method: get
-    uri: http://localhost:5001/api/v1/posts/1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.7.5
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"48b9799314c438eafca8a60d1ab097ad"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - fb921f64-8df9-4248-863c-51adf7644f4a
-      X-Runtime:
-      - '0.030181'
-      Server-Timing:
-      - start_processing.action_controller;dur=0.11, sql.active_record;dur=15.21,
-        instantiation.active_record;dur=0.67, process_action.action_controller;dur=24.64
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
-        Post","body":"This is a test post","user_id":1,"created_at":"2023-06-06T17:03:12.799Z","updated_at":"2023-06-06T17:03:12.799Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
-        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"5:03
-        PM 06/06/2023"},{"id":2,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"5:04
-        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"5:03
-        PM 06/06/2023"}}}'
-  recorded_at: Tue, 06 Jun 2023 20:32:27 GMT
-- request:
-    method: get
-    uri: http://localhost:5001/api/v1/posts/1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.7.5
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"48b9799314c438eafca8a60d1ab097ad"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 622b1f26-e038-4d4b-82c7-a82242cd22f3
-      X-Runtime:
-      - '0.018259'
-      Server-Timing:
-      - start_processing.action_controller;dur=0.14, sql.active_record;dur=9.85, instantiation.active_record;dur=0.49,
-        process_action.action_controller;dur=14.19
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
-        Post","body":"This is a test post","user_id":1,"created_at":"2023-06-06T17:03:12.799Z","updated_at":"2023-06-06T17:03:12.799Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
-        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"5:03
-        PM 06/06/2023"},{"id":2,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"5:04
-        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"5:03
-        PM 06/06/2023"}}}'
-  recorded_at: Tue, 06 Jun 2023 20:32:27 GMT
-- request:
-    method: get
-    uri: http://localhost:5001/api/v1/posts/1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.7.5
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"48b9799314c438eafca8a60d1ab097ad"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 59fc443f-b7e8-4167-9a93-0f1ef0bfd97a
-      X-Runtime:
-      - '0.018757'
-      Server-Timing:
-      - start_processing.action_controller;dur=0.08, sql.active_record;dur=7.31, instantiation.active_record;dur=0.22,
-        process_action.action_controller;dur=14.95
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
-        Post","body":"This is a test post","user_id":1,"created_at":"2023-06-06T17:03:12.799Z","updated_at":"2023-06-06T17:03:12.799Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
-        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"5:03
-        PM 06/06/2023"},{"id":2,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"5:04
-        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"5:03
-        PM 06/06/2023"}}}'
-  recorded_at: Tue, 06 Jun 2023 20:32:27 GMT
-- request:
-    method: get
-    uri: http://localhost:5001/api/v1/posts/1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.7.5
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"48b9799314c438eafca8a60d1ab097ad"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 9a37f0de-565a-4d54-822d-62420b80781d
-      X-Runtime:
-      - '0.013211'
-      Server-Timing:
-      - start_processing.action_controller;dur=0.12, sql.active_record;dur=6.86, instantiation.active_record;dur=0.26,
-        process_action.action_controller;dur=9.94
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
-        Post","body":"This is a test post","user_id":1,"created_at":"2023-06-06T17:03:12.799Z","updated_at":"2023-06-06T17:03:12.799Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
-        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"5:03
-        PM 06/06/2023"},{"id":2,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"5:04
-        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"5:03
-        PM 06/06/2023"}}}'
-  recorded_at: Tue, 06 Jun 2023 20:32:27 GMT
-- request:
-    method: get
-    uri: http://localhost:5001/api/v1/posts/1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.7.5
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"48b9799314c438eafca8a60d1ab097ad"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 8873ba54-cecf-4178-9bea-37a414a93e8b
-      X-Runtime:
-      - '0.014742'
-      Server-Timing:
-      - start_processing.action_controller;dur=0.08, sql.active_record;dur=6.31, instantiation.active_record;dur=0.26,
-        process_action.action_controller;dur=9.63
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
-        Post","body":"This is a test post","user_id":1,"created_at":"2023-06-06T17:03:12.799Z","updated_at":"2023-06-06T17:03:12.799Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
-        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"5:03
-        PM 06/06/2023"},{"id":2,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"5:04
-        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"5:03
-        PM 06/06/2023"}}}'
-  recorded_at: Tue, 06 Jun 2023 20:32:27 GMT
-- request:
-    method: get
-    uri: http://localhost:5001/api/v1/posts/1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.7.5
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"48b9799314c438eafca8a60d1ab097ad"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - b2e606ba-931c-4abd-88a3-83eed4b109b8
-      X-Runtime:
-      - '0.038146'
-      Server-Timing:
-      - start_processing.action_controller;dur=0.09, sql.active_record;dur=31.00,
-        instantiation.active_record;dur=0.27, process_action.action_controller;dur=35.02
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
-        Post","body":"This is a test post","user_id":1,"created_at":"2023-06-06T17:03:12.799Z","updated_at":"2023-06-06T17:03:12.799Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
-        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"5:03
-        PM 06/06/2023"},{"id":2,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"5:04
-        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"5:03
-        PM 06/06/2023"}}}'
-  recorded_at: Tue, 06 Jun 2023 20:32:27 GMT
-- request:
-    method: get
-    uri: http://localhost:5001/api/v1/posts/1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.7.5
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"48b9799314c438eafca8a60d1ab097ad"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - a030a623-3e8f-4b76-96d7-e8140a66232a
-      X-Runtime:
-      - '0.034916'
-      Server-Timing:
-      - start_processing.action_controller;dur=0.09, sql.active_record;dur=26.70,
-        instantiation.active_record;dur=0.37, process_action.action_controller;dur=31.54
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
-        Post","body":"This is a test post","user_id":1,"created_at":"2023-06-06T17:03:12.799Z","updated_at":"2023-06-06T17:03:12.799Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
-        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"5:03
-        PM 06/06/2023"},{"id":2,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"5:04
-        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"5:03
-        PM 06/06/2023"}}}'
-  recorded_at: Tue, 06 Jun 2023 20:32:27 GMT
+  recorded_at: Tue, 06 Jun 2023 20:44:43 GMT
 - request:
     method: post
     uri: http://localhost:5001/api/v1/posts/1/comments
@@ -1839,23 +687,23 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"9e42b536a47bb74b8005034bd4046c2b"
+      - W/"a09e5148f55d0c56930849a675d3afa6"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - b8d53dd3-ab8f-4e5e-9d38-a1a454cf22c4
+      - b8592314-d9b0-4f89-8c72-c25082e2c7aa
       X-Runtime:
-      - '0.094641'
+      - '0.031764'
       Server-Timing:
-      - start_processing.action_controller;dur=0.13, sql.active_record;dur=12.41,
-        instantiation.active_record;dur=0.06, process_action.action_controller;dur=25.24
+      - start_processing.action_controller;dur=0.29, sql.active_record;dur=5.68, instantiation.active_record;dur=0.07,
+        process_action.action_controller;dur=13.13
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"3","type":"comment","attributes":{"id":3,"body":"Samuel
-        Jones","user_id":1,"post_id":1,"created_at":"2023-06-06T20:32:27.635Z","updated_at":"2023-06-06T20:32:27.635Z"}}}'
-  recorded_at: Tue, 06 Jun 2023 20:32:27 GMT
+      string: '{"data":{"id":"4","type":"comment","attributes":{"id":4,"body":"Samuel
+        Jones","user_id":1,"post_id":1,"created_at":"2023-06-06T20:44:43.493Z","updated_at":"2023-06-06T20:44:43.493Z"}}}'
+  recorded_at: Tue, 06 Jun 2023 20:44:43 GMT
 - request:
     method: get
     uri: http://localhost:5001/api/v1/posts/1
@@ -1891,28 +739,29 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"ab766e3eb19223e1357c63a97bfcd3f3"
+      - W/"d936ff434acf2e5c0dfd7759f8cb57c6"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 89e89e2b-ca83-44ab-ba58-f2f85922d007
+      - c3bedce6-28ac-4e8b-bc9e-cdc7728a182d
       X-Runtime:
-      - '0.016910'
+      - '0.014370'
       Server-Timing:
-      - start_processing.action_controller;dur=0.08, sql.active_record;dur=9.31, instantiation.active_record;dur=0.42,
-        process_action.action_controller;dur=13.27
+      - start_processing.action_controller;dur=0.10, sql.active_record;dur=3.46, instantiation.active_record;dur=0.23,
+        process_action.action_controller;dur=6.74
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
         Post","body":"This is a test post","user_id":1,"created_at":"2023-06-06T17:03:12.799Z","updated_at":"2023-06-06T17:03:12.799Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
-        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"5:03
-        PM 06/06/2023"},{"id":2,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"5:04
-        PM 06/06/2023"},{"id":3,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"8:32
-        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"5:03
+        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"12:03
+        PM 06/06/2023"},{"id":2,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:04
+        PM 06/06/2023"},{"id":3,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"3:32
+        PM 06/06/2023"},{"id":4,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"3:44
+        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"12:03
         PM 06/06/2023"}}}'
-  recorded_at: Tue, 06 Jun 2023 20:32:27 GMT
+  recorded_at: Tue, 06 Jun 2023 20:44:43 GMT
 - request:
     method: get
     uri: http://localhost:5001/api/v1/posts/1
@@ -1948,28 +797,29 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"ab766e3eb19223e1357c63a97bfcd3f3"
+      - W/"d936ff434acf2e5c0dfd7759f8cb57c6"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - a9e48de0-b6b6-4b7f-94ac-8a16abdf3910
+      - daac7b66-3d63-4dc9-90d8-9c3c9f2c62d6
       X-Runtime:
-      - '0.013589'
+      - '0.022638'
       Server-Timing:
-      - start_processing.action_controller;dur=0.09, sql.active_record;dur=6.10, instantiation.active_record;dur=0.22,
-        process_action.action_controller;dur=9.96
+      - start_processing.action_controller;dur=0.11, sql.active_record;dur=11.34,
+        instantiation.active_record;dur=0.59, process_action.action_controller;dur=19.15
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
         Post","body":"This is a test post","user_id":1,"created_at":"2023-06-06T17:03:12.799Z","updated_at":"2023-06-06T17:03:12.799Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
-        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"5:03
-        PM 06/06/2023"},{"id":2,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"5:04
-        PM 06/06/2023"},{"id":3,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"8:32
-        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"5:03
+        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"12:03
+        PM 06/06/2023"},{"id":2,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:04
+        PM 06/06/2023"},{"id":3,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"3:32
+        PM 06/06/2023"},{"id":4,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"3:44
+        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"12:03
         PM 06/06/2023"}}}'
-  recorded_at: Tue, 06 Jun 2023 20:32:27 GMT
+  recorded_at: Tue, 06 Jun 2023 20:44:43 GMT
 - request:
     method: get
     uri: http://localhost:5001/api/v1/posts/1
@@ -2005,28 +855,29 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"ab766e3eb19223e1357c63a97bfcd3f3"
+      - W/"d936ff434acf2e5c0dfd7759f8cb57c6"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e446c513-3502-4399-a020-cc04f22b1d0f
+      - 76e3a4a9-fef0-40c9-8ac3-ae39bb5328ff
       X-Runtime:
-      - '0.017517'
+      - '0.015602'
       Server-Timing:
-      - start_processing.action_controller;dur=0.06, sql.active_record;dur=9.10, instantiation.active_record;dur=0.37,
-        process_action.action_controller;dur=14.10
+      - start_processing.action_controller;dur=0.11, sql.active_record;dur=3.54, instantiation.active_record;dur=0.24,
+        process_action.action_controller;dur=6.87
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
         Post","body":"This is a test post","user_id":1,"created_at":"2023-06-06T17:03:12.799Z","updated_at":"2023-06-06T17:03:12.799Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
-        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"5:03
-        PM 06/06/2023"},{"id":2,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"5:04
-        PM 06/06/2023"},{"id":3,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"8:32
-        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"5:03
+        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"12:03
+        PM 06/06/2023"},{"id":2,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:04
+        PM 06/06/2023"},{"id":3,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"3:32
+        PM 06/06/2023"},{"id":4,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"3:44
+        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"12:03
         PM 06/06/2023"}}}'
-  recorded_at: Tue, 06 Jun 2023 20:32:27 GMT
+  recorded_at: Tue, 06 Jun 2023 20:44:43 GMT
 - request:
     method: get
     uri: http://localhost:5001/api/v1/posts/1
@@ -2062,28 +913,29 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"ab766e3eb19223e1357c63a97bfcd3f3"
+      - W/"d936ff434acf2e5c0dfd7759f8cb57c6"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - da3e812c-7531-41f2-9ae7-c725d3ac9774
+      - 5634380a-2ada-4d3f-a299-52871dafb89e
       X-Runtime:
-      - '0.018444'
+      - '0.021114'
       Server-Timing:
-      - start_processing.action_controller;dur=0.45, sql.active_record;dur=5.37, instantiation.active_record;dur=0.42,
-        process_action.action_controller;dur=11.65
+      - start_processing.action_controller;dur=0.10, sql.active_record;dur=12.11,
+        instantiation.active_record;dur=0.45, process_action.action_controller;dur=17.30
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
         Post","body":"This is a test post","user_id":1,"created_at":"2023-06-06T17:03:12.799Z","updated_at":"2023-06-06T17:03:12.799Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
-        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"5:03
-        PM 06/06/2023"},{"id":2,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"5:04
-        PM 06/06/2023"},{"id":3,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"8:32
-        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"5:03
+        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"12:03
+        PM 06/06/2023"},{"id":2,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:04
+        PM 06/06/2023"},{"id":3,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"3:32
+        PM 06/06/2023"},{"id":4,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"3:44
+        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"12:03
         PM 06/06/2023"}}}'
-  recorded_at: Tue, 06 Jun 2023 20:32:27 GMT
+  recorded_at: Tue, 06 Jun 2023 20:44:43 GMT
 - request:
     method: get
     uri: http://localhost:5001/api/v1/posts/1
@@ -2119,28 +971,29 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"ab766e3eb19223e1357c63a97bfcd3f3"
+      - W/"d936ff434acf2e5c0dfd7759f8cb57c6"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 65dc7c30-20f1-4518-aa53-a0d1ef64223b
+      - 59cff510-204d-4661-b3dd-fb50e47cabbd
       X-Runtime:
-      - '0.013008'
+      - '0.013498'
       Server-Timing:
-      - start_processing.action_controller;dur=0.08, sql.active_record;dur=4.74, instantiation.active_record;dur=0.32,
-        process_action.action_controller;dur=9.79
+      - start_processing.action_controller;dur=0.11, sql.active_record;dur=3.65, instantiation.active_record;dur=0.24,
+        process_action.action_controller;dur=7.19
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
         Post","body":"This is a test post","user_id":1,"created_at":"2023-06-06T17:03:12.799Z","updated_at":"2023-06-06T17:03:12.799Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
-        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"5:03
-        PM 06/06/2023"},{"id":2,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"5:04
-        PM 06/06/2023"},{"id":3,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"8:32
-        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"5:03
+        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"12:03
+        PM 06/06/2023"},{"id":2,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:04
+        PM 06/06/2023"},{"id":3,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"3:32
+        PM 06/06/2023"},{"id":4,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"3:44
+        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"12:03
         PM 06/06/2023"}}}'
-  recorded_at: Tue, 06 Jun 2023 20:32:27 GMT
+  recorded_at: Tue, 06 Jun 2023 20:44:43 GMT
 - request:
     method: get
     uri: http://localhost:5001/api/v1/posts/1
@@ -2176,28 +1029,29 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"ab766e3eb19223e1357c63a97bfcd3f3"
+      - W/"d936ff434acf2e5c0dfd7759f8cb57c6"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e7406958-981b-431e-9ee2-ecf86c2d528d
+      - 7f3204f1-5f18-4bcf-b5ad-d932a533f918
       X-Runtime:
-      - '0.011530'
+      - '0.017696'
       Server-Timing:
-      - start_processing.action_controller;dur=0.08, sql.active_record;dur=3.65, instantiation.active_record;dur=0.24,
-        process_action.action_controller;dur=8.30
+      - start_processing.action_controller;dur=0.08, sql.active_record;dur=3.45, instantiation.active_record;dur=0.21,
+        process_action.action_controller;dur=14.73
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
         Post","body":"This is a test post","user_id":1,"created_at":"2023-06-06T17:03:12.799Z","updated_at":"2023-06-06T17:03:12.799Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
-        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"5:03
-        PM 06/06/2023"},{"id":2,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"5:04
-        PM 06/06/2023"},{"id":3,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"8:32
-        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"5:03
+        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"12:03
+        PM 06/06/2023"},{"id":2,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:04
+        PM 06/06/2023"},{"id":3,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"3:32
+        PM 06/06/2023"},{"id":4,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"3:44
+        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"12:03
         PM 06/06/2023"}}}'
-  recorded_at: Tue, 06 Jun 2023 20:32:27 GMT
+  recorded_at: Tue, 06 Jun 2023 20:44:43 GMT
 - request:
     method: get
     uri: http://localhost:5001/api/v1/posts/1
@@ -2233,28 +1087,29 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"ab766e3eb19223e1357c63a97bfcd3f3"
+      - W/"d936ff434acf2e5c0dfd7759f8cb57c6"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9055bfdc-8109-4007-a626-03ae5ac60aa6
+      - dea554e9-4288-4840-9584-5651d5be81cb
       X-Runtime:
-      - '0.012300'
+      - '0.010531'
       Server-Timing:
-      - start_processing.action_controller;dur=0.06, sql.active_record;dur=3.48, instantiation.active_record;dur=0.23,
-        process_action.action_controller;dur=9.10
+      - start_processing.action_controller;dur=0.06, sql.active_record;dur=4.09, instantiation.active_record;dur=0.23,
+        process_action.action_controller;dur=7.64
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
         Post","body":"This is a test post","user_id":1,"created_at":"2023-06-06T17:03:12.799Z","updated_at":"2023-06-06T17:03:12.799Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
-        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"5:03
-        PM 06/06/2023"},{"id":2,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"5:04
-        PM 06/06/2023"},{"id":3,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"8:32
-        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"5:03
+        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"12:03
+        PM 06/06/2023"},{"id":2,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:04
+        PM 06/06/2023"},{"id":3,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"3:32
+        PM 06/06/2023"},{"id":4,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"3:44
+        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"12:03
         PM 06/06/2023"}}}'
-  recorded_at: Tue, 06 Jun 2023 20:32:27 GMT
+  recorded_at: Tue, 06 Jun 2023 20:44:43 GMT
 - request:
     method: get
     uri: http://localhost:5001/api/v1/posts/1
@@ -2290,28 +1145,29 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"ab766e3eb19223e1357c63a97bfcd3f3"
+      - W/"d936ff434acf2e5c0dfd7759f8cb57c6"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - dd38d6fb-d294-400e-b4d1-913fabd2393b
+      - 2e554dd4-56e6-4b27-9434-b3caa2fcb3fd
       X-Runtime:
-      - '0.016693'
+      - '0.010249'
       Server-Timing:
-      - start_processing.action_controller;dur=0.15, sql.active_record;dur=4.36, instantiation.active_record;dur=0.42,
-        process_action.action_controller;dur=13.49
+      - start_processing.action_controller;dur=0.06, sql.active_record;dur=3.97, instantiation.active_record;dur=0.23,
+        process_action.action_controller;dur=7.22
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
         Post","body":"This is a test post","user_id":1,"created_at":"2023-06-06T17:03:12.799Z","updated_at":"2023-06-06T17:03:12.799Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
-        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"5:03
-        PM 06/06/2023"},{"id":2,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"5:04
-        PM 06/06/2023"},{"id":3,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"8:32
-        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"5:03
+        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"12:03
+        PM 06/06/2023"},{"id":2,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:04
+        PM 06/06/2023"},{"id":3,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"3:32
+        PM 06/06/2023"},{"id":4,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"3:44
+        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"12:03
         PM 06/06/2023"}}}'
-  recorded_at: Tue, 06 Jun 2023 20:32:27 GMT
+  recorded_at: Tue, 06 Jun 2023 20:44:43 GMT
 - request:
     method: get
     uri: http://localhost:5001/api/v1/posts/1
@@ -2347,26 +1203,27 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"ab766e3eb19223e1357c63a97bfcd3f3"
+      - W/"d936ff434acf2e5c0dfd7759f8cb57c6"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e3f80330-887e-4612-be05-207f00d3e12c
+      - 9dda527c-c329-4312-826c-97be856c0b4d
       X-Runtime:
-      - '0.027825'
+      - '0.033206'
       Server-Timing:
-      - start_processing.action_controller;dur=0.09, sql.active_record;dur=6.10, instantiation.active_record;dur=0.74,
-        process_action.action_controller;dur=24.33
+      - start_processing.action_controller;dur=0.11, sql.active_record;dur=15.34,
+        instantiation.active_record;dur=0.75, process_action.action_controller;dur=25.14
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
         Post","body":"This is a test post","user_id":1,"created_at":"2023-06-06T17:03:12.799Z","updated_at":"2023-06-06T17:03:12.799Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
-        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"5:03
-        PM 06/06/2023"},{"id":2,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"5:04
-        PM 06/06/2023"},{"id":3,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"8:32
-        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"5:03
+        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"12:03
+        PM 06/06/2023"},{"id":2,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"12:04
+        PM 06/06/2023"},{"id":3,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"3:32
+        PM 06/06/2023"},{"id":4,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"3:44
+        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"12:03
         PM 06/06/2023"}}}'
-  recorded_at: Tue, 06 Jun 2023 20:32:28 GMT
+  recorded_at: Tue, 06 Jun 2023 20:44:43 GMT
 recorded_with: VCR 6.1.0

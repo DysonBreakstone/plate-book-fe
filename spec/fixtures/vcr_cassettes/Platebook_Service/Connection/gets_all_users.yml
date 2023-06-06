@@ -2,66 +2,6 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:5000/api/v1/users
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.7.5
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"1ff177df287d3ce64085ad8b92aec450"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - cf7b6e40-4b67-4e1d-a260-8c849a2cc17f
-      X-Runtime:
-      - '0.015425'
-      Server-Timing:
-      - start_processing.action_controller;dur=0.06, sql.active_record;dur=6.72, instantiation.active_record;dur=0.35,
-        process_action.action_controller;dur=12.61
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":[{"id":"1","type":"user","attributes":{"id":1,"username":"test","email":"somethingcrazy@gmail.com","uid":"1234","token":"1234","created_at":"2023-06-05T21:00:11.700Z","updated_at":"2023-06-05T21:00:11.700Z","comments":[{"id":5,"body":"Samuel
-        Jones","post_id":1},{"id":6,"body":"Samuel Jones","post_id":1},{"id":7,"body":"Samuel
-        Jones","post_id":1},{"id":8,"body":"Samuel Jones","post_id":1},{"id":9,"body":"Samuel
-        Jones","post_id":1},{"id":10,"body":"Samuel Jones","post_id":1},{"id":11,"body":"Samuel
-        Jones","post_id":1}],"posts":[{"id":1,"title":"Test Post"},{"id":2,"title":"Test
-        Post 2"}],"plates":[]}},{"id":"2","type":"user","attributes":{"id":2,"username":"test2","email":"anotheremail@gmail.com","uid":"5678","token":"5678","created_at":"2023-06-05T21:00:11.703Z","updated_at":"2023-06-05T21:00:11.703Z","comments":[],"posts":[{"id":3,"title":"Test
-        Post 3"},{"id":4,"title":"Test Post 4"}],"plates":[]}},{"id":"3","type":"user","attributes":{"id":3,"username":"User
-        Show Test","email":"usershow@gmail.com","uid":"12345","token":"12345","created_at":"2023-06-05T21:00:11.705Z","updated_at":"2023-06-05T21:00:11.705Z","comments":[{"id":1,"body":"This
-        is a test comment","post_id":1}],"posts":[{"id":5,"title":"Test Post 5"}],"plates":[{"id":3,"plate_number":"ABCD-1234"}]}},{"id":"4","type":"user","attributes":{"id":4,"username":"100192940301654341943","email":"kingofacloud@gmail.com","uid":"100192940301654341943","token":"ya29.a0AWY7CklnstYuAN2QtYEiFWMzyyKaz3Gu4xhD9MRnpFA9hCZGR_BLZ4u2RiljIAaDUZLn0UY9Vb84bD-wuRNoPa7XACJXZLf5o8JYeaVf5zADQZ69xs1rZkQZ7TYFwHqluFKVdYO8oaakI6KxHpbC_yw0Yz_uaCgYKAQoSARMSFQG1tDrpuBIauC5bPVD90b9mV8N2dg0163","created_at":"2023-06-05T21:06:04.204Z","updated_at":"2023-06-05T23:05:29.361Z","comments":[{"id":2,"body":"Neat!","post_id":4},{"id":3,"body":"Really
-        cool!","post_id":4},{"id":4,"body":"okay maybe now","post_id":4}],"posts":[],"plates":[]}},{"id":"5","type":"user","attributes":{"id":5,"username":"234923492","email":"tester@gmail.com","uid":"234923492","token":"234u23u","created_at":"2023-06-06T17:43:17.611Z","updated_at":"2023-06-06T17:43:17.616Z","comments":[],"posts":[],"plates":[]}}]}'
-  recorded_at: Tue, 06 Jun 2023 18:11:59 GMT
-- request:
-    method: get
     uri: http://localhost:5001/api/v1/users
     body:
       encoding: US-ASCII
@@ -95,25 +35,26 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"6a0c55c51aa343122d0546a68647d796"
+      - W/"cc53112103ddf39981b8333c00a384ee"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 371007f5-b1ce-4e5d-b9f4-6ea5755a2174
+      - aadd203f-1751-4b8f-a4df-93638371657c
       X-Runtime:
-      - '0.029763'
+      - '0.034127'
       Server-Timing:
-      - start_processing.action_controller;dur=0.10, sql.active_record;dur=13.56,
-        instantiation.active_record;dur=1.21, process_action.action_controller;dur=25.08
+      - start_processing.action_controller;dur=0.19, sql.active_record;dur=12.55,
+        instantiation.active_record;dur=0.86, process_action.action_controller;dur=24.38
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":[{"id":"1","type":"user","attributes":{"id":1,"username":"test","email":"somethingcrazy@gmail.com","uid":"1234","token":"1234","created_at":"2023-06-06T17:03:12.733Z","updated_at":"2023-06-06T17:03:12.733Z","comments":[{"id":2,"body":"Samuel
+        Jones","post_id":1},{"id":3,"body":"Samuel Jones","post_id":1},{"id":4,"body":"Samuel
         Jones","post_id":1}],"posts":[{"id":1,"title":"Test Post"},{"id":2,"title":"Test
         Post 2"}],"plates":[]}},{"id":"2","type":"user","attributes":{"id":2,"username":"test2","email":"anotheremail@gmail.com","uid":"5678","token":"5678","created_at":"2023-06-06T17:03:12.736Z","updated_at":"2023-06-06T17:03:12.736Z","comments":[],"posts":[{"id":3,"title":"Test
         Post 3"},{"id":4,"title":"Test Post 4"}],"plates":[]}},{"id":"3","type":"user","attributes":{"id":3,"username":"User
         Show Test","email":"usershow@gmail.com","uid":"12345","token":"12345","created_at":"2023-06-06T17:03:12.738Z","updated_at":"2023-06-06T17:03:12.738Z","comments":[{"id":1,"body":"This
         is a test comment","post_id":1}],"posts":[{"id":5,"title":"Test Post 5"}],"plates":[{"id":3,"plate_number":"ABCD-1234"}]}},{"id":"4","type":"user","attributes":{"id":4,"username":"234923492","email":"tester@gmail.com","uid":"234923492","token":"234u23u","created_at":"2023-06-06T17:04:29.412Z","updated_at":"2023-06-06T17:04:29.417Z","comments":[],"posts":[],"plates":[]}}]}'
-  recorded_at: Tue, 06 Jun 2023 20:31:21 GMT
+  recorded_at: Tue, 06 Jun 2023 20:44:52 GMT
 recorded_with: VCR 6.1.0

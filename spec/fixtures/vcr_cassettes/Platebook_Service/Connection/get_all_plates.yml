@@ -35,25 +35,32 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"f8bd21f2eccc2891b3baba0404e3d022"
+      - W/"c3b10c9242a1aefa9f85dd2e7df3fe9f"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 986892c8-d382-49da-8ae5-ea809dfaf24d
+      - 0d055e69-4ab3-4fcd-b199-86f5a1f657f4
       X-Runtime:
-      - '0.027794'
+      - '0.024593'
       Server-Timing:
-      - start_processing.action_controller;dur=0.09, sql.active_record;dur=14.09,
-        instantiation.active_record;dur=0.33, process_action.action_controller;dur=22.81
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=12.23,
+        instantiation.active_record;dur=0.35, process_action.action_controller;dur=22.05
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"1","type":"plate","attributes":{"plate_number":"ABC-1234","created_at":"2023-06-06T21:16:35.654Z","updated_at":"2023-06-06T21:16:35.654Z","posts":[{"id":1,"title":"Test
-        Post","created_at":"3:16 PM 06/06/2023","username":"test","user_id":1,"comment_count":5},{"id":2,"title":"Test
-        Post 2","created_at":"3:16 PM 06/06/2023","username":"test","user_id":1,"comment_count":0}]}},{"id":"2","type":"plate","attributes":{"plate_number":"MKV-1234","created_at":"2023-06-06T21:16:35.657Z","updated_at":"2023-06-06T21:16:35.657Z","posts":[{"id":3,"title":"Test
-        Post 3","created_at":"3:16 PM 06/06/2023","username":"test2","user_id":2,"comment_count":0},{"id":4,"title":"Test
-        Post 4","created_at":"3:16 PM 06/06/2023","username":"test2","user_id":2,"comment_count":0}]}},{"id":"3","type":"plate","attributes":{"plate_number":"ABCD-1234","created_at":"2023-06-06T21:16:35.660Z","updated_at":"2023-06-06T21:16:35.660Z","posts":[{"id":5,"title":"Test
-        Post 5","created_at":"3:16 PM 06/06/2023","username":"User Show Test","user_id":3,"comment_count":0}]}}]}'
-  recorded_at: Tue, 06 Jun 2023 22:55:44 GMT
+      string: '{"data":[{"id":"1","type":"plate","attributes":{"plate_number":"ABC-1234","created_at":"2023-06-05T21:00:11.712Z","updated_at":"2023-06-05T21:00:11.712Z","posts":[{"id":1,"title":"Test
+        Post","created_at":"3:00 PM 06/05/2023","username":"test","user_id":1,"comment_count":11},{"id":2,"title":"Test
+        Post 2","created_at":"3:00 PM 06/05/2023","username":"test","user_id":1,"comment_count":0}]}},{"id":"2","type":"plate","attributes":{"plate_number":"MKV-1234","created_at":"2023-06-05T21:00:11.715Z","updated_at":"2023-06-05T21:00:11.715Z","posts":[{"id":3,"title":"Test
+        Post 3","created_at":"3:00 PM 06/05/2023","username":"test2","user_id":2,"comment_count":0},{"id":4,"title":"Test
+        Post 4","created_at":"3:00 PM 06/05/2023","username":"test2","user_id":2,"comment_count":3}]}},{"id":"3","type":"plate","attributes":{"plate_number":"ABCD-1234","created_at":"2023-06-05T21:00:11.717Z","updated_at":"2023-06-05T21:00:11.717Z","posts":[{"id":5,"title":"Test
+        Post 5","created_at":"3:00 PM 06/05/2023","username":"User Show Test","user_id":3,"comment_count":1},{"id":7,"title":"Hope
+        this ones cool","created_at":"1:12 PM 06/06/2023","username":"100192940301654341943","user_id":4,"comment_count":0},{"id":12,"title":"Here
+        we go","created_at":"3:52 PM 06/06/2023","username":"100192940301654341943","user_id":4,"comment_count":1}]}},{"id":"4","type":"plate","attributes":{"plate_number":"LOS-167","created_at":"2023-06-06T19:11:26.288Z","updated_at":"2023-06-06T19:11:26.288Z","posts":[{"id":6,"title":"This
+        should be okay","created_at":"1:11 PM 06/06/2023","username":"100192940301654341943","user_id":4,"comment_count":0},{"id":8,"title":"Something
+        different ","created_at":"1:39 PM 06/06/2023","username":"100192940301654341943","user_id":4,"comment_count":1}]}},{"id":"5","type":"plate","attributes":{"plate_number":"GHS-163","created_at":"2023-06-06T19:42:05.640Z","updated_at":"2023-06-06T19:42:05.640Z","posts":[{"id":9,"title":"Something
+        nice","created_at":"1:42 PM 06/06/2023","username":"100192940301654341943","user_id":4,"comment_count":0}]}},{"id":"6","type":"plate","attributes":{"plate_number":"SRD-063","created_at":"2023-06-06T19:48:23.663Z","updated_at":"2023-06-06T19:48:23.663Z","posts":[{"id":10,"title":"How
+        about this","created_at":"1:48 PM 06/06/2023","username":"100192940301654341943","user_id":4,"comment_count":0},{"id":11,"title":"Ba
+        ba Blacksheep","created_at":"1:51 PM 06/06/2023","username":"100192940301654341943","user_id":4,"comment_count":0}]}}]}'
+  recorded_at: Tue, 06 Jun 2023 23:09:43 GMT
 recorded_with: VCR 6.1.0

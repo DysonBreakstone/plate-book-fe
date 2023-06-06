@@ -35,23 +35,25 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"acb238f13ae241ddd0213ea9cd2079ab"
+      - W/"67f55f98137a441c57886bd669779f69"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - cdf85e5a-bc02-46d6-942c-3ede6039428e
+      - 3eff9c9f-d8d2-46eb-a3c5-bba9d231c731
       X-Runtime:
-      - '0.037054'
+      - '0.012700'
       Server-Timing:
-      - start_processing.action_controller;dur=0.31, sql.active_record;dur=9.96, instantiation.active_record;dur=0.35,
-        process_action.action_controller;dur=18.72
+      - start_processing.action_controller;dur=0.06, sql.active_record;dur=5.86, instantiation.active_record;dur=0.15,
+        process_action.action_controller;dur=9.70
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"1","type":"plate","attributes":{"plate_number":"ABC-1234","created_at":"2023-06-06T21:16:35.654Z","updated_at":"2023-06-06T21:16:35.654Z","posts":[{"id":1,"title":"Test
-        Post","created_at":"3:16 PM 06/06/2023","username":"test","user_id":1,"comment_count":5},{"id":2,"title":"Test
-        Post 2","created_at":"3:16 PM 06/06/2023","username":"test","user_id":1,"comment_count":0}]}},{"id":"3","type":"plate","attributes":{"plate_number":"ABCD-1234","created_at":"2023-06-06T21:16:35.660Z","updated_at":"2023-06-06T21:16:35.660Z","posts":[{"id":5,"title":"Test
-        Post 5","created_at":"3:16 PM 06/06/2023","username":"User Show Test","user_id":3,"comment_count":0}]}}]}'
-  recorded_at: Tue, 06 Jun 2023 22:55:43 GMT
+      string: '{"data":[{"id":"1","type":"plate","attributes":{"plate_number":"ABC-1234","created_at":"2023-06-05T21:00:11.712Z","updated_at":"2023-06-05T21:00:11.712Z","posts":[{"id":1,"title":"Test
+        Post","created_at":"3:00 PM 06/05/2023","username":"test","user_id":1,"comment_count":11},{"id":2,"title":"Test
+        Post 2","created_at":"3:00 PM 06/05/2023","username":"test","user_id":1,"comment_count":0}]}},{"id":"3","type":"plate","attributes":{"plate_number":"ABCD-1234","created_at":"2023-06-05T21:00:11.717Z","updated_at":"2023-06-05T21:00:11.717Z","posts":[{"id":5,"title":"Test
+        Post 5","created_at":"3:00 PM 06/05/2023","username":"User Show Test","user_id":3,"comment_count":1},{"id":7,"title":"Hope
+        this ones cool","created_at":"1:12 PM 06/06/2023","username":"100192940301654341943","user_id":4,"comment_count":0},{"id":12,"title":"Here
+        we go","created_at":"3:52 PM 06/06/2023","username":"100192940301654341943","user_id":4,"comment_count":1}]}}]}'
+  recorded_at: Tue, 06 Jun 2023 23:09:43 GMT
 recorded_with: VCR 6.1.0

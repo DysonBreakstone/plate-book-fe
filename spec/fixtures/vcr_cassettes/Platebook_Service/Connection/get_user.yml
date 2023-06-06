@@ -35,23 +35,26 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"c55e75819adb59c614b31a3cca2ddf01"
+      - W/"08bdde941793b318c9f5ed018bbfb513"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 196cf9f0-77e2-4868-a167-566a6170787b
+      - bd80e416-f57e-49fb-bf22-10e17ef9a96a
       X-Runtime:
-      - '0.015151'
+      - '0.006277'
       Server-Timing:
-      - start_processing.action_controller;dur=0.14, sql.active_record;dur=4.57, instantiation.active_record;dur=0.29,
-        process_action.action_controller;dur=8.39
+      - start_processing.action_controller;dur=0.07, sql.active_record;dur=1.68, instantiation.active_record;dur=0.16,
+        process_action.action_controller;dur=3.66
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1","type":"user","attributes":{"id":1,"username":"test","email":"somethingcrazy@gmail.com","uid":"1234","token":"1234","created_at":"2023-06-06T21:16:35.639Z","updated_at":"2023-06-06T21:16:35.639Z","comments":[{"id":2,"body":"Samuel
-        Jones","post_id":1},{"id":3,"body":"Samuel Jones","post_id":1},{"id":4,"body":"Samuel
-        Jones","post_id":1},{"id":5,"body":"Samuel Jones","post_id":1}],"posts":[{"id":1,"title":"Test
+      string: '{"data":{"id":"1","type":"user","attributes":{"id":1,"username":"test","email":"somethingcrazy@gmail.com","uid":"1234","token":"1234","created_at":"2023-06-05T21:00:11.700Z","updated_at":"2023-06-05T21:00:11.700Z","comments":[{"id":5,"body":"Samuel
+        Jones","post_id":1},{"id":6,"body":"Samuel Jones","post_id":1},{"id":7,"body":"Samuel
+        Jones","post_id":1},{"id":8,"body":"Samuel Jones","post_id":1},{"id":9,"body":"Samuel
+        Jones","post_id":1},{"id":10,"body":"Samuel Jones","post_id":1},{"id":11,"body":"Samuel
+        Jones","post_id":1},{"id":15,"body":"This is a nice post","post_id":1},{"id":16,"body":"Samuel
+        Jones","post_id":1},{"id":17,"body":"This is a nice post","post_id":1}],"posts":[{"id":1,"title":"Test
         Post"},{"id":2,"title":"Test Post 2"}],"plates":[]}}}'
-  recorded_at: Tue, 06 Jun 2023 22:55:44 GMT
+  recorded_at: Tue, 06 Jun 2023 23:09:43 GMT
 recorded_with: VCR 6.1.0

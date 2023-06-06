@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'User Index Page', type: :feature, vcr: { record: :new_episodes } do
+RSpec.feature 'User Index Page', vcr: { record: :new_episodes } do
   before(:each) do
     json_response = File.read('spec/fixtures/all_users.json')
     stub_request(:get, "http://#{ENV['BACK_END_DOMAIN']}:5001/api/v1/users").

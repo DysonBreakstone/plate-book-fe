@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "Platebook Service", vcr: { record: :new_episodes } do
+RSpec.feature "Platebook Service", vcr: { record: :new_episodes } do
   describe "Connection" do
     it "gets all users" do
 

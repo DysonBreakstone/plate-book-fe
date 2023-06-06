@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "Perspective Service", vcr: { record: :new_episodes } do
+RSpec.feature "Perspective Service", vcr: { record: :new_episodes } do
   describe "Connection" do
     it "gets a response" do
       json_response = File.read('spec/fixtures/positive_message_perspective.json')

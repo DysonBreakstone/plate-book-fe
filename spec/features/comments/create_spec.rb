@@ -1,28 +1,28 @@
 require 'rails_helper'
 
-RSpec.describe "Create comments" do
+RSpec.feature "Create comments", vcr: { record: :new_episodes } do
   describe "Happy Path" do
-    it "posts comment", :vcr do
+    it "posts comment" do
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(1)
       visit post_path(1)
 
-      
+
       expect(page).to have_field('body')
-      
+
       fill_in "body", with: "Samuel Jones"
       click_on("Submit")
       expect(page).to have_content("Samuel Jones")
     end
   end
 
-  describe "Sad Paths", :vcr do
-    it "has no text field if not logged in", :vcr do
+  describe "Sad Paths" do
+    it "has no text field if not logged in" do
       visit post_path(1)
       expect(page).to have_no_field("body")
       expect(page).to have_link("Login to Add Comment")
     end
 
-    it "explicit content", :vcr do
+    it "explicit content" do
       allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(1)
       visit post_path(1)
 

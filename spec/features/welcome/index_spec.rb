@@ -8,7 +8,7 @@ RSpec.feature 'Home Page', vcr: { record: :new_episodes } do
     visit root_path
   end
 
-  xit 'has a search button', :vcr do
+  xit 'has a search button' do
     expect(page).to have_button('Search')
   end
 end

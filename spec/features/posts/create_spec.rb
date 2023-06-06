@@ -3,6 +3,7 @@ require 'rails_helper'
 RSpec.describe "create post" do
   describe "sad path" do
     it "rejects inappropriate posts", :vcr do
+      allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(1)
       visit new_post_path
       fill_in("title", with: "I'm going to commit murder")
       fill_in("body", with: "I would never really do that, this is just a test.")

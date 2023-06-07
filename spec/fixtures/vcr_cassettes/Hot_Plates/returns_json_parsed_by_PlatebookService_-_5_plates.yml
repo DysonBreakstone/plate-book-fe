@@ -35,21 +35,24 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"8f4101a505de9b3f82370fd893519f26"
+      - W/"cf9f35ad725c8a4f3ca329046ed063d1"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 89f6ebf8-0a5d-4499-8bd6-0c545d7be30f
+      - 54f712de-cf33-4db5-8a07-17cceece307a
       X-Runtime:
-      - '0.037662'
+      - '0.035188'
       Server-Timing:
-      - start_processing.action_controller;dur=0.05, sql.active_record;dur=23.12,
-        instantiation.active_record;dur=0.68, process_action.action_controller;dur=34.64
+      - start_processing.action_controller;dur=0.05, sql.active_record;dur=18.99,
+        instantiation.active_record;dur=0.45, process_action.action_controller;dur=31.95
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"7","type":"plate","attributes":{"plate_number":"STU-1234","created_at":"2023-06-06T22:50:04.933Z","updated_at":"2023-06-06T22:50:04.933Z","posts":[{"id":18,"title":"Test
+      string: '{"data":[{"id":"1","type":"plate","attributes":{"plate_number":"ABC-1234","created_at":"2023-06-06T22:50:04.917Z","updated_at":"2023-06-06T22:50:04.917Z","posts":[{"id":1,"title":"Test
+        Post 1","created_at":"4:50 PM 06/06/2023","username":"User 1","user_id":1,"comment_count":10},{"id":2,"title":"Test
+        Post 2","created_at":"4:50 PM 06/06/2023","username":"User 1","user_id":1,"comment_count":0},{"id":3,"title":"Test
+        Post 3","created_at":"4:50 PM 06/06/2023","username":"User 1","user_id":1,"comment_count":0}]}},{"id":"7","type":"plate","attributes":{"plate_number":"STU-1234","created_at":"2023-06-06T22:50:04.933Z","updated_at":"2023-06-06T22:50:04.933Z","posts":[{"id":18,"title":"Test
         Post 18","created_at":"4:50 PM 06/06/2023","username":"User 1","user_id":1,"comment_count":1},{"id":19,"title":"Test
         Post 19","created_at":"4:50 PM 06/06/2023","username":"User 1","user_id":1,"comment_count":1},{"id":20,"title":"Test
         Post 20","created_at":"4:50 PM 06/06/2023","username":"User 1","user_id":1,"comment_count":1},{"id":21,"title":"Test
@@ -60,13 +63,10 @@ http_interactions:
         Post 6","created_at":"4:50 PM 06/06/2023","username":"User 1","user_id":1,"comment_count":2}]}},{"id":"9","type":"plate","attributes":{"plate_number":"YYY-1234","created_at":"2023-06-06T22:50:04.938Z","updated_at":"2023-06-06T22:50:04.938Z","posts":[{"id":26,"title":"Test
         Post 24","created_at":"4:50 PM 06/06/2023","username":"User 1","user_id":1,"comment_count":1},{"id":27,"title":"Test
         Post 25","created_at":"4:50 PM 06/06/2023","username":"User 1","user_id":1,"comment_count":1},{"id":28,"title":"Test
-        Post 26","created_at":"4:50 PM 06/06/2023","username":"User 1","user_id":1,"comment_count":1}]}},{"id":"1","type":"plate","attributes":{"plate_number":"ABC-1234","created_at":"2023-06-06T22:50:04.917Z","updated_at":"2023-06-06T22:50:04.917Z","posts":[{"id":1,"title":"Test
-        Post 1","created_at":"4:50 PM 06/06/2023","username":"User 1","user_id":1,"comment_count":2},{"id":2,"title":"Test
-        Post 2","created_at":"4:50 PM 06/06/2023","username":"User 1","user_id":1,"comment_count":0},{"id":3,"title":"Test
-        Post 3","created_at":"4:50 PM 06/06/2023","username":"User 1","user_id":1,"comment_count":0}]}},{"id":"5","type":"plate","attributes":{"plate_number":"MNO-1234","created_at":"2023-06-06T22:50:04.929Z","updated_at":"2023-06-06T22:50:04.929Z","posts":[{"id":10,"title":"Test
+        Post 26","created_at":"4:50 PM 06/06/2023","username":"User 1","user_id":1,"comment_count":1}]}},{"id":"5","type":"plate","attributes":{"plate_number":"MNO-1234","created_at":"2023-06-06T22:50:04.929Z","updated_at":"2023-06-06T22:50:04.929Z","posts":[{"id":10,"title":"Test
         Post 10","created_at":"4:50 PM 06/06/2023","username":"User 1","user_id":1,"comment_count":1},{"id":11,"title":"Test
         Post 11","created_at":"4:50 PM 06/06/2023","username":"User 1","user_id":1,"comment_count":0},{"id":12,"title":"Test
         Post 12","created_at":"4:50 PM 06/06/2023","username":"User 1","user_id":1,"comment_count":0},{"id":13,"title":"Test
         Post 13","created_at":"4:50 PM 06/06/2023","username":"User 1","user_id":1,"comment_count":0}]}}]}'
-  recorded_at: Wed, 07 Jun 2023 02:08:03 GMT
+  recorded_at: Wed, 07 Jun 2023 02:44:39 GMT
 recorded_with: VCR 6.1.0

@@ -39,12 +39,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d69f33bf-7167-48b2-a593-bf09395982b7
+      - bf8fc16f-00d6-46ba-8340-843da3f14ac5
       X-Runtime:
-      - '0.012448'
+      - '0.028165'
       Server-Timing:
-      - start_processing.action_controller;dur=0.07, sql.active_record;dur=4.75, instantiation.active_record;dur=0.33,
-        process_action.action_controller;dur=9.22
+      - start_processing.action_controller;dur=0.07, sql.active_record;dur=15.04,
+        instantiation.active_record;dur=0.34, process_action.action_controller;dur=24.37
       Transfer-Encoding:
       - chunked
     body:
@@ -62,7 +62,7 @@ http_interactions:
         1","created_at":"8:42 PM 06/06/2023"},{"id":20,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
         1","created_at":"8:44 PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"4:50
         PM 06/06/2023"}}}'
-  recorded_at: Wed, 07 Jun 2023 02:44:26 GMT
+  recorded_at: Wed, 07 Jun 2023 02:44:35 GMT
 - request:
     method: get
     uri: http://localhost:5001/api/v1/posts/1
@@ -102,12 +102,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 32f8d2c9-b766-47da-9f49-5cbbbe8f8292
+      - e2b2f7d6-873f-4240-b997-3ab471f7a05a
       X-Runtime:
-      - '0.011921'
+      - '0.039868'
       Server-Timing:
-      - start_processing.action_controller;dur=0.06, sql.active_record;dur=4.40, instantiation.active_record;dur=0.31,
-        process_action.action_controller;dur=9.02
+      - start_processing.action_controller;dur=0.06, sql.active_record;dur=13.53,
+        instantiation.active_record;dur=0.36, process_action.action_controller;dur=35.63
       Transfer-Encoding:
       - chunked
     body:
@@ -125,7 +125,7 @@ http_interactions:
         1","created_at":"8:42 PM 06/06/2023"},{"id":20,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
         1","created_at":"8:44 PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"4:50
         PM 06/06/2023"}}}'
-  recorded_at: Wed, 07 Jun 2023 02:44:26 GMT
+  recorded_at: Wed, 07 Jun 2023 02:44:35 GMT
 - request:
     method: get
     uri: http://localhost:5001/api/v1/posts/1
@@ -165,12 +165,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - edf7eb90-cacd-44a0-9ba6-3d3df2de1ba0
+      - c62eb272-2f0b-4996-86d2-3ee5cf8d4c91
       X-Runtime:
-      - '0.012609'
+      - '0.012188'
       Server-Timing:
-      - start_processing.action_controller;dur=0.06, sql.active_record;dur=5.99, instantiation.active_record;dur=0.32,
-        process_action.action_controller;dur=9.94
+      - start_processing.action_controller;dur=0.07, sql.active_record;dur=4.75, instantiation.active_record;dur=0.36,
+        process_action.action_controller;dur=9.15
       Transfer-Encoding:
       - chunked
     body:
@@ -188,7 +188,7 @@ http_interactions:
         1","created_at":"8:42 PM 06/06/2023"},{"id":20,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
         1","created_at":"8:44 PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"4:50
         PM 06/06/2023"}}}'
-  recorded_at: Wed, 07 Jun 2023 02:44:26 GMT
+  recorded_at: Wed, 07 Jun 2023 02:44:35 GMT
 - request:
     method: get
     uri: http://localhost:5001/api/v1/posts/1
@@ -228,12 +228,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 69b2df1f-f0bc-4052-83b9-7e3fc06c83d7
+      - 7038f59a-ffae-42d4-b1f1-428db06b6a74
       X-Runtime:
-      - '0.011896'
+      - '0.011474'
       Server-Timing:
-      - start_processing.action_controller;dur=0.07, sql.active_record;dur=4.60, instantiation.active_record;dur=0.33,
-        process_action.action_controller;dur=9.03
+      - start_processing.action_controller;dur=0.07, sql.active_record;dur=4.76, instantiation.active_record;dur=0.29,
+        process_action.action_controller;dur=8.76
       Transfer-Encoding:
       - chunked
     body:
@@ -251,7 +251,7 @@ http_interactions:
         1","created_at":"8:42 PM 06/06/2023"},{"id":20,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
         1","created_at":"8:44 PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"4:50
         PM 06/06/2023"}}}'
-  recorded_at: Wed, 07 Jun 2023 02:44:26 GMT
+  recorded_at: Wed, 07 Jun 2023 02:44:35 GMT
 - request:
     method: get
     uri: http://localhost:5001/api/v1/posts/1
@@ -291,12 +291,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 07d2d7db-a150-4dec-806f-321a20f414c9
+      - f6d6364c-36ad-4fc2-b598-ad39f20cd71f
       X-Runtime:
-      - '0.012374'
+      - '0.011617'
       Server-Timing:
-      - start_processing.action_controller;dur=0.06, sql.active_record;dur=5.63, instantiation.active_record;dur=0.33,
-        process_action.action_controller;dur=9.71
+      - start_processing.action_controller;dur=0.06, sql.active_record;dur=4.80, instantiation.active_record;dur=0.30,
+        process_action.action_controller;dur=8.96
       Transfer-Encoding:
       - chunked
     body:
@@ -314,7 +314,7 @@ http_interactions:
         1","created_at":"8:42 PM 06/06/2023"},{"id":20,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
         1","created_at":"8:44 PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"4:50
         PM 06/06/2023"}}}'
-  recorded_at: Wed, 07 Jun 2023 02:44:26 GMT
+  recorded_at: Wed, 07 Jun 2023 02:44:35 GMT
 - request:
     method: get
     uri: http://localhost:5001/api/v1/posts/1
@@ -354,12 +354,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 07221fc2-5153-4aa2-a77a-1c70e043703b
+      - 2102b33e-5b73-4155-a7ea-74d6f2d1d228
       X-Runtime:
-      - '0.011659'
+      - '0.011370'
       Server-Timing:
-      - start_processing.action_controller;dur=0.07, sql.active_record;dur=4.74, instantiation.active_record;dur=0.33,
-        process_action.action_controller;dur=8.98
+      - start_processing.action_controller;dur=0.06, sql.active_record;dur=4.75, instantiation.active_record;dur=0.45,
+        process_action.action_controller;dur=8.61
       Transfer-Encoding:
       - chunked
     body:
@@ -377,7 +377,7 @@ http_interactions:
         1","created_at":"8:42 PM 06/06/2023"},{"id":20,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
         1","created_at":"8:44 PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"4:50
         PM 06/06/2023"}}}'
-  recorded_at: Wed, 07 Jun 2023 02:44:26 GMT
+  recorded_at: Wed, 07 Jun 2023 02:44:35 GMT
 - request:
     method: get
     uri: http://localhost:5001/api/v1/posts/1
@@ -417,12 +417,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 829bbc56-da3f-4324-a22a-0065b5539e66
+      - d18756dc-dbba-40d4-bdcd-229d0a0de527
       X-Runtime:
-      - '0.012358'
+      - '0.011918'
       Server-Timing:
-      - start_processing.action_controller;dur=0.07, sql.active_record;dur=5.38, instantiation.active_record;dur=0.32,
-        process_action.action_controller;dur=9.45
+      - start_processing.action_controller;dur=0.06, sql.active_record;dur=4.54, instantiation.active_record;dur=0.33,
+        process_action.action_controller;dur=8.96
       Transfer-Encoding:
       - chunked
     body:
@@ -440,7 +440,7 @@ http_interactions:
         1","created_at":"8:42 PM 06/06/2023"},{"id":20,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
         1","created_at":"8:44 PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"4:50
         PM 06/06/2023"}}}'
-  recorded_at: Wed, 07 Jun 2023 02:44:26 GMT
+  recorded_at: Wed, 07 Jun 2023 02:44:36 GMT
 - request:
     method: get
     uri: http://localhost:5001/api/v1/posts/1
@@ -480,12 +480,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - ce1e6458-0660-4de0-830d-06b425f8ef33
+      - c9585218-6d47-4c87-a3c9-0209b0feeb1c
       X-Runtime:
-      - '0.014351'
+      - '0.021782'
       Server-Timing:
-      - start_processing.action_controller;dur=0.07, sql.active_record;dur=6.93, instantiation.active_record;dur=0.32,
-        process_action.action_controller;dur=11.57
+      - start_processing.action_controller;dur=0.06, sql.active_record;dur=14.73,
+        instantiation.active_record;dur=0.50, process_action.action_controller;dur=19.14
       Transfer-Encoding:
       - chunked
     body:
@@ -503,5 +503,5 @@ http_interactions:
         1","created_at":"8:42 PM 06/06/2023"},{"id":20,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
         1","created_at":"8:44 PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"4:50
         PM 06/06/2023"}}}'
-  recorded_at: Wed, 07 Jun 2023 02:44:26 GMT
+  recorded_at: Wed, 07 Jun 2023 02:44:36 GMT
 recorded_with: VCR 6.1.0

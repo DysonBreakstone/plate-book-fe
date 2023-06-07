@@ -35,23 +35,27 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"790194dee951322d97725648b97e6508"
+      - W/"82ec3997570e9ae4b289e98662dfefd8"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - b1d26902-8875-4f9d-81ed-b2048e12a54a
+      - 1268824f-b515-4081-9689-0396dfda6939
       X-Runtime:
-      - '0.007698'
+      - '0.008059'
       Server-Timing:
-      - start_processing.action_controller;dur=0.07, sql.active_record;dur=1.87, instantiation.active_record;dur=0.28,
-        process_action.action_controller;dur=4.90
+      - start_processing.action_controller;dur=0.07, sql.active_record;dur=1.82, instantiation.active_record;dur=0.54,
+        process_action.action_controller;dur=4.78
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"id":1,"username":"User
         1","email":"user1@gmail.com","uid":"1234","token":"1234","created_at":"2023-06-06T22:50:04.905Z","updated_at":"2023-06-06T22:50:04.905Z","comments":[{"id":12,"body":"Samuel
-        Jones","post_id":1},{"id":13,"body":"Samuel Jones","post_id":1}],"posts":[{"id":1,"title":"Test
+        Jones","post_id":1},{"id":13,"body":"Samuel Jones","post_id":1},{"id":14,"body":"Samuel
+        Jones","post_id":1},{"id":15,"body":"This is a nice post","post_id":1},{"id":16,"body":"Samuel
+        Jones","post_id":1},{"id":17,"body":"This is a nice post","post_id":1},{"id":18,"body":"Samuel
+        Jones","post_id":1},{"id":19,"body":"This is a nice post","post_id":1},{"id":20,"body":"Samuel
+        Jones","post_id":1},{"id":21,"body":"This is a nice post","post_id":1}],"posts":[{"id":1,"title":"Test
         Post 1"},{"id":2,"title":"Test Post 2"},{"id":3,"title":"Test Post 3"},{"id":4,"title":"Test
         Post 4"},{"id":5,"title":"Test Post 5"},{"id":6,"title":"Test Post 6"},{"id":7,"title":"Test
         Post 7"},{"id":8,"title":"Test Post 8"},{"id":9,"title":"Test Post 9"},{"id":10,"title":"Test
@@ -63,5 +67,5 @@ http_interactions:
         Post 23"},{"id":26,"title":"Test Post 24"},{"id":27,"title":"Test Post 25"},{"id":28,"title":"Test
         Post 26"},{"id":29,"title":"Test Post 27"},{"id":30,"title":"Test Post 28"},{"id":31,"title":"Test
         Post 29"}],"plates":[]}}}'
-  recorded_at: Wed, 07 Jun 2023 02:08:01 GMT
+  recorded_at: Wed, 07 Jun 2023 02:44:38 GMT
 recorded_with: VCR 6.1.0

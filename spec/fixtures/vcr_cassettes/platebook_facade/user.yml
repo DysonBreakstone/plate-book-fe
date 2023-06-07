@@ -35,33 +35,36 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"790194dee951322d97725648b97e6508"
+      - W/"b453b8aad2b23069ea99490123b85cfe"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 8bf0039b-e988-4ee3-b5c7-aa98f4e19fff
+      - 26b7e3a9-f03d-4c28-8228-a960c4642046
       X-Runtime:
-      - '0.018666'
+      - '0.008146'
       Server-Timing:
-      - start_processing.action_controller;dur=0.08, sql.active_record;dur=2.11, instantiation.active_record;dur=0.44,
-        process_action.action_controller;dur=15.91
+      - start_processing.action_controller;dur=0.07, sql.active_record;dur=2.12, instantiation.active_record;dur=0.36,
+        process_action.action_controller;dur=5.00
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"user","attributes":{"id":1,"username":"User
         1","email":"user1@gmail.com","uid":"1234","token":"1234","created_at":"2023-06-06T22:50:04.905Z","updated_at":"2023-06-06T22:50:04.905Z","comments":[{"id":12,"body":"Samuel
-        Jones","post_id":1},{"id":13,"body":"Samuel Jones","post_id":1}],"posts":[{"id":1,"title":"Test
-        Post 1"},{"id":2,"title":"Test Post 2"},{"id":3,"title":"Test Post 3"},{"id":4,"title":"Test
-        Post 4"},{"id":5,"title":"Test Post 5"},{"id":6,"title":"Test Post 6"},{"id":7,"title":"Test
-        Post 7"},{"id":8,"title":"Test Post 8"},{"id":9,"title":"Test Post 9"},{"id":10,"title":"Test
-        Post 10"},{"id":11,"title":"Test Post 11"},{"id":12,"title":"Test Post 12"},{"id":13,"title":"Test
-        Post 13"},{"id":14,"title":"Test Post 14"},{"id":15,"title":"Test Post 15"},{"id":16,"title":"Test
-        Post 16"},{"id":17,"title":"Test Post 17"},{"id":18,"title":"Test Post 18"},{"id":19,"title":"Test
-        Post 19"},{"id":20,"title":"Test Post 20"},{"id":21,"title":"Test Post 20"},{"id":22,"title":"Test
-        Post 20"},{"id":23,"title":"Test Post 21"},{"id":24,"title":"Test Post 22"},{"id":25,"title":"Test
-        Post 23"},{"id":26,"title":"Test Post 24"},{"id":27,"title":"Test Post 25"},{"id":28,"title":"Test
-        Post 26"},{"id":29,"title":"Test Post 27"},{"id":30,"title":"Test Post 28"},{"id":31,"title":"Test
-        Post 29"}],"plates":[]}}}'
-  recorded_at: Wed, 07 Jun 2023 02:07:55 GMT
+        Jones","post_id":1},{"id":13,"body":"Samuel Jones","post_id":1},{"id":14,"body":"Samuel
+        Jones","post_id":1},{"id":15,"body":"This is a nice post","post_id":1},{"id":16,"body":"Samuel
+        Jones","post_id":1},{"id":17,"body":"This is a nice post","post_id":1},{"id":18,"body":"Samuel
+        Jones","post_id":1},{"id":19,"body":"This is a nice post","post_id":1},{"id":20,"body":"Samuel
+        Jones","post_id":1}],"posts":[{"id":1,"title":"Test Post 1"},{"id":2,"title":"Test
+        Post 2"},{"id":3,"title":"Test Post 3"},{"id":4,"title":"Test Post 4"},{"id":5,"title":"Test
+        Post 5"},{"id":6,"title":"Test Post 6"},{"id":7,"title":"Test Post 7"},{"id":8,"title":"Test
+        Post 8"},{"id":9,"title":"Test Post 9"},{"id":10,"title":"Test Post 10"},{"id":11,"title":"Test
+        Post 11"},{"id":12,"title":"Test Post 12"},{"id":13,"title":"Test Post 13"},{"id":14,"title":"Test
+        Post 14"},{"id":15,"title":"Test Post 15"},{"id":16,"title":"Test Post 16"},{"id":17,"title":"Test
+        Post 17"},{"id":18,"title":"Test Post 18"},{"id":19,"title":"Test Post 19"},{"id":20,"title":"Test
+        Post 20"},{"id":21,"title":"Test Post 20"},{"id":22,"title":"Test Post 20"},{"id":23,"title":"Test
+        Post 21"},{"id":24,"title":"Test Post 22"},{"id":25,"title":"Test Post 23"},{"id":26,"title":"Test
+        Post 24"},{"id":27,"title":"Test Post 25"},{"id":28,"title":"Test Post 26"},{"id":29,"title":"Test
+        Post 27"},{"id":30,"title":"Test Post 28"},{"id":31,"title":"Test Post 29"}],"plates":[]}}}'
+  recorded_at: Wed, 07 Jun 2023 02:44:28 GMT
 recorded_with: VCR 6.1.0

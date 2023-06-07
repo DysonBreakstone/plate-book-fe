@@ -62,6 +62,11 @@ class PlatebookService
     get_url("/api/v1/search?category=#{params[:category]}&query=#{params[:query]}")
   end
 
+
+  def get_hot_plates
+    get_url("api/v1/search/hot_plates")
+  end
+  
   def create_user_plate(params)
     post_url("/api/v1/user_plates", params: { user_id: params[:user_id], plate_id: params[:plate_id] })
   end

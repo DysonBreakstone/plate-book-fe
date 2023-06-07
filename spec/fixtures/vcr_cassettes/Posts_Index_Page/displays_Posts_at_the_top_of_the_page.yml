@@ -158,4 +158,164 @@ http_interactions:
         1","comments":[],"parent_plates":[{"plate_number":"ZZZ-1234"}],"formatted_created_at":"4:34
         PM 06/07/2023"}}]}'
   recorded_at: Wed, 07 Jun 2023 21:40:58 GMT
+- request:
+    method: get
+    uri: http://localhost:10000/api/v1/posts
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.5
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"bdfb637f0a7dae6fd2411dddc606403c"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 2c47213c-6b02-4e07-b0ec-996e65974374
+      X-Runtime:
+      - '0.220618'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.08, sql.active_record;dur=151.28,
+        instantiation.active_record;dur=5.26, process_action.action_controller;dur=216.89
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"post","attributes":{"id":1,"title":"Test
+        Post 1","body":"This is a test post 1","user_id":1,"created_at":"2023-06-07T21:34:17.701Z","updated_at":"2023-06-07T21:34:17.701Z","plate_posts":[{"photo_url":null}],"username":"User
+        1","comments":[{"id":12,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
+        1","created_at":"4:34 PM 06/07/2023"},{"id":13,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
+        1","created_at":"4:35 PM 06/07/2023"},{"id":14,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
+        1","created_at":"4:40 PM 06/07/2023"},{"id":15,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
+        1","created_at":"4:41 PM 06/07/2023"},{"id":16,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
+        1","created_at":"5:20 PM 06/07/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"4:34
+        PM 06/07/2023"}},{"id":"2","type":"post","attributes":{"id":2,"title":"Test
+        Post 2","body":"This is a test post 2","user_id":1,"created_at":"2023-06-07T21:34:17.714Z","updated_at":"2023-06-07T21:34:17.714Z","plate_posts":[{"photo_url":null}],"username":"User
+        1","comments":[],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"4:34
+        PM 06/07/2023"}},{"id":"3","type":"post","attributes":{"id":3,"title":"Test
+        Post 3","body":"This is a test post 3","user_id":1,"created_at":"2023-06-07T21:34:17.719Z","updated_at":"2023-06-07T21:34:17.719Z","plate_posts":[{"photo_url":null}],"username":"User
+        1","comments":[],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"4:34
+        PM 06/07/2023"}},{"id":"4","type":"post","attributes":{"id":4,"title":"Test
+        Post 4","body":"This is a test post 4","user_id":1,"created_at":"2023-06-07T21:34:17.725Z","updated_at":"2023-06-07T21:34:17.725Z","plate_posts":[{"photo_url":null}],"username":"User
+        1","comments":[{"id":1,"body":"Comment 1","user_id":2,"post_id":4,"username":"User
+        2","created_at":"4:34 PM 06/07/2023"}],"parent_plates":[{"plate_number":"DEF-1234"}],"formatted_created_at":"4:34
+        PM 06/07/2023"}},{"id":"5","type":"post","attributes":{"id":5,"title":"Test
+        Post 5","body":"This is a test post 5","user_id":1,"created_at":"2023-06-07T21:34:17.742Z","updated_at":"2023-06-07T21:34:17.742Z","plate_posts":[{"photo_url":null}],"username":"User
+        1","comments":[{"id":2,"body":"Comment 2","user_id":2,"post_id":5,"username":"User
+        2","created_at":"4:34 PM 06/07/2023"}],"parent_plates":[{"plate_number":"DEF-1234"}],"formatted_created_at":"4:34
+        PM 06/07/2023"}},{"id":"6","type":"post","attributes":{"id":6,"title":"Test
+        Post 6","body":"This is a test post 6","user_id":1,"created_at":"2023-06-07T21:34:17.747Z","updated_at":"2023-06-07T21:34:17.747Z","plate_posts":[{"photo_url":null}],"username":"User
+        1","comments":[{"id":3,"body":"Comment 3","user_id":2,"post_id":6,"username":"User
+        2","created_at":"4:34 PM 06/07/2023"},{"id":4,"body":"Comment 4","user_id":2,"post_id":6,"username":"User
+        2","created_at":"4:34 PM 06/07/2023"}],"parent_plates":[{"plate_number":"DEF-1234"}],"formatted_created_at":"4:34
+        PM 06/07/2023"}},{"id":"7","type":"post","attributes":{"id":7,"title":"Test
+        Post 7","body":"This is a test post 7","user_id":1,"created_at":"2023-06-07T21:34:17.753Z","updated_at":"2023-06-07T21:34:17.753Z","plate_posts":[{"photo_url":null}],"username":"User
+        1","comments":[],"parent_plates":[{"plate_number":"GHI-1234"}],"formatted_created_at":"4:34
+        PM 06/07/2023"}},{"id":"8","type":"post","attributes":{"id":8,"title":"Test
+        Post 8","body":"This is a test post 8","user_id":1,"created_at":"2023-06-07T21:34:17.760Z","updated_at":"2023-06-07T21:34:17.760Z","plate_posts":[{"photo_url":null}],"username":"User
+        1","comments":[],"parent_plates":[{"plate_number":"GHI-1234"}],"formatted_created_at":"4:34
+        PM 06/07/2023"}},{"id":"9","type":"post","attributes":{"id":9,"title":"Test
+        Post 9","body":"This is a test post 9","user_id":1,"created_at":"2023-06-07T21:34:17.766Z","updated_at":"2023-06-07T21:34:17.766Z","plate_posts":[{"photo_url":null}],"username":"User
+        1","comments":[],"parent_plates":[{"plate_number":"JKL-1234"}],"formatted_created_at":"4:34
+        PM 06/07/2023"}},{"id":"10","type":"post","attributes":{"id":10,"title":"Test
+        Post 10","body":"This is a test post 10","user_id":1,"created_at":"2023-06-07T21:34:17.771Z","updated_at":"2023-06-07T21:34:17.771Z","plate_posts":[{"photo_url":null}],"username":"User
+        1","comments":[{"id":5,"body":"Comment 5","user_id":2,"post_id":10,"username":"User
+        2","created_at":"4:34 PM 06/07/2023"}],"parent_plates":[{"plate_number":"MNO-1234"}],"formatted_created_at":"4:34
+        PM 06/07/2023"}},{"id":"11","type":"post","attributes":{"id":11,"title":"Test
+        Post 11","body":"This is a test post 11","user_id":1,"created_at":"2023-06-07T21:34:17.776Z","updated_at":"2023-06-07T21:34:17.776Z","plate_posts":[{"photo_url":null}],"username":"User
+        1","comments":[],"parent_plates":[{"plate_number":"MNO-1234"}],"formatted_created_at":"4:34
+        PM 06/07/2023"}},{"id":"12","type":"post","attributes":{"id":12,"title":"Test
+        Post 12","body":"This is a test post 12","user_id":1,"created_at":"2023-06-07T21:34:17.782Z","updated_at":"2023-06-07T21:34:17.782Z","plate_posts":[{"photo_url":null}],"username":"User
+        1","comments":[],"parent_plates":[{"plate_number":"MNO-1234"}],"formatted_created_at":"4:34
+        PM 06/07/2023"}},{"id":"13","type":"post","attributes":{"id":13,"title":"Test
+        Post 13","body":"This is a test post 13","user_id":1,"created_at":"2023-06-07T21:34:17.787Z","updated_at":"2023-06-07T21:34:17.787Z","plate_posts":[{"photo_url":null}],"username":"User
+        1","comments":[],"parent_plates":[{"plate_number":"MNO-1234"}],"formatted_created_at":"4:34
+        PM 06/07/2023"}},{"id":"14","type":"post","attributes":{"id":14,"title":"Test
+        Post 14","body":"This is a test post 14","user_id":1,"created_at":"2023-06-07T21:34:17.793Z","updated_at":"2023-06-07T21:34:17.793Z","plate_posts":[{"photo_url":null}],"username":"User
+        1","comments":[],"parent_plates":[{"plate_number":"PQR-1234"}],"formatted_created_at":"4:34
+        PM 06/07/2023"}},{"id":"15","type":"post","attributes":{"id":15,"title":"Test
+        Post 15","body":"This is a test post 15","user_id":1,"created_at":"2023-06-07T21:34:17.802Z","updated_at":"2023-06-07T21:34:17.802Z","plate_posts":[{"photo_url":null}],"username":"User
+        1","comments":[],"parent_plates":[{"plate_number":"PQR-1234"}],"formatted_created_at":"4:34
+        PM 06/07/2023"}},{"id":"16","type":"post","attributes":{"id":16,"title":"Test
+        Post 16","body":"This is a test post 16","user_id":1,"created_at":"2023-06-07T21:34:17.819Z","updated_at":"2023-06-07T21:34:17.819Z","plate_posts":[{"photo_url":null}],"username":"User
+        1","comments":[],"parent_plates":[{"plate_number":"PQR-1234"}],"formatted_created_at":"4:34
+        PM 06/07/2023"}},{"id":"17","type":"post","attributes":{"id":17,"title":"Test
+        Post 17","body":"This is a test post 17","user_id":1,"created_at":"2023-06-07T21:34:17.835Z","updated_at":"2023-06-07T21:34:17.835Z","plate_posts":[{"photo_url":null}],"username":"User
+        1","comments":[],"parent_plates":[{"plate_number":"PQR-1234"}],"formatted_created_at":"4:34
+        PM 06/07/2023"}},{"id":"18","type":"post","attributes":{"id":18,"title":"Test
+        Post 18","body":"This is a test post 18","user_id":1,"created_at":"2023-06-07T21:34:17.862Z","updated_at":"2023-06-07T21:34:17.862Z","plate_posts":[{"photo_url":null}],"username":"User
+        1","comments":[{"id":6,"body":"Comment 6","user_id":2,"post_id":18,"username":"User
+        2","created_at":"4:34 PM 06/07/2023"}],"parent_plates":[{"plate_number":"STU-1234"}],"formatted_created_at":"4:34
+        PM 06/07/2023"}},{"id":"19","type":"post","attributes":{"id":19,"title":"Test
+        Post 19","body":"This is a test post 19","user_id":1,"created_at":"2023-06-07T21:34:17.868Z","updated_at":"2023-06-07T21:34:17.868Z","plate_posts":[{"photo_url":null}],"username":"User
+        1","comments":[{"id":7,"body":"Comment 7","user_id":2,"post_id":19,"username":"User
+        2","created_at":"4:34 PM 06/07/2023"}],"parent_plates":[{"plate_number":"STU-1234"}],"formatted_created_at":"4:34
+        PM 06/07/2023"}},{"id":"20","type":"post","attributes":{"id":20,"title":"Test
+        Post 20","body":"This is a test post 20","user_id":1,"created_at":"2023-06-07T21:34:17.884Z","updated_at":"2023-06-07T21:34:17.884Z","plate_posts":[{"photo_url":null}],"username":"User
+        1","comments":[{"id":8,"body":"Comment 8","user_id":2,"post_id":20,"username":"User
+        2","created_at":"4:34 PM 06/07/2023"}],"parent_plates":[{"plate_number":"STU-1234"}],"formatted_created_at":"4:34
+        PM 06/07/2023"}},{"id":"21","type":"post","attributes":{"id":21,"title":"Test
+        Post 20","body":"This is a test post 20","user_id":1,"created_at":"2023-06-07T21:34:17.890Z","updated_at":"2023-06-07T21:34:17.890Z","plate_posts":[{"photo_url":null}],"username":"User
+        1","comments":[],"parent_plates":[{"plate_number":"STU-1234"}],"formatted_created_at":"4:34
+        PM 06/07/2023"}},{"id":"22","type":"post","attributes":{"id":22,"title":"Test
+        Post 20","body":"This is a test post 20","user_id":1,"created_at":"2023-06-07T21:34:17.896Z","updated_at":"2023-06-07T21:34:17.896Z","plate_posts":[{"photo_url":null}],"username":"User
+        1","comments":[],"parent_plates":[{"plate_number":"STU-1234"}],"formatted_created_at":"4:34
+        PM 06/07/2023"}},{"id":"23","type":"post","attributes":{"id":23,"title":"Test
+        Post 21","body":"This is a test post 21","user_id":1,"created_at":"2023-06-07T21:34:17.902Z","updated_at":"2023-06-07T21:34:17.902Z","plate_posts":[{"photo_url":null}],"username":"User
+        1","comments":[],"parent_plates":[{"plate_number":"VWX-1234"}],"formatted_created_at":"4:34
+        PM 06/07/2023"}},{"id":"24","type":"post","attributes":{"id":24,"title":"Test
+        Post 22","body":"This is a test post 22","user_id":1,"created_at":"2023-06-07T21:34:17.909Z","updated_at":"2023-06-07T21:34:17.909Z","plate_posts":[{"photo_url":null}],"username":"User
+        1","comments":[],"parent_plates":[{"plate_number":"VWX-1234"}],"formatted_created_at":"4:34
+        PM 06/07/2023"}},{"id":"25","type":"post","attributes":{"id":25,"title":"Test
+        Post 23","body":"This is a test post 23","user_id":1,"created_at":"2023-06-07T21:34:17.914Z","updated_at":"2023-06-07T21:34:17.914Z","plate_posts":[{"photo_url":null}],"username":"User
+        1","comments":[],"parent_plates":[{"plate_number":"VWX-1234"}],"formatted_created_at":"4:34
+        PM 06/07/2023"}},{"id":"26","type":"post","attributes":{"id":26,"title":"Test
+        Post 24","body":"This is a test post 24","user_id":1,"created_at":"2023-06-07T21:34:17.920Z","updated_at":"2023-06-07T21:34:17.920Z","plate_posts":[{"photo_url":null}],"username":"User
+        1","comments":[{"id":9,"body":"Comment 9","user_id":2,"post_id":26,"username":"User
+        2","created_at":"4:34 PM 06/07/2023"}],"parent_plates":[{"plate_number":"YYY-1234"}],"formatted_created_at":"4:34
+        PM 06/07/2023"}},{"id":"27","type":"post","attributes":{"id":27,"title":"Test
+        Post 25","body":"This is a test post 25","user_id":1,"created_at":"2023-06-07T21:34:17.926Z","updated_at":"2023-06-07T21:34:17.926Z","plate_posts":[{"photo_url":null}],"username":"User
+        1","comments":[{"id":10,"body":"Comment 10","user_id":2,"post_id":27,"username":"User
+        2","created_at":"4:34 PM 06/07/2023"}],"parent_plates":[{"plate_number":"YYY-1234"}],"formatted_created_at":"4:34
+        PM 06/07/2023"}},{"id":"28","type":"post","attributes":{"id":28,"title":"Test
+        Post 26","body":"This is a test post 26","user_id":1,"created_at":"2023-06-07T21:34:17.932Z","updated_at":"2023-06-07T21:34:17.932Z","plate_posts":[{"photo_url":null}],"username":"User
+        1","comments":[{"id":11,"body":"Comment 11","user_id":2,"post_id":28,"username":"User
+        2","created_at":"4:34 PM 06/07/2023"}],"parent_plates":[{"plate_number":"YYY-1234"}],"formatted_created_at":"4:34
+        PM 06/07/2023"}},{"id":"29","type":"post","attributes":{"id":29,"title":"Test
+        Post 27","body":"This is a test post 27","user_id":1,"created_at":"2023-06-07T21:34:17.938Z","updated_at":"2023-06-07T21:34:17.938Z","plate_posts":[{"photo_url":null}],"username":"User
+        1","comments":[],"parent_plates":[{"plate_number":"ZZZ-1234"}],"formatted_created_at":"4:34
+        PM 06/07/2023"}},{"id":"30","type":"post","attributes":{"id":30,"title":"Test
+        Post 28","body":"This is a test post 28","user_id":1,"created_at":"2023-06-07T21:34:17.943Z","updated_at":"2023-06-07T21:34:17.943Z","plate_posts":[{"photo_url":null}],"username":"User
+        1","comments":[],"parent_plates":[{"plate_number":"ZZZ-1234"}],"formatted_created_at":"4:34
+        PM 06/07/2023"}},{"id":"31","type":"post","attributes":{"id":31,"title":"Test
+        Post 29","body":"This is a test post 29","user_id":1,"created_at":"2023-06-07T21:34:17.948Z","updated_at":"2023-06-07T21:34:17.948Z","plate_posts":[{"photo_url":null}],"username":"User
+        1","comments":[],"parent_plates":[{"plate_number":"ZZZ-1234"}],"formatted_created_at":"4:34
+        PM 06/07/2023"}}]}'
+  recorded_at: Wed, 07 Jun 2023 22:20:25 GMT
 recorded_with: VCR 6.1.0

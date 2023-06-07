@@ -35,22 +35,23 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"6744742b0a1ce1eef0b3f5754d7ff159"
+      - W/"17dc1d0cd0060374d5c38d239a9d4d09"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 6957a6da-2ab3-427f-b2a3-574bd09d6763
+      - 2b659dd1-a459-4b87-a8f1-6456e0555e92
       X-Runtime:
-      - '0.007460'
+      - '0.008600'
       Server-Timing:
-      - start_processing.action_controller;dur=0.07, sql.active_record;dur=2.60, instantiation.active_record;dur=0.10,
-        process_action.action_controller;dur=4.80
+      - start_processing.action_controller;dur=0.06, sql.active_record;dur=3.29, instantiation.active_record;dur=0.12,
+        process_action.action_controller;dur=5.80
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1","type":"plate","attributes":{"plate_number":"ABC-1234","created_at":"2023-06-05T21:00:11.712Z","updated_at":"2023-06-05T21:00:11.712Z","posts":[{"id":1,"title":"Test
-        Post","created_at":"3:00 PM 06/05/2023","username":"test","user_id":1,"comment_count":11},{"id":2,"title":"Test
-        Post 2","created_at":"3:00 PM 06/05/2023","username":"test","user_id":1,"comment_count":0}]}}}'
-  recorded_at: Tue, 06 Jun 2023 23:09:43 GMT
+      string: '{"data":{"id":"1","type":"plate","attributes":{"plate_number":"ABC-1234","created_at":"2023-06-07T00:25:08.175Z","updated_at":"2023-06-07T00:25:08.175Z","posts":[{"id":1,"title":"Test
+        Post 1","created_at":"6:25 PM 06/06/2023","username":"User 1","user_id":1,"comment_count":6},{"id":2,"title":"Test
+        Post 2","created_at":"6:25 PM 06/06/2023","username":"User 1","user_id":1,"comment_count":0},{"id":3,"title":"Test
+        Post 3","created_at":"6:25 PM 06/06/2023","username":"User 1","user_id":1,"comment_count":0}]}}}'
+  recorded_at: Wed, 07 Jun 2023 00:46:37 GMT
 recorded_with: VCR 6.1.0

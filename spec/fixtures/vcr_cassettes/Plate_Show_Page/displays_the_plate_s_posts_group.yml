@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:5001/api/v1/userplate?params%5Bplate_id%5D=1&params%5Buser_id%5D
+    uri: http://localhost:10000/api/v1/userplate?params%5Bplate_id%5D=1&params%5Buser_id%5D
     body:
       encoding: US-ASCII
       string: ''
@@ -37,15 +37,15 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 52821923-6568-48d7-b185-9214881aa4f4
+      - f051f787-9270-48a3-92cd-f5142872f74f
       X-Runtime:
-      - '0.016045'
+      - '0.005280'
       Server-Timing:
-      - start_processing.action_controller;dur=0.20, sql.active_record;dur=1.22, process_action.action_controller;dur=2.81
+      - start_processing.action_controller;dur=0.14, sql.active_record;dur=0.66, process_action.action_controller;dur=1.51
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"errors":"Not found"}'
-  recorded_at: Wed, 07 Jun 2023 21:04:15 GMT
+  recorded_at: Wed, 07 Jun 2023 23:01:46 GMT
 recorded_with: VCR 6.1.0

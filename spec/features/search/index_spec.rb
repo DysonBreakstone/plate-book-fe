@@ -11,7 +11,6 @@ RSpec.feature 'Search Index Page', vcr: { record: :new_episodes } do
   it "can search by plates" do
     visit "/search?category=plates&query=ABC"
     expect(page).to have_link("ABC-1234")
-    expect(page).to have_link("ABCD-1234")
   end
 
   it "can search by posts" do

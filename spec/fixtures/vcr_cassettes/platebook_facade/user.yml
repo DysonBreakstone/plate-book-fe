@@ -35,23 +35,34 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"7fa92b71a98c582a6b00c597394d7a62"
+      - W/"f522317de488615173d849c7dfc8d3f0"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 217ee430-d11a-4770-ba34-d36cbf448ef1
+      - 3e2a56b9-6f1a-4a35-a238-a53f034615a1
       X-Runtime:
-      - '0.007930'
+      - '0.007281'
       Server-Timing:
-      - start_processing.action_controller;dur=0.07, sql.active_record;dur=2.23, instantiation.active_record;dur=0.15,
-        process_action.action_controller;dur=4.80
+      - start_processing.action_controller;dur=0.06, sql.active_record;dur=2.17, instantiation.active_record;dur=0.28,
+        process_action.action_controller;dur=4.62
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1","type":"user","attributes":{"id":1,"username":"test","email":"somethingcrazy@gmail.com","uid":"1234","token":"1234","created_at":"2023-06-06T17:30:30.423Z","updated_at":"2023-06-06T17:30:30.423Z","comments":[{"id":2,"body":"Samuel
-        Jones","post_id":1},{"id":3,"body":"Samuel Jones","post_id":1},{"id":4,"body":"Samuel
-        Jones","post_id":1}],"posts":[{"id":1,"title":"Test Post"},{"id":2,"title":"Test
-        Post 2"}],"plates":[]}}}'
-  recorded_at: Tue, 06 Jun 2023 21:34:25 GMT
+      string: '{"data":{"id":"1","type":"user","attributes":{"id":1,"username":"User
+        1","email":"user1@gmail.com","uid":"1234","token":"1234","created_at":"2023-06-07T00:25:08.164Z","updated_at":"2023-06-07T00:25:08.164Z","comments":[{"id":12,"body":"Samuel
+        Jones","post_id":1},{"id":13,"body":"This is a nice post","post_id":1},{"id":14,"body":"Samuel
+        Jones","post_id":1},{"id":15,"body":"This is a nice post","post_id":1},{"id":16,"body":"Samuel
+        Jones","post_id":1}],"posts":[{"id":1,"title":"Test Post 1"},{"id":2,"title":"Test
+        Post 2"},{"id":3,"title":"Test Post 3"},{"id":4,"title":"Test Post 4"},{"id":5,"title":"Test
+        Post 5"},{"id":6,"title":"Test Post 6"},{"id":7,"title":"Test Post 7"},{"id":8,"title":"Test
+        Post 8"},{"id":9,"title":"Test Post 9"},{"id":10,"title":"Test Post 10"},{"id":11,"title":"Test
+        Post 11"},{"id":12,"title":"Test Post 12"},{"id":13,"title":"Test Post 13"},{"id":14,"title":"Test
+        Post 14"},{"id":15,"title":"Test Post 15"},{"id":16,"title":"Test Post 16"},{"id":17,"title":"Test
+        Post 17"},{"id":18,"title":"Test Post 18"},{"id":19,"title":"Test Post 19"},{"id":20,"title":"Test
+        Post 20"},{"id":21,"title":"Test Post 20"},{"id":22,"title":"Test Post 20"},{"id":23,"title":"Test
+        Post 21"},{"id":24,"title":"Test Post 22"},{"id":25,"title":"Test Post 23"},{"id":26,"title":"Test
+        Post 24"},{"id":27,"title":"Test Post 25"},{"id":28,"title":"Test Post 26"},{"id":29,"title":"Test
+        Post 27"},{"id":30,"title":"Test Post 28"},{"id":31,"title":"Test Post 29"}],"plates":[]}}}'
+  recorded_at: Wed, 07 Jun 2023 00:46:28 GMT
 recorded_with: VCR 6.1.0

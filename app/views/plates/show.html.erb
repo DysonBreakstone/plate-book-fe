@@ -4,10 +4,36 @@
       <h1 class="my-4" id="plate-number">
         <%= @facade.plate.plate_number %>
       </h1>
-      <%= link_to "New Post", new_post_path(plate_number: @facade.plate.plate_number), class: 'btn btn-primary' %>
+
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <%= link_to "New Post", new_post_path(plate_number: @facade.plate.plate_number), class: 'btn btn-primary' %>
+        </div>
+        <% if @userplate[:errors] && current_user %>
+        <div class="col-auto">
+          <%= form_with(url: user_plates_path, method: "post") do |form| %>
+          <%= form.hidden_field :user_id, value: current_user %>
+          <%= form.hidden_field :plate_id, value: @facade.plate.id %>
+            <%= form.submit "Follow", class: 'btn btn-primary' %>
+          <% end %>
+        </div>
+      </div>
+        <% elsif @userplate[:data] && current_user %>
+      <div class="col-auto">
+          <%= form_with(url: user_plate_path(@userplate[:data][:id]), method: :delete) do |form| %>
+          <%= form.hidden_field :user_id, value: current_user %>
+          <%= form.hidden_field :plate_id, value: @facade.plate.id %>
+          <%= form.hidden_field :user_plate_id, value: @userplate[:data][:id] %>
+            <%= form.submit "Unfollow", class: 'btn btn-primary' %>
+          <% end %>
+        </div>
+      </div>
+        <% end %>
+
+
+
     </div>
   </div>
-  
 <div class="container">
   <div class="row">
     <div class="col-12">

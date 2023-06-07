@@ -53,6 +53,16 @@ class PlatebookFacade
     end
   end
 
+  def follow
+    json = service.create_user_plate(@params)
+  end
+
+  def unfollow
+    json = service.delete_user_plate(@params)
+  end
+
+
+
   private 
 
   def service

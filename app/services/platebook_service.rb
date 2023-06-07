@@ -14,6 +14,14 @@ class PlatebookService
     conn.post(url, params)
   end
 
+  def find_url(url, params)
+    conn.get(url, params)
+  end
+
+  def destroy_url(url)
+    conn.delete(url)
+  end
+
   def get_all_users
     get_url("/api/v1/users")
   end

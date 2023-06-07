@@ -7,10 +7,11 @@ Rails.application.routes.draw do
   
   get '/logout', to: 'sessions#logout'
 
+
   resources :users, only: [:index, :show]
   resources :posts, only: [:new, :create, :index, :show]
   resources :search, only: [:index]
   resources :plates, only: [:index, :show]
   resources :comments, only: [:create]
-
+  resources :user_plates, only: [:create, :destroy]
 end

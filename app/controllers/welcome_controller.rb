@@ -3,6 +3,7 @@ class WelcomeController < ApplicationController
     @locations = []
     json = PlatebookService.new.get_locations
     @locations << json[:data]
+    @hot_plates = PlatebookService.new.get_hot_plates
     # locations = [{ lat: 40.7392, lng: -101.9903 },
     #               { lat: 40.7128, lng: -74.0060 },
     #               { lat: 34.0522, lng: -118.2437 },

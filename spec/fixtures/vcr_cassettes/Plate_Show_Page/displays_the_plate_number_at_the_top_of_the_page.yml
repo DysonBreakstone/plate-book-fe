@@ -37,15 +37,177 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - '038d67db-e0ea-4f09-8d57-0879bfa28caf'
+      - 0df41ca3-d4db-4f67-aae7-3083d8bb32f0
       X-Runtime:
-      - '0.036554'
+      - '0.010253'
       Server-Timing:
-      - start_processing.action_controller;dur=0.18, sql.active_record;dur=1.26, process_action.action_controller;dur=3.75
+      - start_processing.action_controller;dur=0.13, sql.active_record;dur=0.95, process_action.action_controller;dur=3.51
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"errors":"Not found"}'
-  recorded_at: Wed, 07 Jun 2023 21:04:15 GMT
+  recorded_at: Wed, 07 Jun 2023 21:40:55 GMT
+- request:
+    method: get
+    uri: http://localhost:5001/api/v1/plates/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.5
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"554a59655f3bc2309cda8fab82672c33"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 18cb26bf-2ec5-4e18-9f23-bda5162c9511
+      X-Runtime:
+      - '0.010809'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.09, sql.active_record;dur=3.94, instantiation.active_record;dur=0.12,
+        process_action.action_controller;dur=7.23
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"plate","attributes":{"plate_number":"ABC-1234","created_at":"2023-06-07T21:34:17.638Z","updated_at":"2023-06-07T21:34:17.638Z","posts":[{"id":1,"title":"Test
+        Post 1","created_at":"4:34 PM 06/07/2023","username":"User 1","user_id":1,"comment_count":3},{"id":2,"title":"Test
+        Post 2","created_at":"4:34 PM 06/07/2023","username":"User 1","user_id":1,"comment_count":0},{"id":3,"title":"Test
+        Post 3","created_at":"4:34 PM 06/07/2023","username":"User 1","user_id":1,"comment_count":0}]}}}'
+  recorded_at: Wed, 07 Jun 2023 21:40:55 GMT
+- request:
+    method: get
+    uri: http://localhost:5001/api/v1/plates/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.5
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"554a59655f3bc2309cda8fab82672c33"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ac97eeca-4389-450b-8c8a-ceeca1f567de
+      X-Runtime:
+      - '0.010380'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.06, sql.active_record;dur=3.99, instantiation.active_record;dur=0.12,
+        process_action.action_controller;dur=7.20
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"plate","attributes":{"plate_number":"ABC-1234","created_at":"2023-06-07T21:34:17.638Z","updated_at":"2023-06-07T21:34:17.638Z","posts":[{"id":1,"title":"Test
+        Post 1","created_at":"4:34 PM 06/07/2023","username":"User 1","user_id":1,"comment_count":3},{"id":2,"title":"Test
+        Post 2","created_at":"4:34 PM 06/07/2023","username":"User 1","user_id":1,"comment_count":0},{"id":3,"title":"Test
+        Post 3","created_at":"4:34 PM 06/07/2023","username":"User 1","user_id":1,"comment_count":0}]}}}'
+  recorded_at: Wed, 07 Jun 2023 21:40:55 GMT
+- request:
+    method: get
+    uri: http://localhost:5001/api/v1/plates/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.5
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"554a59655f3bc2309cda8fab82672c33"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9b381b10-4a17-46cf-854a-9aae79d7c3b6
+      X-Runtime:
+      - '0.011880'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.08, sql.active_record;dur=4.49, instantiation.active_record;dur=0.13,
+        process_action.action_controller;dur=8.28
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"plate","attributes":{"plate_number":"ABC-1234","created_at":"2023-06-07T21:34:17.638Z","updated_at":"2023-06-07T21:34:17.638Z","posts":[{"id":1,"title":"Test
+        Post 1","created_at":"4:34 PM 06/07/2023","username":"User 1","user_id":1,"comment_count":3},{"id":2,"title":"Test
+        Post 2","created_at":"4:34 PM 06/07/2023","username":"User 1","user_id":1,"comment_count":0},{"id":3,"title":"Test
+        Post 3","created_at":"4:34 PM 06/07/2023","username":"User 1","user_id":1,"comment_count":0}]}}}'
+  recorded_at: Wed, 07 Jun 2023 21:40:55 GMT
 recorded_with: VCR 6.1.0

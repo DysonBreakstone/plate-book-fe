@@ -1,0 +1,309 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:5001/api/v1/users/3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.5
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"4ed85332fd1a39726cf2ef6ee2bb04b3"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d84104d4-e13e-4956-bad0-78b46276b498
+      X-Runtime:
+      - '0.008917'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.09, sql.active_record;dur=2.64, instantiation.active_record;dur=0.07,
+        process_action.action_controller;dur=5.17
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"3","type":"user","attributes":{"id":3,"username":"234923492","email":"tester@gmail.com","uid":"234923492","token":"234u23u","created_at":"2023-06-07T21:35:05.208Z","updated_at":"2023-06-07T21:35:05.213Z","comments":[],"posts":[],"plates":[]}}}'
+  recorded_at: Wed, 07 Jun 2023 21:41:03 GMT
+- request:
+    method: get
+    uri: http://localhost:5001/api/v1/users/3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.5
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"4ed85332fd1a39726cf2ef6ee2bb04b3"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d57e89fb-7a71-4761-9f14-02966e4b4655
+      X-Runtime:
+      - '0.006978'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.07, sql.active_record;dur=2.04, instantiation.active_record;dur=0.05,
+        process_action.action_controller;dur=3.81
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"3","type":"user","attributes":{"id":3,"username":"234923492","email":"tester@gmail.com","uid":"234923492","token":"234u23u","created_at":"2023-06-07T21:35:05.208Z","updated_at":"2023-06-07T21:35:05.213Z","comments":[],"posts":[],"plates":[]}}}'
+  recorded_at: Wed, 07 Jun 2023 21:41:03 GMT
+- request:
+    method: get
+    uri: http://localhost:5001/api/v1/users/3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.5
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"4ed85332fd1a39726cf2ef6ee2bb04b3"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 2d5ff8c4-c3a2-468d-bd0f-b12be76947e0
+      X-Runtime:
+      - '0.007108'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.08, sql.active_record;dur=1.90, instantiation.active_record;dur=0.05,
+        process_action.action_controller;dur=3.73
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"3","type":"user","attributes":{"id":3,"username":"234923492","email":"tester@gmail.com","uid":"234923492","token":"234u23u","created_at":"2023-06-07T21:35:05.208Z","updated_at":"2023-06-07T21:35:05.213Z","comments":[],"posts":[],"plates":[]}}}'
+  recorded_at: Wed, 07 Jun 2023 21:41:03 GMT
+- request:
+    method: get
+    uri: http://localhost:5001/api/v1/users/3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.5
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"4ed85332fd1a39726cf2ef6ee2bb04b3"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 91091b3c-5753-4838-9bb2-803fd46585d4
+      X-Runtime:
+      - '0.008497'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.09, sql.active_record;dur=1.91, instantiation.active_record;dur=0.06,
+        process_action.action_controller;dur=4.22
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"3","type":"user","attributes":{"id":3,"username":"234923492","email":"tester@gmail.com","uid":"234923492","token":"234u23u","created_at":"2023-06-07T21:35:05.208Z","updated_at":"2023-06-07T21:35:05.213Z","comments":[],"posts":[],"plates":[]}}}'
+  recorded_at: Wed, 07 Jun 2023 21:41:03 GMT
+- request:
+    method: get
+    uri: http://localhost:5001/api/v1/users/3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.5
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"4ed85332fd1a39726cf2ef6ee2bb04b3"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - fd0ddcc9-4d6d-4ad3-a5b7-18e05cf0da19
+      X-Runtime:
+      - '0.010076'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.33, sql.active_record;dur=3.81, instantiation.active_record;dur=0.11,
+        process_action.action_controller;dur=6.21
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"3","type":"user","attributes":{"id":3,"username":"234923492","email":"tester@gmail.com","uid":"234923492","token":"234u23u","created_at":"2023-06-07T21:35:05.208Z","updated_at":"2023-06-07T21:35:05.213Z","comments":[],"posts":[],"plates":[]}}}'
+  recorded_at: Wed, 07 Jun 2023 21:41:03 GMT
+- request:
+    method: get
+    uri: http://localhost:5001/api/v1/users/3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.5
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"4ed85332fd1a39726cf2ef6ee2bb04b3"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c89f9f5e-a058-4e69-92be-cfb79a2079fe
+      X-Runtime:
+      - '0.015224'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.09, sql.active_record;dur=7.66, instantiation.active_record;dur=0.07,
+        process_action.action_controller;dur=10.33
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"3","type":"user","attributes":{"id":3,"username":"234923492","email":"tester@gmail.com","uid":"234923492","token":"234u23u","created_at":"2023-06-07T21:35:05.208Z","updated_at":"2023-06-07T21:35:05.213Z","comments":[],"posts":[],"plates":[]}}}'
+  recorded_at: Wed, 07 Jun 2023 21:41:03 GMT
+recorded_with: VCR 6.1.0

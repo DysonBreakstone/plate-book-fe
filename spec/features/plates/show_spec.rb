@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.feature 'Plate Show Page', vcr: { record: :new_episodes } do
   before(:each) do
     json_response = File.read('spec/fixtures/single_plate.json')
-    stub_request(:get, "http://#{ENV['BACK_END_DOMAIN']}:5001/api/v1/plates/1").
+    stub_request(:get, "#{ENV['BACK_END_DOMAIN']}/api/v1/plates/1").
         to_return(status: 200, body: json_response)
 
     visit plate_path(1)

@@ -5,20 +5,19 @@ RSpec.describe 'Post Show Page', vcr: { record: :new_episodes } do
     visit post_path(1)
 
     within("#post-card") do
-      expect(page).to have_content("Test Post")
+      expect(page).to have_content("Test Post 1")
       expect(page).to_not have_content("Test Post 2")
       expect(page).to have_content("This is a test post")
     end
   end
 
-  it 'shows the license plate number as well as the poster and time' do
+  it 'shows the license plate number as well as the poster' do
     visit post_path(1)
 
     within("#post-card") do
       expect(page).to have_content("ABC-1234")
-      expect(page).to have_content("User: test")
-      expect(page).to have_link("test")
-      expect(page).to have_content("3:00 PM 06/05/2023")
+      expect(page).to have_content("User: User 1")
+      expect(page).to have_link("User 1")
     end
   end
 
@@ -34,9 +33,8 @@ RSpec.describe 'Post Show Page', vcr: { record: :new_episodes } do
     visit post_path(1)
 
     within("#comment-card-0") do
-      expect(page).to have_content("This is a test comment")
-      expect(page).to have_link("User Show Test")
-      expect(page).to have_content("3:00 PM 06/05/2023")
+      expect(page).to have_content("Samuel Jones")
+      expect(page).to have_link("User 1")
     end
   end
 

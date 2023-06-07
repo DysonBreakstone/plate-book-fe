@@ -35,27 +35,25 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"0a9ce924cd82f2b8c0048a1df92bc6bb"
+      - W/"92304a4fb142f8e4f1b1551e2f61f84c"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 4578b4ad-a35c-40d7-8709-d2b7b7a6e589
+      - 0d392957-e850-43bb-9c6f-d25c8bbfa08d
       X-Runtime:
-      - '0.022444'
+      - '0.009920'
       Server-Timing:
-      - start_processing.action_controller;dur=0.07, sql.active_record;dur=15.72,
-        instantiation.active_record;dur=0.25, process_action.action_controller;dur=19.41
+      - start_processing.action_controller;dur=0.08, sql.active_record;dur=3.23, instantiation.active_record;dur=0.25,
+        process_action.action_controller;dur=6.61
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
-        Post","body":"This is a test post","user_id":1,"created_at":"2023-06-06T17:30:30.455Z","updated_at":"2023-06-06T17:30:30.455Z","plate_posts":[{"photo_url":null}],"username":"test","comments":[{"id":1,"body":"This
-        is a test comment","user_id":3,"post_id":1,"username":"User Show Test","created_at":"11:30
-        AM 06/06/2023"},{"id":2,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:31
-        AM 06/06/2023"},{"id":3,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"11:57
-        AM 06/06/2023"},{"id":4,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"test","created_at":"3:34
-        PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"11:30
-        AM 06/06/2023"}}}'
-  recorded_at: Tue, 06 Jun 2023 21:34:31 GMT
+        Post 1","body":"This is a test post 1","user_id":1,"created_at":"2023-06-06T22:50:04.964Z","updated_at":"2023-06-06T22:50:04.964Z","plate_posts":[{"photo_url":null}],"username":"User
+        1","comments":[{"id":12,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
+        1","created_at":"8:07 PM 06/06/2023"},{"id":13,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
+        1","created_at":"8:07 PM 06/06/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"4:50
+        PM 06/06/2023"}}}'
+  recorded_at: Wed, 07 Jun 2023 02:08:02 GMT
 recorded_with: VCR 6.1.0

@@ -35,23 +35,23 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"ee313e347fccb1a22042e2963c9435bc"
+      - W/"b03c9c0c31eaf1a06178ba9ee2ce9fb1"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - b490ac8d-eef6-47bb-9433-6be86ae6863b
+      - 45f9069a-7d2e-4dff-aace-19a157c05f89
       X-Runtime:
-      - '0.024953'
+      - '0.012170'
       Server-Timing:
-      - start_processing.action_controller;dur=0.09, sql.active_record;dur=17.64,
-        instantiation.active_record;dur=0.15, process_action.action_controller;dur=21.37
+      - start_processing.action_controller;dur=0.07, sql.active_record;dur=4.67, instantiation.active_record;dur=0.15,
+        process_action.action_controller;dur=8.29
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"1","type":"plate","attributes":{"plate_number":"ABC-1234","created_at":"2023-06-06T17:30:30.436Z","updated_at":"2023-06-06T17:30:30.436Z","posts":[{"id":1,"title":"Test
-        Post","created_at":"11:30 AM 06/06/2023","username":"test","user_id":1,"comment_count":4},{"id":2,"title":"Test
-        Post 2","created_at":"11:30 AM 06/06/2023","username":"test","user_id":1,"comment_count":0}]}},{"id":"3","type":"plate","attributes":{"plate_number":"ABCD-1234","created_at":"2023-06-06T17:30:30.442Z","updated_at":"2023-06-06T17:30:30.442Z","posts":[{"id":5,"title":"Test
-        Post 5","created_at":"11:30 AM 06/06/2023","username":"User Show Test","user_id":3,"comment_count":0}]}}]}'
-  recorded_at: Tue, 06 Jun 2023 21:34:30 GMT
+      string: '{"data":[{"id":"1","type":"plate","attributes":{"plate_number":"ABC-1234","created_at":"2023-06-06T22:50:04.917Z","updated_at":"2023-06-06T22:50:04.917Z","posts":[{"id":1,"title":"Test
+        Post 1","created_at":"4:50 PM 06/06/2023","username":"User 1","user_id":1,"comment_count":2},{"id":2,"title":"Test
+        Post 2","created_at":"4:50 PM 06/06/2023","username":"User 1","user_id":1,"comment_count":0},{"id":3,"title":"Test
+        Post 3","created_at":"4:50 PM 06/06/2023","username":"User 1","user_id":1,"comment_count":0}]}}]}'
+  recorded_at: Wed, 07 Jun 2023 02:08:01 GMT
 recorded_with: VCR 6.1.0

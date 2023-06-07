@@ -2,78 +2,6 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:5001/api/v1/users
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.7.5
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"f303a32a20585b9a357795ef0cee5166"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - f341fb86-3913-4ae0-bf37-e325595f06a8
-      X-Runtime:
-      - '0.021719'
-      Server-Timing:
-      - start_processing.action_controller;dur=0.07, sql.active_record;dur=10.92,
-        instantiation.active_record;dur=0.81, process_action.action_controller;dur=18.17
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":[{"id":"1","type":"user","attributes":{"id":1,"username":"User
-        1","email":"user1@gmail.com","uid":"1234","token":"1234","created_at":"2023-06-07T21:34:17.618Z","updated_at":"2023-06-07T21:34:17.618Z","comments":[{"id":12,"body":"Samuel
-        Jones","post_id":1},{"id":13,"body":"This is a nice post","post_id":1},{"id":14,"body":"Samuel
-        Jones","post_id":1},{"id":15,"body":"This is a nice post","post_id":1}],"posts":[{"id":1,"title":"Test
-        Post 1"},{"id":2,"title":"Test Post 2"},{"id":3,"title":"Test Post 3"},{"id":4,"title":"Test
-        Post 4"},{"id":5,"title":"Test Post 5"},{"id":6,"title":"Test Post 6"},{"id":7,"title":"Test
-        Post 7"},{"id":8,"title":"Test Post 8"},{"id":9,"title":"Test Post 9"},{"id":10,"title":"Test
-        Post 10"},{"id":11,"title":"Test Post 11"},{"id":12,"title":"Test Post 12"},{"id":13,"title":"Test
-        Post 13"},{"id":14,"title":"Test Post 14"},{"id":15,"title":"Test Post 15"},{"id":16,"title":"Test
-        Post 16"},{"id":17,"title":"Test Post 17"},{"id":18,"title":"Test Post 18"},{"id":19,"title":"Test
-        Post 19"},{"id":20,"title":"Test Post 20"},{"id":21,"title":"Test Post 20"},{"id":22,"title":"Test
-        Post 20"},{"id":23,"title":"Test Post 21"},{"id":24,"title":"Test Post 22"},{"id":25,"title":"Test
-        Post 23"},{"id":26,"title":"Test Post 24"},{"id":27,"title":"Test Post 25"},{"id":28,"title":"Test
-        Post 26"},{"id":29,"title":"Test Post 27"},{"id":30,"title":"Test Post 28"},{"id":31,"title":"Test
-        Post 29"}],"plates":[]}},{"id":"2","type":"user","attributes":{"id":2,"username":"User
-        2","email":"user2@gmail.com","uid":"5678","token":"5678","created_at":"2023-06-07T21:34:17.623Z","updated_at":"2023-06-07T21:34:17.623Z","comments":[{"id":1,"body":"Comment
-        1","post_id":4},{"id":2,"body":"Comment 2","post_id":5},{"id":3,"body":"Comment
-        3","post_id":6},{"id":4,"body":"Comment 4","post_id":6},{"id":5,"body":"Comment
-        5","post_id":10},{"id":6,"body":"Comment 6","post_id":18},{"id":7,"body":"Comment
-        7","post_id":19},{"id":8,"body":"Comment 8","post_id":20},{"id":9,"body":"Comment
-        9","post_id":26},{"id":10,"body":"Comment 10","post_id":27},{"id":11,"body":"Comment
-        11","post_id":28}],"posts":[],"plates":[]}},{"id":"3","type":"user","attributes":{"id":3,"username":"234923492","email":"tester@gmail.com","uid":"234923492","token":"234u23u","created_at":"2023-06-07T21:35:05.208Z","updated_at":"2023-06-07T21:35:05.213Z","comments":[],"posts":[],"plates":[]}}]}'
-  recorded_at: Wed, 07 Jun 2023 21:41:02 GMT
-- request:
-    method: get
     uri: http://localhost:10000/api/v1/users
     body:
       encoding: US-ASCII
@@ -107,16 +35,16 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"027c006c4d556461def813533aa789d1"
+      - W/"2171f25d796df930b7fb0503111f8b89"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 6cc2988b-9500-4c48-982a-1f389bc335e9
+      - 45563aca-511a-4b49-8f59-7ff9f7ace6b5
       X-Runtime:
-      - '0.014226'
+      - '0.013662'
       Server-Timing:
-      - start_processing.action_controller;dur=0.04, sql.active_record;dur=5.39, instantiation.active_record;dur=0.46,
-        process_action.action_controller;dur=11.04
+      - start_processing.action_controller;dur=0.06, sql.active_record;dur=5.09, instantiation.active_record;dur=0.48,
+        process_action.action_controller;dur=10.19
       Transfer-Encoding:
       - chunked
     body:
@@ -125,7 +53,8 @@ http_interactions:
         1","email":"user1@gmail.com","uid":"1234","token":"1234","created_at":"2023-06-07T21:34:17.618Z","updated_at":"2023-06-07T21:34:17.618Z","comments":[{"id":12,"body":"Samuel
         Jones","post_id":1},{"id":13,"body":"This is a nice post","post_id":1},{"id":14,"body":"Samuel
         Jones","post_id":1},{"id":15,"body":"This is a nice post","post_id":1},{"id":16,"body":"Samuel
-        Jones","post_id":1},{"id":17,"body":"This is a nice post","post_id":1}],"posts":[{"id":1,"title":"Test
+        Jones","post_id":1},{"id":17,"body":"This is a nice post","post_id":1},{"id":18,"body":"Samuel
+        Jones","post_id":1},{"id":19,"body":"This is a nice post","post_id":1}],"posts":[{"id":1,"title":"Test
         Post 1"},{"id":2,"title":"Test Post 2"},{"id":3,"title":"Test Post 3"},{"id":4,"title":"Test
         Post 4"},{"id":5,"title":"Test Post 5"},{"id":6,"title":"Test Post 6"},{"id":7,"title":"Test
         Post 7"},{"id":8,"title":"Test Post 8"},{"id":9,"title":"Test Post 9"},{"id":10,"title":"Test
@@ -144,5 +73,5 @@ http_interactions:
         7","post_id":19},{"id":8,"body":"Comment 8","post_id":20},{"id":9,"body":"Comment
         9","post_id":26},{"id":10,"body":"Comment 10","post_id":27},{"id":11,"body":"Comment
         11","post_id":28}],"posts":[],"plates":[]}},{"id":"3","type":"user","attributes":{"id":3,"username":"234923492","email":"tester@gmail.com","uid":"234923492","token":"234u23u","created_at":"2023-06-07T21:35:05.208Z","updated_at":"2023-06-07T21:35:05.213Z","comments":[],"posts":[],"plates":[]}}]}'
-  recorded_at: Wed, 07 Jun 2023 22:20:29 GMT
+  recorded_at: Wed, 07 Jun 2023 23:01:52 GMT
 recorded_with: VCR 6.1.0

@@ -2,59 +2,6 @@
 http_interactions:
 - request:
     method: post
-    uri: http://localhost:5001/api/v1/users
-    body:
-      encoding: UTF-8
-      string: email=tester%40gmail.com&token=234u23u&uid=234923492
-    headers:
-      User-Agent:
-      - Faraday v2.7.5
-      Content-Type:
-      - application/x-www-form-urlencoded
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"4ed85332fd1a39726cf2ef6ee2bb04b3"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 0f61bf32-b0f7-496b-9ece-4c75f4197a9b
-      X-Runtime:
-      - '0.015096'
-      Server-Timing:
-      - start_processing.action_controller;dur=0.12, sql.active_record;dur=4.00, instantiation.active_record;dur=0.06,
-        process_action.action_controller;dur=11.24
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":{"id":"3","type":"user","attributes":{"id":3,"username":"234923492","email":"tester@gmail.com","uid":"234923492","token":"234u23u","created_at":"2023-06-07T21:35:05.208Z","updated_at":"2023-06-07T21:35:05.213Z","comments":[],"posts":[],"plates":[]}}}'
-  recorded_at: Wed, 07 Jun 2023 21:41:02 GMT
-- request:
-    method: post
     uri: http://localhost:10000/api/v1/users
     body:
       encoding: UTF-8
@@ -94,16 +41,16 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e920ce7f-a8f9-4e62-8b6c-26c59f9988f8
+      - c3a4906c-7567-4386-83cd-869ba4c30f44
       X-Runtime:
-      - '0.015728'
+      - '0.042126'
       Server-Timing:
-      - start_processing.action_controller;dur=0.10, sql.active_record;dur=5.56, instantiation.active_record;dur=0.08,
-        process_action.action_controller;dur=11.81
+      - start_processing.action_controller;dur=0.11, sql.active_record;dur=30.15,
+        instantiation.active_record;dur=0.09, process_action.action_controller;dur=37.92
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"3","type":"user","attributes":{"id":3,"username":"234923492","email":"tester@gmail.com","uid":"234923492","token":"234u23u","created_at":"2023-06-07T21:35:05.208Z","updated_at":"2023-06-07T21:35:05.213Z","comments":[],"posts":[],"plates":[]}}}'
-  recorded_at: Wed, 07 Jun 2023 22:20:29 GMT
+  recorded_at: Wed, 07 Jun 2023 23:01:52 GMT
 recorded_with: VCR 6.1.0

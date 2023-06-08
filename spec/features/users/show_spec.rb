@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.feature 'User Show Page', vcr: { record: :new_episodes } do
   before(:each) do
     json_response = File.read('spec/fixtures/single_user.json')
-    stub_request(:get, "http://#{ENV['BACK_END_DOMAIN']}:5001/api/v1/users/3").
+    stub_request(:get, "#{ENV['BACK_END_DOMAIN']}/api/v1/users/3").
         to_return(status: 200, body: json_response)
   end
 

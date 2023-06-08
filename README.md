@@ -1,22 +1,22 @@
 # Platebook
-This is the front-end repository of our application. For the back-end repository, please visit [plate-book-be](https://github.com/andrew-bingham1/plate-book-be).
-
-Platebook is a license plate based social media website where anonymous users can share images of notable driving, make posts, and make comments on them. This serves as an alternative method for drivers to share their thoughts and hopefully reduce road aggression. By providing a platform for drivers to express themselves, it may provide a chance for drivers to express gratitude, address traffic safety concerns, or pursue missed connections.
+This is the front-end repository of our application. For the back-end repository, please visit [plate-book-be](https://github.com/andrew-bingham1/plate-book-be).\
+\
+Platebook is a license plate based social media website where anonymous users can share images of notable driving, make posts, and make comments on them. This serves as an alternative method for drivers to share their thoughts and hopefully reduce road aggression. By providing a platform for drivers to express themselves, it may provide a chance for drivers to express gratitude, address traffic safety concerns, or pursue missed connections.\
 
 ## How to Use
-Platebook is a social media platform that revolves around license plates.
+Platebook is a social media platform that revolves around license plates.\
 
-Users must log in using Google OAuth to create new posts or comments.
-Visitors are free to peruse the site.
-
-Users can create a post and attach it to a new license plate or attach the post directly to an existing license plate.
-When creating a post, users can also attach a photo or provide the location of the incident the post is referring to.
-If a photo is provided, the photo will be displayed on the post's show page.
-If a location is provided, a marker that links to the posts's show page will be placed on the map in the landing page at the provided location.
-Users can leave comments on posts.
-Users can follow plates.
-Users can view their posts, comments, and followed plates on their dashboard.
-Users can search for specific plates or posts using the search box.
+Users must log in using Google OAuth to create new posts or comments.\
+Visitors are free to peruse the site.\
+\
+Users can create a post and attach it to a new license plate or attach the post directly to an existing license plate.\
+When creating a post, users can also attach a photo or provide the location of the incident the post is referring to.\
+If a photo is provided, the photo will be displayed on the post's show page.\
+If a location is provided, a marker that links to the posts's show page will be placed on the map in the landing page at the provided location.\
+Users can leave comments on posts.\
+Users can follow plates.\
+Users can view their posts, comments, and followed plates on their dashboard.\
+Users can search for specific plates or posts using the search box.\
 
 ## Screenshots
 
@@ -31,7 +31,7 @@ The front-end repository was deployed using\
 The back-end repository was deployed using\
 The database is hosted was deployed using\
 
-## How Install Locally
+## How to Install Locally
 Ensure you have the correct versions of Ruby and Ruby on Rails installed.
 
 1. In your terminal, navigate to the directory you would like to host the repository in.
@@ -74,8 +74,8 @@ This application uses the `Simplecov` gem to monitor test coverage. Current cove
 
 Andrew Bingham
 
--[GitHub](https://github.com/andrew-bingham1)
--[LinkedIn](https://www.linkedin.com/in/andrew-bingham1/)
+- [GitHub](https://github.com/andrew-bingham1)
+- [LinkedIn](https://www.linkedin.com/in/andrew-bingham1/)
 
 Branden Ge
 

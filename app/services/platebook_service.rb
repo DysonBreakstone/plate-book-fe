@@ -2,7 +2,7 @@ require 'faraday'
 
 class PlatebookService
   def conn
-    Faraday.new(url: "http://#{ENV['BACK_END_DOMAIN']}:5001")
+    Faraday.new(url: "#{ENV['BACK_END_DOMAIN']}")
   end
 
   def get_url(url)
@@ -39,11 +39,11 @@ class PlatebookService
   end
 
   def create_post(params)
-    post_url("api/v1/posts", params: params)
+    post_url("/api/v1/posts", params: params)
   end
 
   def create_comment(params)
-    post_url("api/v1/posts/#{params[:post_id]}/comments", params: params)
+    post_url("/api/v1/posts/#{params[:post_id]}/comments", params: params)
   end
 
   def get_all_posts
@@ -64,9 +64,9 @@ class PlatebookService
 
 
   def get_hot_plates
-    get_url("api/v1/search/hot_plates")
+    get_url("/api/v1/search/hot_plates")
   end
-  
+
   def create_user_plate(params)
     post_url("/api/v1/user_plates", params: { user_id: params[:user_id], plate_id: params[:plate_id] })
   end

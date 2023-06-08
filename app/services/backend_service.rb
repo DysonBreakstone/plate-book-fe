@@ -1,6 +1,6 @@
 class BackendService
   def conn
-    @_conn ||= Faraday.new(url: "http://#{ENV['BACK_END_DOMAIN']}:5001/")
+    @_conn ||= Faraday.new(url: "#{ENV['BACK_END_DOMAIN']}")
   end
 
   def register_user(google_id, email, token)
@@ -9,11 +9,10 @@ class BackendService
       email: email,
       token: token
     }
-    post_url("api/v1/users", params)
+    post_url("/api/v1/users", params)
   end
 
   def post_url(url, params)
     conn.post(url, params)
   end
 end
-

@@ -14,7 +14,7 @@ RSpec.feature 'Search Index Page', vcr: { record: :new_episodes } do
   end
 
   it "can search by posts" do
-    visit "/search?category=posts&query=Test"
+    visit "/search?category=posts&query=Test&emotion=None"
     expect(page).to have_link("Test Post")
     expect(page).to have_link("Test Post 2")
     expect(page).to have_link("Test Post 3")

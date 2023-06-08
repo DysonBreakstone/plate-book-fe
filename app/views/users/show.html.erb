@@ -2,18 +2,24 @@
   <div class="row">
     <div class="col-12 text-center">
       <h1 class="my-4" id="username">
-        <%= @facade.user.username %>
+        <span class="bg-light p-2 rounded">
+          <%= @facade.user.username %>
+        </span>
       </h1>
     </div>
   </div>
 
-  <div class="row mt-5" id="plates-row">
+  <div class="row mt-5 justify-content-center">
     <div class="col-12">
-      <h3 id="plates-title">Followed Plates</h3>
+      <h3 id="plates-title" class="text-center">
+        <span class="bg-light p-2 rounded">
+          Followed Plates
+        </span>
+      </h3>
       <% @facade.user.plates.each_with_index do |plate, index| %>
         <div class="card my-2" id="plate-card-<%= index %>">
-          <div class="card-body">
-            <h5 class="card-title" id="plate-number-<%= index %>">
+          <div class="card-body p-3 rounded">
+            <h5 class="card-title m-0">
               <%= link_to plate[:plate_number], plate_path(plate[:id]) %>
             </h5>
           </div>
@@ -22,13 +28,17 @@
     </div>
   </div>
 
-  <div class="row mt-5" id="posts-row">
+  <div class="row mt-5 justify-content-center">
     <div class="col-12">
-      <h3 id="posts-title"><%= @facade.user.username  %>'s Posts</h3>
+      <h3 id="posts-title" class="text-center">
+        <span class="bg-light p-2 rounded">
+          <%= @facade.user.username  %>'s Posts
+        </span>
+      </h3>
       <% @facade.user.posts.each_with_index do |post, index| %>
         <div class="card my-2" id="post-card-<%= index %>">
-          <div class="card-body">
-            <h5 class="card-title" id="post-title-<%= index %>">
+          <div class="card-body p-3 rounded">
+            <h5 class="card-title m-0">
               <%= link_to post[:title], post_path(post[:id]) %>
             </h5>
           </div>
@@ -37,13 +47,17 @@
     </div>
   </div>
 
-  <div class="row mt-5" id="comments-row">
+  <div class="row mt-5 justify-content-center">
     <div class="col-12">
-      <h3 id="comments-title"><%= @facade.user.username  %>'s Comments</h3>
+      <h3 id="comments-title" class="text-center">
+        <span class="bg-light p-2 rounded">
+          <%= @facade.user.username  %>'s Comments
+        </span>
+      </h3>
       <% @facade.user.comments.each_with_index do |comment, index| %>
         <div class="card my-2" id="comment-card-<%= index %>">
-          <div class="card-body">
-            <p class="card-text" id="comment-body-<%= index %>">
+          <div class="card-body p-3 rounded">
+            <p class="card-text m-0">
               <%= link_to comment[:body], post_path(comment[:post_id]) %>
             </p>
           </div>

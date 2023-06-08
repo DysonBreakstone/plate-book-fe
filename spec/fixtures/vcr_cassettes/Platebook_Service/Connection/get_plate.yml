@@ -35,23 +35,23 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"3208b2a3d3054b3a72f7fca34232e501"
+      - W/"112650c3738ba817a445472a862044f4"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 8ab4b24a-788a-476c-b1b0-077b54c3f65f
+      - 700d7131-c7b4-4343-8159-6b6a610e67a2
       X-Runtime:
-      - '0.016072'
+      - '0.010812'
       Server-Timing:
-      - start_processing.action_controller;dur=0.06, sql.active_record;dur=6.25, instantiation.active_record;dur=0.18,
-        process_action.action_controller;dur=11.44
+      - start_processing.action_controller;dur=0.08, sql.active_record;dur=4.03, instantiation.active_record;dur=0.16,
+        process_action.action_controller;dur=7.65
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"1","type":"plate","attributes":{"plate_number":"ABC-1234","created_at":"2023-06-07T00:43:56.066Z","updated_at":"2023-06-07T00:43:56.066Z","posts":[{"id":1,"title":"Test
-        Post 1","created_at":"6:43 PM 06/06/2023","username":"User 1","user_id":1,"comment_count":4},{"id":2,"title":"Test
-        Post 2","created_at":"6:43 PM 06/06/2023","username":"User 1","user_id":1,"comment_count":0},{"id":3,"title":"Test
-        Post 3","created_at":"6:43 PM 06/06/2023","username":"User 1","user_id":1,"comment_count":0}]}}}'
-  recorded_at: Wed, 07 Jun 2023 21:04:23 GMT
+      string: '{"data":{"id":"1","type":"plate","attributes":{"plate_number":"ABC-1234","created_at":"2023-06-07T21:36:34.539Z","updated_at":"2023-06-07T21:36:34.539Z","posts":[{"id":1,"title":"Test
+        Post 1","created_at":"3:36 PM 06/07/2023","username":"User 1","user_id":1,"comment_count":2},{"id":2,"title":"Test
+        Post 2","created_at":"3:36 PM 06/07/2023","username":"User 1","user_id":1,"comment_count":0},{"id":3,"title":"Test
+        Post 3","created_at":"3:36 PM 06/07/2023","username":"User 1","user_id":1,"comment_count":0}]}}}'
+  recorded_at: Wed, 07 Jun 2023 21:36:59 GMT
 recorded_with: VCR 6.1.0

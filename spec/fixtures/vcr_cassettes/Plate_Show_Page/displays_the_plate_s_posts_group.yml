@@ -37,15 +37,16 @@ http_interactions:
       Cache-Control:
       - no-cache
       X-Request-Id:
-      - 24510e46-6ec9-4749-a2b5-8f1b22de5bb7
+      - a6e7b53d-14d8-40c0-bcd5-7ba1a06ec731
       X-Runtime:
-      - '0.005597'
+      - '0.023984'
       Server-Timing:
-      - start_processing.action_controller;dur=0.07, sql.active_record;dur=0.71, process_action.action_controller;dur=1.55
+      - start_processing.action_controller;dur=0.07, sql.active_record;dur=19.89,
+        process_action.action_controller;dur=20.71
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"errors":"Not found"}'
-  recorded_at: Wed, 07 Jun 2023 21:36:53 GMT
+  recorded_at: Thu, 08 Jun 2023 01:10:55 GMT
 recorded_with: VCR 6.1.0

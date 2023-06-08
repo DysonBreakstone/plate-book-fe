@@ -59,7 +59,7 @@ class PlatebookService
   end
 
   def get_all_search(params)
-    get_url("/api/v1/search?category=#{params[:category]}&query=#{params[:query]}")
+    get_url("/api/v1/search?category=#{params[:category]}&query=#{params[:query]}&emotion=#{params[:emotion]}")
   end
 
 

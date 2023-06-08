@@ -14,21 +14,16 @@
         <div class="card-body text-center">
           <h3><%= @facade.post.title %></h3>
 
-          <%
-            tag_to_color = {
+          <%tag_to_color = {
               "Joy" => "btn-green", "Trust" => "btn-blue", "Funny" => "btn-cyan", "Anticipation" => "btn-purple", 
               "Anger" => "btn-red", "Fear" => "btn-orange", "Surprise" => "btn-yellow", "Confusion" => "btn-pink",
               "Sadness" => "btn-grey", "Disgust" => "btn-brown", "Sympathy" => "btn-black"
             }
-
-            tags = @facade.post.selected_tags.split(',')
-          %>
+            tags = @facade.post.selected_tags.split(',')%>
 
           <h4>Tags:</h4>
           <% tags.each do |tag| %>
-            <%
-              color_class = tag_to_color[tag] || 'btn-default'
-            %>
+            <%color_class = tag_to_color[tag] || 'btn-default'%>
             <button type="button" class="btn btn-default tag-button <%= color_class %>" data-tag="<%= tag %>"><%= tag %></button>
           <% end %>
           <br>

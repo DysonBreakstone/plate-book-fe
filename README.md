@@ -1,14 +1,14 @@
 # Platebook
 This is the front-end repository of our application. For the back-end repository, please visit [plate-book-be](https://github.com/andrew-bingham1/plate-book-be).\
 \
-Platebook is a license plate based social media website where anonymous users can share images of notable driving, make posts, and make comments on them. This serves as an alternative method for drivers to share their thoughts and hopefully reduce road aggression. By providing a platform for drivers to express themselves, it may provide a chance for drivers to express gratitude, address traffic safety concerns, or pursue missed connections.\
+Platebook is a license plate based social media website where anonymous users can share images of notable driving, make posts, and make comments on them. This serves as an alternative method for drivers to share their thoughts and hopefully reduce road aggression. By providing a platform for drivers to express themselves, it may provide a chance for drivers to express gratitude, address traffic safety concerns, or pursue missed connections.
 
 ## How to Use
-Platebook is a social media platform that revolves around license plates.\
+Platebook is a social media platform that revolves around license plates.
 
 Users must log in using Google OAuth to create new posts or comments.\
-Visitors are free to peruse the site.\
-\
+Visitors are free to peruse the site.
+
 Users can create a post and attach it to a new license plate or attach the post directly to an existing license plate.\
 When creating a post, users can also attach a photo or provide the location of the incident the post is referring to.\
 If a photo is provided, the photo will be displayed on the post's show page.\
@@ -16,15 +16,17 @@ If a location is provided, a marker that links to the posts's show page will be 
 Users can leave comments on posts.\
 Users can follow plates.\
 Users can view their posts, comments, and followed plates on their dashboard.\
-Users can search for specific plates or posts using the search box.\
+Users can search for specific plates or posts using the search box.
 
-## Screenshots
+## Preview
+<img width="1431" alt="Screenshot 2023-06-07 at 8 16 08 PM" src="https://github.com/DysonBreakstone/plate-book-fe/assets/92887935/7784a0e0-5889-46c2-a9ab-a89f03ecd297">
 
 ## Built Using
 * Rails 7.0.5
+
 * Ruby 3.1.1
 * Bootstrap 5
-* AWS S3
+* AWS S3 (hosts user images)
 
 ## Deployment
 The front-end repository was deployed using\

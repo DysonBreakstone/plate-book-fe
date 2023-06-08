@@ -1,0 +1,183 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:10000/api/v1/users/2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.5
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Request-Id:
+      - '09592d3e-bbcf-4438-bbba-bd9946bade7b'
+      X-Runtime:
+      - '0.185760'
+      Server-Timing:
+      - sql.active_record;dur=72.75
+      Vary:
+      - Origin
+      Content-Length:
+      - '18408'
+    body:
+      encoding: UTF-8
+      string: '{"status":500,"error":"Internal Server Error","exception":"#\u003cSyntaxError:
+        /Users/dysonbreakstone/Turing/3mod/projects/platebook/plate-book-be/app/controllers/api/v1/users_controller.rb:29:
+        syntax error, unexpected '':'', expecting `end''\n        return json: UserSerializer.new(user),
+        st...\n                   ^\n/Users/dysonbreakstone/Turing/3mod/projects/platebook/plate-book-be/app/controllers/api/v1/users_controller.rb:29:
+        syntax error, unexpected '','', expecting `end''\n...json: UserSerializer.new(user),
+        status: 200\n...                              ^\n/Users/dysonbreakstone/Turing/3mod/projects/platebook/plate-book-be/app/controllers/api/v1/users_controller.rb:31:
+        syntax error, unexpected '':'', expecting `end''\n        return json: {errors:
+        \"Something went wro...\n                   ^\n/Users/dysonbreakstone/Turing/3mod/projects/platebook/plate-book-be/app/controllers/api/v1/users_controller.rb:31:
+        syntax error, unexpected '','', expecting `end''\n...rors: \"Something went
+        wrong.\"}, status: 400\n...                              ^\n\u003e","traces":{"Application
+        Trace":[{"exception_object_id":23240,"id":0,"trace":"app/controllers/api/v1/users_controller.rb:29:
+        syntax error, unexpected '':'', expecting `end''"},{"exception_object_id":23240,"id":3,"trace":"app/controllers/api/v1/users_controller.rb:29:
+        syntax error, unexpected '','', expecting `end''"},{"exception_object_id":23240,"id":6,"trace":"app/controllers/api/v1/users_controller.rb:31:
+        syntax error, unexpected '':'', expecting `end''"},{"exception_object_id":23240,"id":9,"trace":"app/controllers/api/v1/users_controller.rb:31:
+        syntax error, unexpected '','', expecting `end''"},{"exception_object_id":23240,"id":12,"trace":"app/controllers/api/v1/users_controller.rb:29:
+        syntax error, unexpected '':'', expecting `end''"},{"exception_object_id":23240,"id":15,"trace":"app/controllers/api/v1/users_controller.rb:29:
+        syntax error, unexpected '','', expecting `end''"},{"exception_object_id":23240,"id":18,"trace":"app/controllers/api/v1/users_controller.rb:31:
+        syntax error, unexpected '':'', expecting `end''"},{"exception_object_id":23240,"id":21,"trace":"app/controllers/api/v1/users_controller.rb:31:
+        syntax error, unexpected '','', expecting `end''"}],"Framework Trace":[{"exception_object_id":23240,"id":1,"trace":"        return
+        json: UserSerializer.new(user), st..."},{"exception_object_id":23240,"id":2,"trace":"                   ^"},{"exception_object_id":23240,"id":4,"trace":"...json:
+        UserSerializer.new(user), status: 200"},{"exception_object_id":23240,"id":5,"trace":"...                              ^"},{"exception_object_id":23240,"id":7,"trace":"        return
+        json: {errors: \"Something went wro..."},{"exception_object_id":23240,"id":8,"trace":"                   ^"},{"exception_object_id":23240,"id":10,"trace":"...rors:
+        \"Something went wrong.\"}, status: 400"},{"exception_object_id":23240,"id":11,"trace":"...                              ^"},{"exception_object_id":23240,"id":13,"trace":"        return
+        json: UserSerializer.new(user), st..."},{"exception_object_id":23240,"id":14,"trace":"                   ^"},{"exception_object_id":23240,"id":16,"trace":"...json:
+        UserSerializer.new(user), status: 200"},{"exception_object_id":23240,"id":17,"trace":"...                              ^"},{"exception_object_id":23240,"id":19,"trace":"        return
+        json: {errors: \"Something went wro..."},{"exception_object_id":23240,"id":20,"trace":"                   ^"},{"exception_object_id":23240,"id":22,"trace":"...rors:
+        \"Something went wrong.\"}, status: 400"},{"exception_object_id":23240,"id":23,"trace":"...                              ^"},{"exception_object_id":23240,"id":24,"trace":"bootsnap
+        (1.16.0) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require''"},{"exception_object_id":23240,"id":25,"trace":"bootsnap
+        (1.16.0) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require''"},{"exception_object_id":23240,"id":26,"trace":"zeitwerk
+        (2.6.8) lib/zeitwerk/kernel.rb:30:in `require''"},{"exception_object_id":23240,"id":27,"trace":"activesupport
+        (7.0.5) lib/active_support/inflector/methods.rb:280:in `const_get''"},{"exception_object_id":23240,"id":28,"trace":"activesupport
+        (7.0.5) lib/active_support/inflector/methods.rb:280:in `constantize''"},{"exception_object_id":23240,"id":29,"trace":"activesupport
+        (7.0.5) lib/active_support/core_ext/string/inflections.rb:74:in `constantize''"},{"exception_object_id":23240,"id":30,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/http/request.rb:90:in `controller_class_for''"},{"exception_object_id":23240,"id":31,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/request/utils.rb:95:in `action_encoding_template''"},{"exception_object_id":23240,"id":32,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/request/utils.rb:83:in `encode''"},{"exception_object_id":23240,"id":33,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/request/utils.rb:45:in `set_binary_encoding''"},{"exception_object_id":23240,"id":34,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/http/parameters.rb:68:in `path_parameters=''"},{"exception_object_id":23240,"id":35,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/journey/router.rb:48:in `block in serve''"},{"exception_object_id":23240,"id":36,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/journey/router.rb:32:in `each''"},{"exception_object_id":23240,"id":37,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/journey/router.rb:32:in `serve''"},{"exception_object_id":23240,"id":38,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/routing/route_set.rb:852:in `call''"},{"exception_object_id":23240,"id":39,"trace":"rack
+        (2.2.7) lib/rack/etag.rb:27:in `call''"},{"exception_object_id":23240,"id":40,"trace":"rack
+        (2.2.7) lib/rack/conditional_get.rb:27:in `call''"},{"exception_object_id":23240,"id":41,"trace":"rack
+        (2.2.7) lib/rack/head.rb:12:in `call''"},{"exception_object_id":23240,"id":42,"trace":"activerecord
+        (7.0.5) lib/active_record/migration.rb:603:in `call''"},{"exception_object_id":23240,"id":43,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call''"},{"exception_object_id":23240,"id":44,"trace":"activesupport
+        (7.0.5) lib/active_support/callbacks.rb:99:in `run_callbacks''"},{"exception_object_id":23240,"id":45,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/middleware/callbacks.rb:26:in `call''"},{"exception_object_id":23240,"id":46,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"exception_object_id":23240,"id":47,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call''"},{"exception_object_id":23240,"id":48,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call''"},{"exception_object_id":23240,"id":49,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call''"},{"exception_object_id":23240,"id":50,"trace":"railties
+        (7.0.5) lib/rails/rack/logger.rb:40:in `call_app''"},{"exception_object_id":23240,"id":51,"trace":"railties
+        (7.0.5) lib/rails/rack/logger.rb:25:in `block in call''"},{"exception_object_id":23240,"id":52,"trace":"activesupport
+        (7.0.5) lib/active_support/tagged_logging.rb:99:in `block in tagged''"},{"exception_object_id":23240,"id":53,"trace":"activesupport
+        (7.0.5) lib/active_support/tagged_logging.rb:37:in `tagged''"},{"exception_object_id":23240,"id":54,"trace":"activesupport
+        (7.0.5) lib/active_support/tagged_logging.rb:99:in `tagged''"},{"exception_object_id":23240,"id":55,"trace":"railties
+        (7.0.5) lib/rails/rack/logger.rb:25:in `call''"},{"exception_object_id":23240,"id":56,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/middleware/remote_ip.rb:93:in `call''"},{"exception_object_id":23240,"id":57,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/middleware/request_id.rb:26:in `call''"},{"exception_object_id":23240,"id":58,"trace":"rack
+        (2.2.7) lib/rack/runtime.rb:22:in `call''"},{"exception_object_id":23240,"id":59,"trace":"activesupport
+        (7.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in
+        `call''"},{"exception_object_id":23240,"id":60,"trace":"actionpack (7.0.5)
+        lib/action_dispatch/middleware/server_timing.rb:61:in `block in call''"},{"exception_object_id":23240,"id":61,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events''"},{"exception_object_id":23240,"id":62,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/middleware/server_timing.rb:60:in `call''"},{"exception_object_id":23240,"id":63,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"exception_object_id":23240,"id":64,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/middleware/static.rb:23:in `call''"},{"exception_object_id":23240,"id":65,"trace":"rack
+        (2.2.7) lib/rack/sendfile.rb:110:in `call''"},{"exception_object_id":23240,"id":66,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/middleware/host_authorization.rb:137:in `call''"},{"exception_object_id":23240,"id":67,"trace":"rack-cors
+        (2.0.1) lib/rack/cors.rb:102:in `call''"},{"exception_object_id":23240,"id":68,"trace":"railties
+        (7.0.5) lib/rails/engine.rb:530:in `call''"},{"exception_object_id":23240,"id":69,"trace":"puma
+        (5.6.5) lib/puma/configuration.rb:252:in `call''"},{"exception_object_id":23240,"id":70,"trace":"puma
+        (5.6.5) lib/puma/request.rb:77:in `block in handle_request''"},{"exception_object_id":23240,"id":71,"trace":"puma
+        (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown''"},{"exception_object_id":23240,"id":72,"trace":"puma
+        (5.6.5) lib/puma/request.rb:76:in `handle_request''"},{"exception_object_id":23240,"id":73,"trace":"puma
+        (5.6.5) lib/puma/server.rb:443:in `process_client''"},{"exception_object_id":23240,"id":74,"trace":"puma
+        (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread''"}],"Full Trace":[{"exception_object_id":23240,"id":0,"trace":"app/controllers/api/v1/users_controller.rb:29:
+        syntax error, unexpected '':'', expecting `end''"},{"exception_object_id":23240,"id":1,"trace":"        return
+        json: UserSerializer.new(user), st..."},{"exception_object_id":23240,"id":2,"trace":"                   ^"},{"exception_object_id":23240,"id":3,"trace":"app/controllers/api/v1/users_controller.rb:29:
+        syntax error, unexpected '','', expecting `end''"},{"exception_object_id":23240,"id":4,"trace":"...json:
+        UserSerializer.new(user), status: 200"},{"exception_object_id":23240,"id":5,"trace":"...                              ^"},{"exception_object_id":23240,"id":6,"trace":"app/controllers/api/v1/users_controller.rb:31:
+        syntax error, unexpected '':'', expecting `end''"},{"exception_object_id":23240,"id":7,"trace":"        return
+        json: {errors: \"Something went wro..."},{"exception_object_id":23240,"id":8,"trace":"                   ^"},{"exception_object_id":23240,"id":9,"trace":"app/controllers/api/v1/users_controller.rb:31:
+        syntax error, unexpected '','', expecting `end''"},{"exception_object_id":23240,"id":10,"trace":"...rors:
+        \"Something went wrong.\"}, status: 400"},{"exception_object_id":23240,"id":11,"trace":"...                              ^"},{"exception_object_id":23240,"id":12,"trace":"app/controllers/api/v1/users_controller.rb:29:
+        syntax error, unexpected '':'', expecting `end''"},{"exception_object_id":23240,"id":13,"trace":"        return
+        json: UserSerializer.new(user), st..."},{"exception_object_id":23240,"id":14,"trace":"                   ^"},{"exception_object_id":23240,"id":15,"trace":"app/controllers/api/v1/users_controller.rb:29:
+        syntax error, unexpected '','', expecting `end''"},{"exception_object_id":23240,"id":16,"trace":"...json:
+        UserSerializer.new(user), status: 200"},{"exception_object_id":23240,"id":17,"trace":"...                              ^"},{"exception_object_id":23240,"id":18,"trace":"app/controllers/api/v1/users_controller.rb:31:
+        syntax error, unexpected '':'', expecting `end''"},{"exception_object_id":23240,"id":19,"trace":"        return
+        json: {errors: \"Something went wro..."},{"exception_object_id":23240,"id":20,"trace":"                   ^"},{"exception_object_id":23240,"id":21,"trace":"app/controllers/api/v1/users_controller.rb:31:
+        syntax error, unexpected '','', expecting `end''"},{"exception_object_id":23240,"id":22,"trace":"...rors:
+        \"Something went wrong.\"}, status: 400"},{"exception_object_id":23240,"id":23,"trace":"...                              ^"},{"exception_object_id":23240,"id":24,"trace":"bootsnap
+        (1.16.0) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require''"},{"exception_object_id":23240,"id":25,"trace":"bootsnap
+        (1.16.0) lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:32:in `require''"},{"exception_object_id":23240,"id":26,"trace":"zeitwerk
+        (2.6.8) lib/zeitwerk/kernel.rb:30:in `require''"},{"exception_object_id":23240,"id":27,"trace":"activesupport
+        (7.0.5) lib/active_support/inflector/methods.rb:280:in `const_get''"},{"exception_object_id":23240,"id":28,"trace":"activesupport
+        (7.0.5) lib/active_support/inflector/methods.rb:280:in `constantize''"},{"exception_object_id":23240,"id":29,"trace":"activesupport
+        (7.0.5) lib/active_support/core_ext/string/inflections.rb:74:in `constantize''"},{"exception_object_id":23240,"id":30,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/http/request.rb:90:in `controller_class_for''"},{"exception_object_id":23240,"id":31,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/request/utils.rb:95:in `action_encoding_template''"},{"exception_object_id":23240,"id":32,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/request/utils.rb:83:in `encode''"},{"exception_object_id":23240,"id":33,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/request/utils.rb:45:in `set_binary_encoding''"},{"exception_object_id":23240,"id":34,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/http/parameters.rb:68:in `path_parameters=''"},{"exception_object_id":23240,"id":35,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/journey/router.rb:48:in `block in serve''"},{"exception_object_id":23240,"id":36,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/journey/router.rb:32:in `each''"},{"exception_object_id":23240,"id":37,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/journey/router.rb:32:in `serve''"},{"exception_object_id":23240,"id":38,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/routing/route_set.rb:852:in `call''"},{"exception_object_id":23240,"id":39,"trace":"rack
+        (2.2.7) lib/rack/etag.rb:27:in `call''"},{"exception_object_id":23240,"id":40,"trace":"rack
+        (2.2.7) lib/rack/conditional_get.rb:27:in `call''"},{"exception_object_id":23240,"id":41,"trace":"rack
+        (2.2.7) lib/rack/head.rb:12:in `call''"},{"exception_object_id":23240,"id":42,"trace":"activerecord
+        (7.0.5) lib/active_record/migration.rb:603:in `call''"},{"exception_object_id":23240,"id":43,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call''"},{"exception_object_id":23240,"id":44,"trace":"activesupport
+        (7.0.5) lib/active_support/callbacks.rb:99:in `run_callbacks''"},{"exception_object_id":23240,"id":45,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/middleware/callbacks.rb:26:in `call''"},{"exception_object_id":23240,"id":46,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"exception_object_id":23240,"id":47,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call''"},{"exception_object_id":23240,"id":48,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call''"},{"exception_object_id":23240,"id":49,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call''"},{"exception_object_id":23240,"id":50,"trace":"railties
+        (7.0.5) lib/rails/rack/logger.rb:40:in `call_app''"},{"exception_object_id":23240,"id":51,"trace":"railties
+        (7.0.5) lib/rails/rack/logger.rb:25:in `block in call''"},{"exception_object_id":23240,"id":52,"trace":"activesupport
+        (7.0.5) lib/active_support/tagged_logging.rb:99:in `block in tagged''"},{"exception_object_id":23240,"id":53,"trace":"activesupport
+        (7.0.5) lib/active_support/tagged_logging.rb:37:in `tagged''"},{"exception_object_id":23240,"id":54,"trace":"activesupport
+        (7.0.5) lib/active_support/tagged_logging.rb:99:in `tagged''"},{"exception_object_id":23240,"id":55,"trace":"railties
+        (7.0.5) lib/rails/rack/logger.rb:25:in `call''"},{"exception_object_id":23240,"id":56,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/middleware/remote_ip.rb:93:in `call''"},{"exception_object_id":23240,"id":57,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/middleware/request_id.rb:26:in `call''"},{"exception_object_id":23240,"id":58,"trace":"rack
+        (2.2.7) lib/rack/runtime.rb:22:in `call''"},{"exception_object_id":23240,"id":59,"trace":"activesupport
+        (7.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in
+        `call''"},{"exception_object_id":23240,"id":60,"trace":"actionpack (7.0.5)
+        lib/action_dispatch/middleware/server_timing.rb:61:in `block in call''"},{"exception_object_id":23240,"id":61,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events''"},{"exception_object_id":23240,"id":62,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/middleware/server_timing.rb:60:in `call''"},{"exception_object_id":23240,"id":63,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"exception_object_id":23240,"id":64,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/middleware/static.rb:23:in `call''"},{"exception_object_id":23240,"id":65,"trace":"rack
+        (2.2.7) lib/rack/sendfile.rb:110:in `call''"},{"exception_object_id":23240,"id":66,"trace":"actionpack
+        (7.0.5) lib/action_dispatch/middleware/host_authorization.rb:137:in `call''"},{"exception_object_id":23240,"id":67,"trace":"rack-cors
+        (2.0.1) lib/rack/cors.rb:102:in `call''"},{"exception_object_id":23240,"id":68,"trace":"railties
+        (7.0.5) lib/rails/engine.rb:530:in `call''"},{"exception_object_id":23240,"id":69,"trace":"puma
+        (5.6.5) lib/puma/configuration.rb:252:in `call''"},{"exception_object_id":23240,"id":70,"trace":"puma
+        (5.6.5) lib/puma/request.rb:77:in `block in handle_request''"},{"exception_object_id":23240,"id":71,"trace":"puma
+        (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown''"},{"exception_object_id":23240,"id":72,"trace":"puma
+        (5.6.5) lib/puma/request.rb:76:in `handle_request''"},{"exception_object_id":23240,"id":73,"trace":"puma
+        (5.6.5) lib/puma/server.rb:443:in `process_client''"},{"exception_object_id":23240,"id":74,"trace":"puma
+        (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread''"}]}}'
+  recorded_at: Thu, 08 Jun 2023 21:45:37 GMT
+recorded_with: VCR 6.1.0

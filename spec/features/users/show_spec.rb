@@ -8,6 +8,7 @@ RSpec.feature 'User Show Page', vcr: { record: :new_episodes } do
   end
 
   it "displays the username at the top of the page" do
+    allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(3)
     visit user_path(3)
 
     within ("#username") do
@@ -16,6 +17,7 @@ RSpec.feature 'User Show Page', vcr: { record: :new_episodes } do
   end
 
   it "displays the user's followed plates" do
+    allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(3)
     visit user_path(3)
 
     within ("#plates-row") do
@@ -24,6 +26,7 @@ RSpec.feature 'User Show Page', vcr: { record: :new_episodes } do
   end
 
   it "displays the user's posts" do
+    allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(3)
     visit user_path(3)
 
     within ("#posts-row") do
@@ -32,6 +35,7 @@ RSpec.feature 'User Show Page', vcr: { record: :new_episodes } do
   end
 
   it "displays the user's comments" do
+    allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(3)
     visit user_path(3)
 
     within ("#comments-row") do
@@ -39,5 +43,14 @@ RSpec.feature 'User Show Page', vcr: { record: :new_episodes } do
       expect(page).to have_button("Edit this comment")
       expect(page).to have_button("Delete this comment")
     end
+  end
+
+  it "has button to change user name" do
+    allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(3)
+    visit user_path(3)
+
+    expect(page).to have_link("update_username")
+    click_on("update_username")
+    expect(current_path).to eq(edit_user_path(3))
   end
 end

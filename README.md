@@ -36,7 +36,7 @@ If any user attempts to create a post or comment that rates too highly in probab
 
 ![Screenshot 2023-06-08 at 5 29 24 PM](https://github.com/DysonBreakstone/plate-book-fe/assets/121531791/f8495c4b-d46f-4687-aab6-9241025f724f)
 
-![Screenshot 2023-06-08 at 5 30 46 PM](https://github.com/DysonBreakstone/plate-book-fe/assets/121531791/6094904b-2ec7-49cc-9acf-3c5bb51057a1)
+![Screenshot 2023-06-08 at 5 41 03 PM](https://github.com/DysonBreakstone/plate-book-fe/assets/121531791/2302f299-4336-4b79-86fb-ad2e4bf47f04)
 
 
 ## Built Using

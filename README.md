@@ -18,8 +18,27 @@ Users can follow plates.\
 Users can view their posts, comments, and followed plates on their dashboard.\
 Users can search for specific plates or posts using the search box.
 
+## Language Filtering
+Platebook uses Google Cloud's Perspective API sentiment analysis to evaluate incoming posts and comments on three factors:
+- Insult
+- Identity Attack
+- Threat
+
+If any user attempts to create a post or comment that rates too highly in probability on any of these scales, the user is informed that the comment does not meet community guidelines and the comment/post will not be created.
+
 ## Preview
 <img width="1431" alt="Screenshot 2023-06-07 at 8 16 08 PM" src="https://github.com/DysonBreakstone/plate-book-fe/assets/92887935/7784a0e0-5889-46c2-a9ab-a89f03ecd297">
+
+![Screenshot 2023-06-08 at 5 28 47 PM](https://github.com/DysonBreakstone/plate-book-fe/assets/121531791/df28a60a-ec80-441f-9df6-cfe565d85af2)
+
+![Screenshot 2023-06-08 at 5 29 03 PM](https://github.com/DysonBreakstone/plate-book-fe/assets/121531791/1efafa45-c328-4b3f-9cbe-fbccfb806ed0)
+
+![Screenshot 2023-06-08 at 5 29 14 PM](https://github.com/DysonBreakstone/plate-book-fe/assets/121531791/c50a7089-2f64-4789-83f8-76d997d02a7e)
+
+![Screenshot 2023-06-08 at 5 29 24 PM](https://github.com/DysonBreakstone/plate-book-fe/assets/121531791/f8495c4b-d46f-4687-aab6-9241025f724f)
+
+![Screenshot 2023-06-08 at 5 30 46 PM](https://github.com/DysonBreakstone/plate-book-fe/assets/121531791/6094904b-2ec7-49cc-9acf-3c5bb51057a1)
+
 
 ## Built Using
 * Rails 7.0.5

@@ -28,7 +28,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Wed, 07 Jun 2023 21:04:14 GMT
+      - Thu, 08 Jun 2023 01:36:19 GMT
       Server:
       - ESF
       Cache-Control:
@@ -48,19 +48,19 @@ http_interactions:
       string: |
         {
           "attributeScores": {
-            "IDENTITY_ATTACK": {
+            "TOXICITY": {
               "spanScores": [
                 {
                   "begin": 0,
                   "end": 82,
                   "score": {
-                    "value": 0.33453682,
+                    "value": 0.7510937,
                     "type": "PROBABILITY"
                   }
                 }
               ],
               "summaryScore": {
-                "value": 0.33453682,
+                "value": 0.7510937,
                 "type": "PROBABILITY"
               }
             },
@@ -93,127 +93,6 @@ http_interactions:
               ],
               "summaryScore": {
                 "value": 0.65849507,
-                "type": "PROBABILITY"
-              }
-            },
-            "TOXICITY": {
-              "spanScores": [
-                {
-                  "begin": 0,
-                  "end": 82,
-                  "score": {
-                    "value": 0.7510937,
-                    "type": "PROBABILITY"
-                  }
-                }
-              ],
-              "summaryScore": {
-                "value": 0.7510937,
-                "type": "PROBABILITY"
-              }
-            },
-            "INSULT": {
-              "spanScores": [
-                {
-                  "begin": 0,
-                  "end": 82,
-                  "score": {
-                    "value": 0.5208188,
-                    "type": "PROBABILITY"
-                  }
-                }
-              ],
-              "summaryScore": {
-                "value": 0.5208188,
-                "type": "PROBABILITY"
-              }
-            },
-            "TOXICITY": {
-              "spanScores": [
-                {
-                  "begin": 0,
-                  "end": 82,
-                  "score": {
-                    "value": 0.7510937,
-                    "type": "PROBABILITY"
-                  }
-                }
-              ],
-              "summaryScore": {
-                "value": 0.7510937,
-                "type": "PROBABILITY"
-              }
-            }
-          },
-          "languages": [
-            "en"
-          ],
-          "detectedLanguages": [
-            "en"
-          ]
-        }
-  recorded_at: Wed, 07 Jun 2023 21:04:14 GMT
-- request:
-    method: post
-    uri: https://commentanalyzer.googleapis.com/v1alpha1/comments:analyze?key=DONT_SHARE_MY_DATA_7
-    body:
-      encoding: UTF-8
-      string: '{"comment":{"text":"You''d better hope I never find you, because I''m
-        going to make your life miserable."},"requestedAttributes":{"TOXICITY":{},"IDENTITY_ATTACK":{},"INSULT":{},"PROFANITY":{},"THREAT":{}}}'
-    headers:
-      Content-Type:
-      - application/json, DONT_SHARE_MY_DATA_7
-      User-Agent:
-      - Faraday v2.7.5
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json; charset=UTF-8
-      Vary:
-      - Origin
-      - Referer
-      - X-Origin
-      Date:
-      - Wed, 07 Jun 2023 21:04:15 GMT
-      Server:
-      - ESF
-      Cache-Control:
-      - private
-      X-Xss-Protection:
-      - '0'
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Content-Type-Options:
-      - nosniff
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: ASCII-8BIT
-      string: |
-        {
-          "attributeScores": {
-            "PROFANITY": {
-              "spanScores": [
-                {
-                  "begin": 0,
-                  "end": 82,
-                  "score": {
-                    "value": 0.33453682,
-                    "type": "PROBABILITY"
-                  }
-                }
-              ],
-              "summaryScore": {
-                "value": 0.33453682,
                 "type": "PROBABILITY"
               }
             },
@@ -248,7 +127,64 @@ http_interactions:
                 "value": 0.33453682,
                 "type": "PROBABILITY"
               }
-            },
+            }
+          },
+          "languages": [
+            "en"
+          ],
+          "detectedLanguages": [
+            "en"
+          ]
+        }
+  recorded_at: Thu, 08 Jun 2023 01:36:19 GMT
+- request:
+    method: post
+    uri: https://commentanalyzer.googleapis.com/v1alpha1/comments:analyze?key=DONT_SHARE_MY_DATA_7
+    body:
+      encoding: UTF-8
+      string: '{"comment":{"text":"You''d better hope I never find you, because I''m
+        going to make your life miserable."},"requestedAttributes":{"TOXICITY":{},"IDENTITY_ATTACK":{},"INSULT":{},"PROFANITY":{},"THREAT":{}}}'
+    headers:
+      Content-Type:
+      - application/json, DONT_SHARE_MY_DATA_7
+      User-Agent:
+      - Faraday v2.7.5
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Thu, 08 Jun 2023 01:36:19 GMT
+      Server:
+      - ESF
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "attributeScores": {
             "THREAT": {
               "spanScores": [
                 {
@@ -265,7 +201,7 @@ http_interactions:
                 "type": "PROBABILITY"
               }
             },
-            "TOXICITY": {
+            "PROFANITY": {
               "spanScores": [
                 {
                   "begin": 0,
@@ -280,6 +216,54 @@ http_interactions:
                 "value": 0.33453682,
                 "type": "PROBABILITY"
               }
+            },
+            "INSULT": {
+              "spanScores": [
+                {
+                  "begin": 0,
+                  "end": 82,
+                  "score": {
+                    "value": 0.5208188,
+                    "type": "PROBABILITY"
+                  }
+                }
+              ],
+              "summaryScore": {
+                "value": 0.5208188,
+                "type": "PROBABILITY"
+              }
+            },
+            "IDENTITY_ATTACK": {
+              "spanScores": [
+                {
+                  "begin": 0,
+                  "end": 82,
+                  "score": {
+                    "value": 0.083355546,
+                    "type": "PROBABILITY"
+                  }
+                }
+              ],
+              "summaryScore": {
+                "value": 0.083355546,
+                "type": "PROBABILITY"
+              }
+            },
+            "TOXICITY": {
+              "spanScores": [
+                {
+                  "begin": 0,
+                  "end": 82,
+                  "score": {
+                    "value": 0.7510937,
+                    "type": "PROBABILITY"
+                  }
+                }
+              ],
+              "summaryScore": {
+                "value": 0.7510937,
+                "type": "PROBABILITY"
+              }
             }
           },
           "languages": [
@@ -289,5 +273,5 @@ http_interactions:
             "en"
           ]
         }
-  recorded_at: Wed, 07 Jun 2023 21:04:15 GMT
+  recorded_at: Thu, 08 Jun 2023 01:36:19 GMT
 recorded_with: VCR 6.1.0

@@ -43,7 +43,6 @@ class PostsController < ApplicationController
         lng: location.longitude
       }
       response = PlatebookService.new.create_post(new_params)
-      require 'pry'; binding.pry
       JSON.parse(response.body, symbolize_names: true)
     end
     

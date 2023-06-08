@@ -56,13 +56,13 @@ rails db:migrate
 
 6. Run the `bundle exec rspec` command to see all of the Rspec tests run and ensure the program is running properly.
 
-7. In 2 terminals, run `rails s` in both the back-end and front-end repositories.
+7. Run `rails s` in both the back-end and front-end repositories.
 
 8. Navigate to [localhost:3000](http://localhost:3000/) in your browser to explore!
 
 ## Testing
 
-- To run model tests for this app, type the following command in your terminal from inside the cloned project folder:
+- To run tests for this app, type the following command in your terminal from inside the cloned project folder:
 
 ```
 bundle exec rspec spec

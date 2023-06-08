@@ -41,10 +41,22 @@
       </ul>
       <form class="form-inline my-2 my-lg-0 ml-auto customClass" action="/search" method="GET">
         <div class="input-group">
-          <select class="custom-select" name="category">
+          <select id="category" class="custom-select" name="category" onchange="showEmotion(this)">
             <option selected value="plates">Plates</option>
             <option value="posts">Posts</option>
           </select>
+
+          <select id="emotion" class="custom-select" name="emotion" style="display: none;">
+            <option selected>None</option>
+            <option value="anger">Anger</option>
+            <option value="confusion">Confusion</option>
+            <option value="happy">Happy</option>
+            <option value="disgust">Disgust</option>
+            <option value="envy">Envy</option>
+            <option value="sad">Sad</option>
+
+          </select>
+
           <input class="form-control" type="search" placeholder="Search" aria-label="Search" name="query">
           <div class="input-group-append">
             <button class="btn btn-outline-success" type="submit">Search</button>
@@ -55,3 +67,9 @@
   </div>
 </nav>
 
+<script>
+function showEmotion(el) {
+   document.getElementById('emotion').style.display = (el.value == "posts" ? "block" : "none");
+}
+
+</script>

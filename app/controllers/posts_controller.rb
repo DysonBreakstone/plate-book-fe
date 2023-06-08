@@ -28,7 +28,7 @@ class PostsController < ApplicationController
 
   private
     def posts_params
-      params.permit(:title, :body, :plate_number)
+      params.permit(:title, :body, :plate_number, :selected_tags)
     end
     
     def create_post(location)
@@ -38,10 +38,12 @@ class PostsController < ApplicationController
         plate_number: posts_params[:plate_number],
         photo_url: upload_photo_to_s3,
         user_id: session[:user_id],
+        selected_tags: posts_params[:selected_tags],
         lat: location.latitude,
         lng: location.longitude
       }
       response = PlatebookService.new.create_post(new_params)
+      require 'pry'; binding.pry
       JSON.parse(response.body, symbolize_names: true)
     end
     

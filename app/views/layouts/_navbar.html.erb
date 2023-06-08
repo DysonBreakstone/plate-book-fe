@@ -18,7 +18,7 @@
 
         <% if current_user %>
         <li class="nav-item">
-          <%= link_to "New Post", new_post_path, class: "nav-link" %>
+          <a class="nav-link" href="/posts/new" data-turbolinks="false">New Post</a>
         </li>
         <% end %>
 

@@ -36,6 +36,8 @@ RSpec.feature 'User Show Page', vcr: { record: :new_episodes } do
 
     within ("#comments-row") do
       expect(page).to have_content("This is a test comment")
+      expect(page).to have_button("Edit this comment")
+      expect(page).to have_button("Delete this comment")
     end
   end
 end

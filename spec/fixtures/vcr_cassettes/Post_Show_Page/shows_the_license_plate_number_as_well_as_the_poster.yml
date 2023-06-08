@@ -35,32 +35,35 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"377b0eaaca9ca039e2ff50dd3cd66f1c"
+      - W/"197bb438f9ac9e474e7fe94844448256"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - a2a59a0f-7e71-4022-a302-1059839d397b
+      - 72a4f761-e878-4325-ac2a-cf453166e0f1
       X-Runtime:
-      - '0.010643'
+      - '0.059054'
       Server-Timing:
-      - start_processing.action_controller;dur=0.07, sql.active_record;dur=3.80, instantiation.active_record;dur=0.26,
-        process_action.action_controller;dur=7.49
+      - start_processing.action_controller;dur=0.08, sql.active_record;dur=50.94,
+        instantiation.active_record;dur=0.35, process_action.action_controller;dur=55.90
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
-        Post 1","body":"This is a test post 1","user_id":1,"created_at":"2023-06-07T21:36:34.583Z","updated_at":"2023-06-07T21:36:34.583Z","plate_posts":[{"photo_url":null}],"username":"User
-        1","comments":[{"id":12,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
-        1","created_at":"3:36 PM 06/07/2023"},{"id":13,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
-        1","created_at":"3:36 PM 06/07/2023"},{"id":14,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
-        1","created_at":"7:08 PM 06/07/2023"},{"id":15,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
-        1","created_at":"7:08 PM 06/07/2023"},{"id":16,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
-        1","created_at":"7:10 PM 06/07/2023"},{"id":17,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
-        1","created_at":"7:11 PM 06/07/2023"},{"id":18,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
-        1","created_at":"7:36 PM 06/07/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"3:36
-        PM 06/07/2023"}}}'
-  recorded_at: Thu, 08 Jun 2023 01:36:22 GMT
+        Post 1","body":"This is a test post 1","selected_tags":null,"user_id":1,"created_at":"2023-06-08T18:59:58.768Z","updated_at":"2023-06-08T18:59:58.768Z","plate_posts":[{"photo_url":null}],"username":"User
+        1","comments":[{"id":12,"body":"Deleted","user_id":3,"post_id":1,"username":"110159103651724049339","created_at":"7:07
+        PM 06/08/2023"},{"id":13,"body":"Hello there! I have a person I''d like to
+        buy a beer","user_id":3,"post_id":1,"username":"110159103651724049339","created_at":"7:07
+        PM 06/08/2023"},{"id":14,"body":"I''d gladly pay you tuesday for a hamburger
+        today","user_id":3,"post_id":1,"username":"110159103651724049339","created_at":"7:08
+        PM 06/08/2023"},{"id":15,"body":"This is an edit","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:24 PM 06/08/2023"},{"id":16,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:24 PM 06/08/2023"},{"id":17,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:43 PM 06/08/2023"},{"id":18,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:43 PM 06/08/2023"},{"id":19,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:45 PM 06/08/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"6:59
+        PM 06/08/2023"}}}'
+  recorded_at: Thu, 08 Jun 2023 19:45:54 GMT
 - request:
     method: get
     uri: http://localhost:10000/api/v1/posts/1
@@ -96,32 +99,35 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"377b0eaaca9ca039e2ff50dd3cd66f1c"
+      - W/"197bb438f9ac9e474e7fe94844448256"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e3e27be2-cb77-4d69-946d-515ca02bce1f
+      - 9b29d463-5606-4dd7-abef-b208a82cbfd9
       X-Runtime:
-      - '0.010565'
+      - '0.011959'
       Server-Timing:
-      - start_processing.action_controller;dur=0.06, sql.active_record;dur=3.91, instantiation.active_record;dur=0.41,
-        process_action.action_controller;dur=7.81
+      - start_processing.action_controller;dur=0.07, sql.active_record;dur=4.99, instantiation.active_record;dur=0.30,
+        process_action.action_controller;dur=9.21
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
-        Post 1","body":"This is a test post 1","user_id":1,"created_at":"2023-06-07T21:36:34.583Z","updated_at":"2023-06-07T21:36:34.583Z","plate_posts":[{"photo_url":null}],"username":"User
-        1","comments":[{"id":12,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
-        1","created_at":"3:36 PM 06/07/2023"},{"id":13,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
-        1","created_at":"3:36 PM 06/07/2023"},{"id":14,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
-        1","created_at":"7:08 PM 06/07/2023"},{"id":15,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
-        1","created_at":"7:08 PM 06/07/2023"},{"id":16,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
-        1","created_at":"7:10 PM 06/07/2023"},{"id":17,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
-        1","created_at":"7:11 PM 06/07/2023"},{"id":18,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
-        1","created_at":"7:36 PM 06/07/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"3:36
-        PM 06/07/2023"}}}'
-  recorded_at: Thu, 08 Jun 2023 01:36:22 GMT
+        Post 1","body":"This is a test post 1","selected_tags":null,"user_id":1,"created_at":"2023-06-08T18:59:58.768Z","updated_at":"2023-06-08T18:59:58.768Z","plate_posts":[{"photo_url":null}],"username":"User
+        1","comments":[{"id":12,"body":"Deleted","user_id":3,"post_id":1,"username":"110159103651724049339","created_at":"7:07
+        PM 06/08/2023"},{"id":13,"body":"Hello there! I have a person I''d like to
+        buy a beer","user_id":3,"post_id":1,"username":"110159103651724049339","created_at":"7:07
+        PM 06/08/2023"},{"id":14,"body":"I''d gladly pay you tuesday for a hamburger
+        today","user_id":3,"post_id":1,"username":"110159103651724049339","created_at":"7:08
+        PM 06/08/2023"},{"id":15,"body":"This is an edit","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:24 PM 06/08/2023"},{"id":16,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:24 PM 06/08/2023"},{"id":17,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:43 PM 06/08/2023"},{"id":18,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:43 PM 06/08/2023"},{"id":19,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:45 PM 06/08/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"6:59
+        PM 06/08/2023"}}}'
+  recorded_at: Thu, 08 Jun 2023 19:45:54 GMT
 - request:
     method: get
     uri: http://localhost:10000/api/v1/posts/1
@@ -157,32 +163,35 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"377b0eaaca9ca039e2ff50dd3cd66f1c"
+      - W/"197bb438f9ac9e474e7fe94844448256"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c2643548-e9da-4f32-b702-225d07ab4a7d
+      - 5ae6ab47-8485-4476-abcc-7229a056db91
       X-Runtime:
-      - '0.011088'
+      - '0.014399'
       Server-Timing:
-      - start_processing.action_controller;dur=0.06, sql.active_record;dur=4.75, instantiation.active_record;dur=0.27,
-        process_action.action_controller;dur=8.35
+      - start_processing.action_controller;dur=0.06, sql.active_record;dur=7.66, instantiation.active_record;dur=0.32,
+        process_action.action_controller;dur=11.51
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
-        Post 1","body":"This is a test post 1","user_id":1,"created_at":"2023-06-07T21:36:34.583Z","updated_at":"2023-06-07T21:36:34.583Z","plate_posts":[{"photo_url":null}],"username":"User
-        1","comments":[{"id":12,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
-        1","created_at":"3:36 PM 06/07/2023"},{"id":13,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
-        1","created_at":"3:36 PM 06/07/2023"},{"id":14,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
-        1","created_at":"7:08 PM 06/07/2023"},{"id":15,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
-        1","created_at":"7:08 PM 06/07/2023"},{"id":16,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
-        1","created_at":"7:10 PM 06/07/2023"},{"id":17,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
-        1","created_at":"7:11 PM 06/07/2023"},{"id":18,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
-        1","created_at":"7:36 PM 06/07/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"3:36
-        PM 06/07/2023"}}}'
-  recorded_at: Thu, 08 Jun 2023 01:36:22 GMT
+        Post 1","body":"This is a test post 1","selected_tags":null,"user_id":1,"created_at":"2023-06-08T18:59:58.768Z","updated_at":"2023-06-08T18:59:58.768Z","plate_posts":[{"photo_url":null}],"username":"User
+        1","comments":[{"id":12,"body":"Deleted","user_id":3,"post_id":1,"username":"110159103651724049339","created_at":"7:07
+        PM 06/08/2023"},{"id":13,"body":"Hello there! I have a person I''d like to
+        buy a beer","user_id":3,"post_id":1,"username":"110159103651724049339","created_at":"7:07
+        PM 06/08/2023"},{"id":14,"body":"I''d gladly pay you tuesday for a hamburger
+        today","user_id":3,"post_id":1,"username":"110159103651724049339","created_at":"7:08
+        PM 06/08/2023"},{"id":15,"body":"This is an edit","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:24 PM 06/08/2023"},{"id":16,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:24 PM 06/08/2023"},{"id":17,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:43 PM 06/08/2023"},{"id":18,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:43 PM 06/08/2023"},{"id":19,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:45 PM 06/08/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"6:59
+        PM 06/08/2023"}}}'
+  recorded_at: Thu, 08 Jun 2023 19:45:54 GMT
 - request:
     method: get
     uri: http://localhost:10000/api/v1/posts/1
@@ -218,32 +227,35 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"377b0eaaca9ca039e2ff50dd3cd66f1c"
+      - W/"197bb438f9ac9e474e7fe94844448256"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 897215f0-8be1-4062-9d46-4a267a7af127
+      - a309e21a-c373-45e5-af95-1b3a932ec710
       X-Runtime:
-      - '0.011007'
+      - '0.022258'
       Server-Timing:
-      - start_processing.action_controller;dur=0.07, sql.active_record;dur=4.24, instantiation.active_record;dur=0.29,
-        process_action.action_controller;dur=7.83
+      - start_processing.action_controller;dur=0.07, sql.active_record;dur=14.88,
+        instantiation.active_record;dur=0.33, process_action.action_controller;dur=19.19
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
-        Post 1","body":"This is a test post 1","user_id":1,"created_at":"2023-06-07T21:36:34.583Z","updated_at":"2023-06-07T21:36:34.583Z","plate_posts":[{"photo_url":null}],"username":"User
-        1","comments":[{"id":12,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
-        1","created_at":"3:36 PM 06/07/2023"},{"id":13,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
-        1","created_at":"3:36 PM 06/07/2023"},{"id":14,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
-        1","created_at":"7:08 PM 06/07/2023"},{"id":15,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
-        1","created_at":"7:08 PM 06/07/2023"},{"id":16,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
-        1","created_at":"7:10 PM 06/07/2023"},{"id":17,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
-        1","created_at":"7:11 PM 06/07/2023"},{"id":18,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
-        1","created_at":"7:36 PM 06/07/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"3:36
-        PM 06/07/2023"}}}'
-  recorded_at: Thu, 08 Jun 2023 01:36:22 GMT
+        Post 1","body":"This is a test post 1","selected_tags":null,"user_id":1,"created_at":"2023-06-08T18:59:58.768Z","updated_at":"2023-06-08T18:59:58.768Z","plate_posts":[{"photo_url":null}],"username":"User
+        1","comments":[{"id":12,"body":"Deleted","user_id":3,"post_id":1,"username":"110159103651724049339","created_at":"7:07
+        PM 06/08/2023"},{"id":13,"body":"Hello there! I have a person I''d like to
+        buy a beer","user_id":3,"post_id":1,"username":"110159103651724049339","created_at":"7:07
+        PM 06/08/2023"},{"id":14,"body":"I''d gladly pay you tuesday for a hamburger
+        today","user_id":3,"post_id":1,"username":"110159103651724049339","created_at":"7:08
+        PM 06/08/2023"},{"id":15,"body":"This is an edit","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:24 PM 06/08/2023"},{"id":16,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:24 PM 06/08/2023"},{"id":17,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:43 PM 06/08/2023"},{"id":18,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:43 PM 06/08/2023"},{"id":19,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:45 PM 06/08/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"6:59
+        PM 06/08/2023"}}}'
+  recorded_at: Thu, 08 Jun 2023 19:45:54 GMT
 - request:
     method: get
     uri: http://localhost:10000/api/v1/posts/1
@@ -279,32 +291,35 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"377b0eaaca9ca039e2ff50dd3cd66f1c"
+      - W/"197bb438f9ac9e474e7fe94844448256"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e880b35b-1a3e-43ee-a8c9-3aa6c10ecc35
+      - 418b54f2-90b4-4f27-87f8-051c6c1f57e4
       X-Runtime:
-      - '0.013232'
+      - '0.012452'
       Server-Timing:
-      - start_processing.action_controller;dur=0.06, sql.active_record;dur=6.99, instantiation.active_record;dur=0.29,
-        process_action.action_controller;dur=10.56
+      - start_processing.action_controller;dur=0.07, sql.active_record;dur=4.88, instantiation.active_record;dur=0.59,
+        process_action.action_controller;dur=9.34
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
-        Post 1","body":"This is a test post 1","user_id":1,"created_at":"2023-06-07T21:36:34.583Z","updated_at":"2023-06-07T21:36:34.583Z","plate_posts":[{"photo_url":null}],"username":"User
-        1","comments":[{"id":12,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
-        1","created_at":"3:36 PM 06/07/2023"},{"id":13,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
-        1","created_at":"3:36 PM 06/07/2023"},{"id":14,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
-        1","created_at":"7:08 PM 06/07/2023"},{"id":15,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
-        1","created_at":"7:08 PM 06/07/2023"},{"id":16,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
-        1","created_at":"7:10 PM 06/07/2023"},{"id":17,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
-        1","created_at":"7:11 PM 06/07/2023"},{"id":18,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
-        1","created_at":"7:36 PM 06/07/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"3:36
-        PM 06/07/2023"}}}'
-  recorded_at: Thu, 08 Jun 2023 01:36:22 GMT
+        Post 1","body":"This is a test post 1","selected_tags":null,"user_id":1,"created_at":"2023-06-08T18:59:58.768Z","updated_at":"2023-06-08T18:59:58.768Z","plate_posts":[{"photo_url":null}],"username":"User
+        1","comments":[{"id":12,"body":"Deleted","user_id":3,"post_id":1,"username":"110159103651724049339","created_at":"7:07
+        PM 06/08/2023"},{"id":13,"body":"Hello there! I have a person I''d like to
+        buy a beer","user_id":3,"post_id":1,"username":"110159103651724049339","created_at":"7:07
+        PM 06/08/2023"},{"id":14,"body":"I''d gladly pay you tuesday for a hamburger
+        today","user_id":3,"post_id":1,"username":"110159103651724049339","created_at":"7:08
+        PM 06/08/2023"},{"id":15,"body":"This is an edit","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:24 PM 06/08/2023"},{"id":16,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:24 PM 06/08/2023"},{"id":17,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:43 PM 06/08/2023"},{"id":18,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:43 PM 06/08/2023"},{"id":19,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:45 PM 06/08/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"6:59
+        PM 06/08/2023"}}}'
+  recorded_at: Thu, 08 Jun 2023 19:45:54 GMT
 - request:
     method: get
     uri: http://localhost:10000/api/v1/posts/1
@@ -340,32 +355,35 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"377b0eaaca9ca039e2ff50dd3cd66f1c"
+      - W/"197bb438f9ac9e474e7fe94844448256"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 36c8d959-7826-4443-b2fc-3a2b818f59d4
+      - 2e425a9a-e90a-4794-a49d-f686d055413b
       X-Runtime:
-      - '0.010597'
+      - '0.013970'
       Server-Timing:
-      - start_processing.action_controller;dur=0.08, sql.active_record;dur=4.22, instantiation.active_record;dur=0.30,
-        process_action.action_controller;dur=7.74
+      - start_processing.action_controller;dur=0.13, sql.active_record;dur=4.99, instantiation.active_record;dur=0.32,
+        process_action.action_controller;dur=10.38
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
-        Post 1","body":"This is a test post 1","user_id":1,"created_at":"2023-06-07T21:36:34.583Z","updated_at":"2023-06-07T21:36:34.583Z","plate_posts":[{"photo_url":null}],"username":"User
-        1","comments":[{"id":12,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
-        1","created_at":"3:36 PM 06/07/2023"},{"id":13,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
-        1","created_at":"3:36 PM 06/07/2023"},{"id":14,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
-        1","created_at":"7:08 PM 06/07/2023"},{"id":15,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
-        1","created_at":"7:08 PM 06/07/2023"},{"id":16,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
-        1","created_at":"7:10 PM 06/07/2023"},{"id":17,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
-        1","created_at":"7:11 PM 06/07/2023"},{"id":18,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
-        1","created_at":"7:36 PM 06/07/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"3:36
-        PM 06/07/2023"}}}'
-  recorded_at: Thu, 08 Jun 2023 01:36:22 GMT
+        Post 1","body":"This is a test post 1","selected_tags":null,"user_id":1,"created_at":"2023-06-08T18:59:58.768Z","updated_at":"2023-06-08T18:59:58.768Z","plate_posts":[{"photo_url":null}],"username":"User
+        1","comments":[{"id":12,"body":"Deleted","user_id":3,"post_id":1,"username":"110159103651724049339","created_at":"7:07
+        PM 06/08/2023"},{"id":13,"body":"Hello there! I have a person I''d like to
+        buy a beer","user_id":3,"post_id":1,"username":"110159103651724049339","created_at":"7:07
+        PM 06/08/2023"},{"id":14,"body":"I''d gladly pay you tuesday for a hamburger
+        today","user_id":3,"post_id":1,"username":"110159103651724049339","created_at":"7:08
+        PM 06/08/2023"},{"id":15,"body":"This is an edit","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:24 PM 06/08/2023"},{"id":16,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:24 PM 06/08/2023"},{"id":17,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:43 PM 06/08/2023"},{"id":18,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:43 PM 06/08/2023"},{"id":19,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:45 PM 06/08/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"6:59
+        PM 06/08/2023"}}}'
+  recorded_at: Thu, 08 Jun 2023 19:45:54 GMT
 - request:
     method: get
     uri: http://localhost:10000/api/v1/posts/1
@@ -401,32 +419,35 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"377b0eaaca9ca039e2ff50dd3cd66f1c"
+      - W/"197bb438f9ac9e474e7fe94844448256"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 353357c3-b1d9-4314-bb72-d33c6479d785
+      - 3604be19-e731-4fb1-9715-531d8675ac7e
       X-Runtime:
-      - '0.011948'
+      - '0.011791'
       Server-Timing:
-      - start_processing.action_controller;dur=0.06, sql.active_record;dur=4.53, instantiation.active_record;dur=0.49,
-        process_action.action_controller;dur=8.90
+      - start_processing.action_controller;dur=0.07, sql.active_record;dur=4.63, instantiation.active_record;dur=0.31,
+        process_action.action_controller;dur=8.88
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
-        Post 1","body":"This is a test post 1","user_id":1,"created_at":"2023-06-07T21:36:34.583Z","updated_at":"2023-06-07T21:36:34.583Z","plate_posts":[{"photo_url":null}],"username":"User
-        1","comments":[{"id":12,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
-        1","created_at":"3:36 PM 06/07/2023"},{"id":13,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
-        1","created_at":"3:36 PM 06/07/2023"},{"id":14,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
-        1","created_at":"7:08 PM 06/07/2023"},{"id":15,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
-        1","created_at":"7:08 PM 06/07/2023"},{"id":16,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
-        1","created_at":"7:10 PM 06/07/2023"},{"id":17,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
-        1","created_at":"7:11 PM 06/07/2023"},{"id":18,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
-        1","created_at":"7:36 PM 06/07/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"3:36
-        PM 06/07/2023"}}}'
-  recorded_at: Thu, 08 Jun 2023 01:36:22 GMT
+        Post 1","body":"This is a test post 1","selected_tags":null,"user_id":1,"created_at":"2023-06-08T18:59:58.768Z","updated_at":"2023-06-08T18:59:58.768Z","plate_posts":[{"photo_url":null}],"username":"User
+        1","comments":[{"id":12,"body":"Deleted","user_id":3,"post_id":1,"username":"110159103651724049339","created_at":"7:07
+        PM 06/08/2023"},{"id":13,"body":"Hello there! I have a person I''d like to
+        buy a beer","user_id":3,"post_id":1,"username":"110159103651724049339","created_at":"7:07
+        PM 06/08/2023"},{"id":14,"body":"I''d gladly pay you tuesday for a hamburger
+        today","user_id":3,"post_id":1,"username":"110159103651724049339","created_at":"7:08
+        PM 06/08/2023"},{"id":15,"body":"This is an edit","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:24 PM 06/08/2023"},{"id":16,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:24 PM 06/08/2023"},{"id":17,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:43 PM 06/08/2023"},{"id":18,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:43 PM 06/08/2023"},{"id":19,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:45 PM 06/08/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"6:59
+        PM 06/08/2023"}}}'
+  recorded_at: Thu, 08 Jun 2023 19:45:54 GMT
 - request:
     method: get
     uri: http://localhost:10000/api/v1/posts/1
@@ -462,30 +483,97 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"377b0eaaca9ca039e2ff50dd3cd66f1c"
+      - W/"197bb438f9ac9e474e7fe94844448256"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 46a3dd92-e348-4583-a23d-00fb7c2f5a0d
+      - 94333018-2754-4987-bdd5-d6b10c087856
       X-Runtime:
-      - '0.010741'
+      - '0.013427'
       Server-Timing:
-      - start_processing.action_controller;dur=0.06, sql.active_record;dur=4.30, instantiation.active_record;dur=0.30,
-        process_action.action_controller;dur=8.06
+      - start_processing.action_controller;dur=0.07, sql.active_record;dur=6.70, instantiation.active_record;dur=0.31,
+        process_action.action_controller;dur=10.55
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
-        Post 1","body":"This is a test post 1","user_id":1,"created_at":"2023-06-07T21:36:34.583Z","updated_at":"2023-06-07T21:36:34.583Z","plate_posts":[{"photo_url":null}],"username":"User
-        1","comments":[{"id":12,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
-        1","created_at":"3:36 PM 06/07/2023"},{"id":13,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
-        1","created_at":"3:36 PM 06/07/2023"},{"id":14,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
-        1","created_at":"7:08 PM 06/07/2023"},{"id":15,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
-        1","created_at":"7:08 PM 06/07/2023"},{"id":16,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
-        1","created_at":"7:10 PM 06/07/2023"},{"id":17,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
-        1","created_at":"7:11 PM 06/07/2023"},{"id":18,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
-        1","created_at":"7:36 PM 06/07/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"3:36
-        PM 06/07/2023"}}}'
-  recorded_at: Thu, 08 Jun 2023 01:36:22 GMT
+        Post 1","body":"This is a test post 1","selected_tags":null,"user_id":1,"created_at":"2023-06-08T18:59:58.768Z","updated_at":"2023-06-08T18:59:58.768Z","plate_posts":[{"photo_url":null}],"username":"User
+        1","comments":[{"id":12,"body":"Deleted","user_id":3,"post_id":1,"username":"110159103651724049339","created_at":"7:07
+        PM 06/08/2023"},{"id":13,"body":"Hello there! I have a person I''d like to
+        buy a beer","user_id":3,"post_id":1,"username":"110159103651724049339","created_at":"7:07
+        PM 06/08/2023"},{"id":14,"body":"I''d gladly pay you tuesday for a hamburger
+        today","user_id":3,"post_id":1,"username":"110159103651724049339","created_at":"7:08
+        PM 06/08/2023"},{"id":15,"body":"This is an edit","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:24 PM 06/08/2023"},{"id":16,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:24 PM 06/08/2023"},{"id":17,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:43 PM 06/08/2023"},{"id":18,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:43 PM 06/08/2023"},{"id":19,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:45 PM 06/08/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"6:59
+        PM 06/08/2023"}}}'
+  recorded_at: Thu, 08 Jun 2023 19:45:54 GMT
+- request:
+    method: get
+    uri: http://localhost:10000/api/v1/posts/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.5
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"197bb438f9ac9e474e7fe94844448256"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a0370955-80b9-4a99-9732-fcf7f0b7f188
+      X-Runtime:
+      - '0.011606'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.07, sql.active_record;dur=4.77, instantiation.active_record;dur=0.30,
+        process_action.action_controller;dur=8.71
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"post","attributes":{"id":1,"title":"Test
+        Post 1","body":"This is a test post 1","selected_tags":null,"user_id":1,"created_at":"2023-06-08T18:59:58.768Z","updated_at":"2023-06-08T18:59:58.768Z","plate_posts":[{"photo_url":null}],"username":"User
+        1","comments":[{"id":12,"body":"Deleted","user_id":3,"post_id":1,"username":"110159103651724049339","created_at":"7:07
+        PM 06/08/2023"},{"id":13,"body":"Hello there! I have a person I''d like to
+        buy a beer","user_id":3,"post_id":1,"username":"110159103651724049339","created_at":"7:07
+        PM 06/08/2023"},{"id":14,"body":"I''d gladly pay you tuesday for a hamburger
+        today","user_id":3,"post_id":1,"username":"110159103651724049339","created_at":"7:08
+        PM 06/08/2023"},{"id":15,"body":"This is an edit","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:24 PM 06/08/2023"},{"id":16,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:24 PM 06/08/2023"},{"id":17,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:43 PM 06/08/2023"},{"id":18,"body":"This is a nice post","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:43 PM 06/08/2023"},{"id":19,"body":"Samuel Jones","user_id":1,"post_id":1,"username":"User
+        1","created_at":"7:45 PM 06/08/2023"}],"parent_plates":[{"plate_number":"ABC-1234"}],"formatted_created_at":"6:59
+        PM 06/08/2023"}}}'
+  recorded_at: Thu, 08 Jun 2023 19:45:54 GMT
 recorded_with: VCR 6.1.0

@@ -1,0 +1,23 @@
+<% if current_user.nil? %>
+    Please log in to edit this post
+<% else %>
+  <%= form_with(url: comment_path, method: :patch, local: true, html: { multipart: true }) do |form| %>
+    <%= form.hidden_field :user, value: params[:user].to_i %>
+    <%= form.hidden_field :post, value: params[:post] %>
+    <%= form.hidden_field :id, value: params[:id] %>
+    <%= form.hidden_field :intent, value: "edit" %>
+    
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <%= form.label :body, raw('Body <span class="text-danger">*</span>'), class: 'form-label' %>
+          <%= form.text_area :body, class: 'form-control', rows: 3, required: true, value: @comment[:body] %>
+
+          <div class="mt-3">
+            <%= form.submit class: 'btn btn-primary' %>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+<% end %>

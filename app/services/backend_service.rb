@@ -15,4 +15,12 @@ class BackendService
   def post_url(url, params)
     conn.post(url, params)
   end
+
+  def update_url(url, params)
+    conn.put(url, params)
+  end
+
+  def update_comment(params)
+    update_url("/api/v1/posts/#{params[:post_id]}/comments/#{params[:comment_id]}", params)
+  end
 end

@@ -1,5 +1,5 @@
 class Post
-  attr_reader :title, :body, :user_id, :parent_plates, :plate, :created_at, :comments, :user, :photo, :id
+  attr_reader :title, :body, :user_id, :parent_plates, :plate, :created_at, :comments, :user, :photo, :id, :selected_tags
   
   def initialize(data)
     @id = data[:id]
@@ -12,5 +12,6 @@ class Post
     @comments = data[:attributes][:comments]
     @user = data[:attributes][:username]
     @photo = data[:attributes][:plate_posts][0][:photo_url]
+    @selected_tags = data[:attributes][:selected_tags]
   end
 end

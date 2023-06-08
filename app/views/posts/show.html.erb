@@ -13,6 +13,7 @@
         </div>
         <div class="card-body text-center">
           <h3><%= @facade.post.title %></h3>
+          <h4>Tags: <%= @facade.post.selected_tags%></h4>
           <%= image_tag(@facade.post.photo, class: 'img-fluid') if @facade.post.photo.present? %>
           <p class="mt-2"><%= @facade.post.body %></p>
         </div>

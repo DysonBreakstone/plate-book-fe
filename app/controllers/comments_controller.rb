@@ -1,6 +1,5 @@
 class CommentsController < ApplicationController
   def create
-    # require 'pry'; binding.pry
     if PostsFacade.new.pass_muster?(params[:body])
       new_params = {
         user_id: params[:user_id].to_i,
@@ -16,6 +15,7 @@ class CommentsController < ApplicationController
   end
 
   def edit
+    @comment = params
   end
 
   def update
@@ -36,6 +36,15 @@ class CommentsController < ApplicationController
         user_id: params[:user],
         comment_id: params[:id],
         body: params[:body]
+      }
+    end
+
+    def delete_params
+      {
+        post_id: params[:post],
+        user_id: params[:user],
+        comment_id: params[:id],
+        body: "Deleted"
       }
     end
 end

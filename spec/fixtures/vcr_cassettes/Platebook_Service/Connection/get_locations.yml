@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:10000/api/v1/locations
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.5
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"e4cec6239fd9614101f9cccbb10a6365"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - b28f3af4-fd7b-4245-b799-5bddf76fd3f3
+      X-Runtime:
+      - '0.006025'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.07, sql.active_record;dur=1.01, instantiation.active_record;dur=0.12,
+        process_action.action_controller;dur=3.06
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"1","type":"location","attributes":{"lat":null,"lng":null}},{"id":"2","type":"location","attributes":{"lat":null,"lng":null}},{"id":"3","type":"location","attributes":{"lat":null,"lng":null}},{"id":"4","type":"location","attributes":{"lat":null,"lng":null}},{"id":"5","type":"location","attributes":{"lat":null,"lng":null}},{"id":"6","type":"location","attributes":{"lat":null,"lng":null}},{"id":"7","type":"location","attributes":{"lat":null,"lng":null}},{"id":"8","type":"location","attributes":{"lat":null,"lng":null}},{"id":"9","type":"location","attributes":{"lat":null,"lng":null}},{"id":"10","type":"location","attributes":{"lat":null,"lng":null}},{"id":"11","type":"location","attributes":{"lat":null,"lng":null}},{"id":"12","type":"location","attributes":{"lat":null,"lng":null}},{"id":"13","type":"location","attributes":{"lat":null,"lng":null}},{"id":"14","type":"location","attributes":{"lat":null,"lng":null}},{"id":"15","type":"location","attributes":{"lat":null,"lng":null}},{"id":"16","type":"location","attributes":{"lat":null,"lng":null}},{"id":"17","type":"location","attributes":{"lat":null,"lng":null}},{"id":"18","type":"location","attributes":{"lat":null,"lng":null}},{"id":"19","type":"location","attributes":{"lat":null,"lng":null}},{"id":"20","type":"location","attributes":{"lat":null,"lng":null}},{"id":"21","type":"location","attributes":{"lat":null,"lng":null}},{"id":"22","type":"location","attributes":{"lat":null,"lng":null}},{"id":"23","type":"location","attributes":{"lat":null,"lng":null}},{"id":"24","type":"location","attributes":{"lat":null,"lng":null}},{"id":"25","type":"location","attributes":{"lat":null,"lng":null}},{"id":"26","type":"location","attributes":{"lat":null,"lng":null}},{"id":"27","type":"location","attributes":{"lat":null,"lng":null}},{"id":"28","type":"location","attributes":{"lat":null,"lng":null}},{"id":"29","type":"location","attributes":{"lat":null,"lng":null}},{"id":"30","type":"location","attributes":{"lat":null,"lng":null}},{"id":"31","type":"location","attributes":{"lat":null,"lng":null}}]}'
+  recorded_at: Thu, 08 Jun 2023 19:45:58 GMT
+recorded_with: VCR 6.1.0

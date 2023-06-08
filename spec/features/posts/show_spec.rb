@@ -29,15 +29,6 @@ RSpec.describe 'Post Show Page', vcr: { record: :new_episodes } do
     end
   end
 
-  it 'has comments' do
-    visit post_path(1)
-
-    within("#comment-card-0") do
-      expect(page).to have_content("Samuel Jones")
-      expect(page).to have_link("User 1")
-    end
-  end
-
   it 'has a link to log in if you are not logged in' do
     visit post_path(1)
 

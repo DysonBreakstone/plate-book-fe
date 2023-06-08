@@ -27,7 +27,6 @@ Platebook uses Google Cloud's Perspective API sentiment analysis to evaluate inc
 If any user attempts to create a post or comment that rates too highly in probability on any of these scales, the user is informed that the comment does not meet community guidelines and the comment/post will not be created.
 
 ## Preview
-<img width="1431" alt="Screenshot 2023-06-07 at 8 16 08 PM" src="https://github.com/DysonBreakstone/plate-book-fe/assets/92887935/7784a0e0-5889-46c2-a9ab-a89f03ecd297">
 
 ![Screenshot 2023-06-08 at 5 28 47 PM](https://github.com/DysonBreakstone/plate-book-fe/assets/121531791/df28a60a-ec80-441f-9df6-cfe565d85af2)
 

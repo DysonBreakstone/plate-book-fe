@@ -86,9 +86,8 @@
     <%= form.label :tag, class: 'form-label', for: 'selected_tags' %><br>
 
       <div class="btn-group" role="group" aria-label="Tag Buttons">
-        <% { "Joy" => "btn-success", "Trust" => "btn-primary", "Funny" => "btn-info", "Anticipation" => "btn-purple", 
-          "Anger" => "btn-danger", "Fear" => "btn-warning", "Surprise" => "btn-orange", "Confusion" => "btn-pink",
-          "Sadness" => "btn-secondary", "Disgust" => "btn-brown", "Sympathy" => "btn-dark" }.each do |tag, color_class| %>
+        <% { "Anger" => "btn-red", "Confusion" => "btn-orange", "Happy" => "btn-yellow", "Disgust" => "btn-green",
+              "Envy"=> "btn-lightgreen", "Sad" => "btn-blue", "Funny" => "btn-cyan", "Proud" => "btn-purple", "Love" => "btn-pink"}.each do |tag, color_class| %>
           <button type="button" class="btn <%= color_class %> tag-button" data-tag="<%= tag %>"><%= tag %></button>
         <% end %>
       </div><br>

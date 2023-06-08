@@ -15,9 +15,8 @@
           <h3><%= @facade.post.title %></h3>
 
           <%tag_to_color = {
-              "Joy" => "btn-green", "Trust" => "btn-blue", "Funny" => "btn-cyan", "Anticipation" => "btn-purple", 
-              "Anger" => "btn-red", "Fear" => "btn-orange", "Surprise" => "btn-yellow", "Confusion" => "btn-pink",
-              "Sadness" => "btn-grey", "Disgust" => "btn-brown", "Sympathy" => "btn-black"
+              "Anger" => "btn-red", "Confusion" => "btn-orange", "Happy" => "btn-yellow", "Disgust" => "btn-green",
+              "Jealous"=> "btn-lightgreen", "Sad" => "btn-blue", "Funny" => "btn-cyan", "Proud" => "btn-purple", "Love" => "btn-pink","Envy"=> "btn-lightgreen"
             }%>
             <%if @facade.post.selected_tags%>
             <% tags = @facade.post.selected_tags.split(',') %>

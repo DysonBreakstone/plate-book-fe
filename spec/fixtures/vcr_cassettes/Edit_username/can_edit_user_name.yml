@@ -182,4 +182,412 @@ http_interactions:
         (5.6.5) lib/puma/server.rb:443:in `process_client''"},{"exception_object_id":23280,"id":74,"trace":"puma
         (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread''"}]}}'
   recorded_at: Thu, 08 Jun 2023 21:51:08 GMT
+- request:
+    method: get
+    uri: http://localhost:10000/api/v1/users/3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.5
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"8548afb4f77915cd06e981bdb43eefda"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ef54e6ba-e574-4005-ac72-96c90ba62b4e
+      X-Runtime:
+      - '0.233249'
+      Server-Timing:
+      - sql.active_record;dur=64.59, start_processing.action_controller;dur=0.09,
+        instantiation.active_record;dur=3.44, process_action.action_controller;dur=68.29
+      Vary:
+      - Accept, Origin
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"3","type":"user","attributes":{"id":3,"username":"Cool_Username_69","email":"dysonsnormalemail@gmail.com","uid":"110159103651724049339","token":"ya29.a0AWY7CkmQH-s4GT99yqhqxmwRSdSJnGzzBXwqQuPJSLzh92kXPV_oYxWqimB3sCJNIXmOXweX3UAsXTyJkGzDbffVLKZovqR7TJgky7R7h9KtzpDiq5NZ9yKE9Zl3Z18G7EvLlde9ZREKr5Bsba5Z3mpnKIEIaCgYKAbESARASFQG1tDrpSd9RKLure-MjKHRxKFgBxA0163","created_at":"2023-06-08T21:03:47.997Z","updated_at":"2023-06-08T22:34:34.683Z","comments":[],"posts":[],"plates":[]}}}'
+  recorded_at: Thu, 08 Jun 2023 22:44:33 GMT
+- request:
+    method: get
+    uri: http://localhost:10000/api/v1/users/3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.5
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"8548afb4f77915cd06e981bdb43eefda"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1bdf3266-dd89-4fac-b921-f2792a1159f8
+      X-Runtime:
+      - '0.008334'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.07, sql.active_record;dur=2.41, instantiation.active_record;dur=0.05,
+        process_action.action_controller;dur=4.67
+      Vary:
+      - Accept, Origin
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"3","type":"user","attributes":{"id":3,"username":"Cool_Username_69","email":"dysonsnormalemail@gmail.com","uid":"110159103651724049339","token":"ya29.a0AWY7CkmQH-s4GT99yqhqxmwRSdSJnGzzBXwqQuPJSLzh92kXPV_oYxWqimB3sCJNIXmOXweX3UAsXTyJkGzDbffVLKZovqR7TJgky7R7h9KtzpDiq5NZ9yKE9Zl3Z18G7EvLlde9ZREKr5Bsba5Z3mpnKIEIaCgYKAbESARASFQG1tDrpSd9RKLure-MjKHRxKFgBxA0163","created_at":"2023-06-08T21:03:47.997Z","updated_at":"2023-06-08T22:34:34.683Z","comments":[],"posts":[],"plates":[]}}}'
+  recorded_at: Thu, 08 Jun 2023 22:44:33 GMT
+- request:
+    method: get
+    uri: http://localhost:10000/api/v1/users/3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.5
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"8548afb4f77915cd06e981bdb43eefda"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 02ef2e4e-b1c1-4f98-bec6-c015d12b10e4
+      X-Runtime:
+      - '0.008833'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.06, sql.active_record;dur=3.36, instantiation.active_record;dur=0.06,
+        process_action.action_controller;dur=5.70
+      Vary:
+      - Accept, Origin
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"3","type":"user","attributes":{"id":3,"username":"Cool_Username_69","email":"dysonsnormalemail@gmail.com","uid":"110159103651724049339","token":"ya29.a0AWY7CkmQH-s4GT99yqhqxmwRSdSJnGzzBXwqQuPJSLzh92kXPV_oYxWqimB3sCJNIXmOXweX3UAsXTyJkGzDbffVLKZovqR7TJgky7R7h9KtzpDiq5NZ9yKE9Zl3Z18G7EvLlde9ZREKr5Bsba5Z3mpnKIEIaCgYKAbESARASFQG1tDrpSd9RKLure-MjKHRxKFgBxA0163","created_at":"2023-06-08T21:03:47.997Z","updated_at":"2023-06-08T22:34:34.683Z","comments":[],"posts":[],"plates":[]}}}'
+  recorded_at: Thu, 08 Jun 2023 22:44:33 GMT
+- request:
+    method: get
+    uri: http://localhost:10000/api/v1/users/3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.5
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"8548afb4f77915cd06e981bdb43eefda"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 5f1aa860-03c7-42e0-b067-271135246d39
+      X-Runtime:
+      - '0.006579'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.06, sql.active_record;dur=2.03, instantiation.active_record;dur=0.05,
+        process_action.action_controller;dur=3.67
+      Vary:
+      - Accept, Origin
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"3","type":"user","attributes":{"id":3,"username":"Cool_Username_69","email":"dysonsnormalemail@gmail.com","uid":"110159103651724049339","token":"ya29.a0AWY7CkmQH-s4GT99yqhqxmwRSdSJnGzzBXwqQuPJSLzh92kXPV_oYxWqimB3sCJNIXmOXweX3UAsXTyJkGzDbffVLKZovqR7TJgky7R7h9KtzpDiq5NZ9yKE9Zl3Z18G7EvLlde9ZREKr5Bsba5Z3mpnKIEIaCgYKAbESARASFQG1tDrpSd9RKLure-MjKHRxKFgBxA0163","created_at":"2023-06-08T21:03:47.997Z","updated_at":"2023-06-08T22:34:34.683Z","comments":[],"posts":[],"plates":[]}}}'
+  recorded_at: Thu, 08 Jun 2023 22:44:33 GMT
+- request:
+    method: get
+    uri: http://localhost:10000/api/v1/users/3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.5
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"8548afb4f77915cd06e981bdb43eefda"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 74f356e9-3d5a-4363-9876-8216839a668b
+      X-Runtime:
+      - '0.006564'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.06, sql.active_record;dur=2.25, instantiation.active_record;dur=0.04,
+        process_action.action_controller;dur=3.90
+      Vary:
+      - Accept, Origin
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"3","type":"user","attributes":{"id":3,"username":"Cool_Username_69","email":"dysonsnormalemail@gmail.com","uid":"110159103651724049339","token":"ya29.a0AWY7CkmQH-s4GT99yqhqxmwRSdSJnGzzBXwqQuPJSLzh92kXPV_oYxWqimB3sCJNIXmOXweX3UAsXTyJkGzDbffVLKZovqR7TJgky7R7h9KtzpDiq5NZ9yKE9Zl3Z18G7EvLlde9ZREKr5Bsba5Z3mpnKIEIaCgYKAbESARASFQG1tDrpSd9RKLure-MjKHRxKFgBxA0163","created_at":"2023-06-08T21:03:47.997Z","updated_at":"2023-06-08T22:34:34.683Z","comments":[],"posts":[],"plates":[]}}}'
+  recorded_at: Thu, 08 Jun 2023 22:44:33 GMT
+- request:
+    method: get
+    uri: http://localhost:10000/api/v1/users/3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.5
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"8548afb4f77915cd06e981bdb43eefda"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 12acf84f-48cf-4b0c-8e75-caedc06737c3
+      X-Runtime:
+      - '0.006284'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.06, sql.active_record;dur=2.14, instantiation.active_record;dur=0.04,
+        process_action.action_controller;dur=3.66
+      Vary:
+      - Accept, Origin
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"3","type":"user","attributes":{"id":3,"username":"Cool_Username_69","email":"dysonsnormalemail@gmail.com","uid":"110159103651724049339","token":"ya29.a0AWY7CkmQH-s4GT99yqhqxmwRSdSJnGzzBXwqQuPJSLzh92kXPV_oYxWqimB3sCJNIXmOXweX3UAsXTyJkGzDbffVLKZovqR7TJgky7R7h9KtzpDiq5NZ9yKE9Zl3Z18G7EvLlde9ZREKr5Bsba5Z3mpnKIEIaCgYKAbESARASFQG1tDrpSd9RKLure-MjKHRxKFgBxA0163","created_at":"2023-06-08T21:03:47.997Z","updated_at":"2023-06-08T22:34:34.683Z","comments":[],"posts":[],"plates":[]}}}'
+  recorded_at: Thu, 08 Jun 2023 22:44:33 GMT
+- request:
+    method: get
+    uri: http://localhost:10000/api/v1/users/3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.5
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"8548afb4f77915cd06e981bdb43eefda"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3c01b131-0eca-4f3d-8a58-6569c1966c59
+      X-Runtime:
+      - '0.013761'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.06, sql.active_record;dur=4.12, instantiation.active_record;dur=0.05,
+        process_action.action_controller;dur=8.36
+      Vary:
+      - Accept, Origin
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"3","type":"user","attributes":{"id":3,"username":"Cool_Username_69","email":"dysonsnormalemail@gmail.com","uid":"110159103651724049339","token":"ya29.a0AWY7CkmQH-s4GT99yqhqxmwRSdSJnGzzBXwqQuPJSLzh92kXPV_oYxWqimB3sCJNIXmOXweX3UAsXTyJkGzDbffVLKZovqR7TJgky7R7h9KtzpDiq5NZ9yKE9Zl3Z18G7EvLlde9ZREKr5Bsba5Z3mpnKIEIaCgYKAbESARASFQG1tDrpSd9RKLure-MjKHRxKFgBxA0163","created_at":"2023-06-08T21:03:47.997Z","updated_at":"2023-06-08T22:34:34.683Z","comments":[],"posts":[],"plates":[]}}}'
+  recorded_at: Thu, 08 Jun 2023 22:44:33 GMT
+- request:
+    method: get
+    uri: http://localhost:10000/api/v1/users/3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.5
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"8548afb4f77915cd06e981bdb43eefda"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 542d8dc3-d4c2-4d8b-859c-3d5dd24f4aea
+      X-Runtime:
+      - '0.029188'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.06, sql.active_record;dur=10.99,
+        instantiation.active_record;dur=0.05, process_action.action_controller;dur=21.58
+      Vary:
+      - Accept, Origin
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"3","type":"user","attributes":{"id":3,"username":"Cool_Username_69","email":"dysonsnormalemail@gmail.com","uid":"110159103651724049339","token":"ya29.a0AWY7CkmQH-s4GT99yqhqxmwRSdSJnGzzBXwqQuPJSLzh92kXPV_oYxWqimB3sCJNIXmOXweX3UAsXTyJkGzDbffVLKZovqR7TJgky7R7h9KtzpDiq5NZ9yKE9Zl3Z18G7EvLlde9ZREKr5Bsba5Z3mpnKIEIaCgYKAbESARASFQG1tDrpSd9RKLure-MjKHRxKFgBxA0163","created_at":"2023-06-08T21:03:47.997Z","updated_at":"2023-06-08T22:34:34.683Z","comments":[],"posts":[],"plates":[]}}}'
+  recorded_at: Thu, 08 Jun 2023 22:44:33 GMT
 recorded_with: VCR 6.1.0

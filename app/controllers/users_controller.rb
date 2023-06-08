@@ -12,7 +12,13 @@ class UsersController < ApplicationController
   end
 
   def update
-    BackendService.new.update_user(user_params)
+    response = BackendService.new.update_user(user_params)
+    if response[:errors]
+      flash[:alert] = response[:errors]
+      redirect_to edit_user_path(user_params[:id])
+    else
+      redirect_to user_path(user_params[:id])
+    end
   end
 
   private

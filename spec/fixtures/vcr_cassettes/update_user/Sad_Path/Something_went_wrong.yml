@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: put
+    uri: http://localhost:10000/api/v1/users/1
+    body:
+      encoding: UTF-8
+      string: id=1&username=
+    headers:
+      User-Agent:
+      - Faraday v2.7.5
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      X-Request-Id:
+      - 159fcba1-bcba-45cb-b4f6-e7cb58eb524b
+      X-Runtime:
+      - '0.459344'
+      Server-Timing:
+      - sql.active_record;dur=122.50, start_processing.action_controller;dur=0.10,
+        instantiation.active_record;dur=3.29, process_action.action_controller;dur=60.62
+      Vary:
+      - Accept, Origin
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"errors":"Something went wrong."}'
+  recorded_at: Thu, 08 Jun 2023 22:13:54 GMT
+recorded_with: VCR 6.1.0

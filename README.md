@@ -3,7 +3,7 @@ This is the front-end repository of our application. For the back-end repository
 \
 Platebook is a license plate based social media website where anonymous users can share images of notable driving, make posts, and make comments on them. This serves as an alternative method for drivers to share their thoughts and hopefully reduce road aggression. By providing a platform for drivers to express themselves, it may provide a chance for drivers to express gratitude, address traffic safety concerns, or pursue missed connections.
 
-## How to Use
+## How It Works
 Platebook is a social media platform that revolves around license plates.
 
 Users must log in using Google OAuth to create new posts or comments.\
@@ -23,15 +23,15 @@ Users can search for specific plates or posts using the search box.
 
 ## Built Using
 * Rails 7.0.5
-
 * Ruby 3.1.1
 * Bootstrap 5
 * AWS S3 (hosts user images)
+* Routes documented Swagger
 
 ## Deployment
 The front-end repository was deployed using\
 The back-end repository was deployed using\
-The database is hosted was deployed using\
+The database is hosted was deployed using
 
 ## How to Install Locally
 Ensure you have the correct versions of Ruby and Ruby on Rails installed.

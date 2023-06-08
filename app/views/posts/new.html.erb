@@ -109,9 +109,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
           <%= form.file_field :photo, class: 'form-control' %>
 
        <%= form.label :tag, class: 'form-label' %><br>
+
       <% { "Joy" => "btn-green", "Trust" => "btn-blue","Funny" => "btn-cyan", "Anticipation" => "btn-purple", 
       "Anger" => "btn-red", "Fear" => "btn-orange", "Surprise" => "btn-yellow", "Confusion" => "btn-pink",
       "Sadness" => "btn-grey", "Disgust" => "btn-brown", "Sympathy"=> "btn-black" }.each do |tag, color_class| %>
+
         <button type="button" class="btn btn-default tag-button <%= color_class %>" data-tag="<%= tag %>"><%= tag %></button>
       <% end %><br>
 

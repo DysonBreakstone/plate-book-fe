@@ -8,6 +8,8 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+
+    <link href="<%= image_path("favicon.ico") %>" rel="shortcut icon" />
   </head>
   <%= render partial: "layouts/navbar" %>
   <body>

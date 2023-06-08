@@ -14,4 +14,28 @@ class CommentsController < ApplicationController
       redirect_to post_path(params[:post_id])
     end
   end
+
+  def edit
+  end
+
+  def update
+    if params[:intent] == "edit"
+      BackendService.new.update_comment(edit_params)
+    elsif params[:intent] == "delete"
+      BackendService.new.update_comment(delete_params)
+    else
+      flash[:alert] = "Invalid action"
+    end
+    redirect_to user_path(params[:user])
+  end
+
+  private
+    def edit_params
+      {
+        post_id: params[:post],
+        user_id: params[:user],
+        comment_id: params[:id],
+        body: params[:body]
+      }
+    end
 end

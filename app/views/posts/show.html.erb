@@ -27,8 +27,9 @@
               <% end %>
               <br>
             <% end %>
+            <br>
           
-          <%= image_tag(@facade.post.photo, class: 'img-fluid') if @facade.post.photo.present? %>
+          <%= image_tag(@facade.post.photo, class: 'img-fluid', style: 'width: 600px;') if @facade.post.photo.present? %>
           <p class="mt-2"><%= @facade.post.body %></p>
         </div>
       </div>

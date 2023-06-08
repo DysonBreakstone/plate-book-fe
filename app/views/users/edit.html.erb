@@ -1,0 +1,17 @@
+<% if current_user.nil? %>
+    Please log in to edit your username
+<% else %>
+  <%= form_with(url: user_path(current_user), method: :put, local: true, html: { multipart: true }) do |form| %>    
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <%= form.label :new_user_name, raw('New Username <span class="text-danger">*</span>'), class: 'form-label' %>
+          <%= form.text_area :new_user_name, class: 'form-control', rows: 1, required: true, value: @user[:username] %>
+          <div class="mt-3">
+            <%= form.submit class: 'btn btn-primary' %>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+<% end %>

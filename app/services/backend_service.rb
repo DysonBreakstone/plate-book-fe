@@ -23,4 +23,9 @@ class BackendService
   def update_comment(params)
     update_url("/api/v1/posts/#{params[:post_id]}/comments/#{params[:comment_id]}", params)
   end
+
+  def update_user(params)
+    response = update_url("api/v1/users/#{params[:id]}", params)
+    JSON.parse(response.body, symbolize_names: true)
+  end
 end

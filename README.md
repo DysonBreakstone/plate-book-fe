@@ -9,30 +9,30 @@ Platebook is a social media platform that revolves around license plates.
 Users must log in using Google OAuth to create new posts or comments.\
 Visitors are free to peruse the site.
 
-Users can create a post and attach it to a new license plate or attach the post directly to an existing license plate.\
-When creating a post, users can also attach a photo or provide the location of the incident the post is referring to.\
-If a photo is provided, the photo will be displayed on the post's show page.\
-If a location is provided, a marker that links to the posts's show page will be placed on the map in the landing page at the provided location.\
-Users can leave comments on posts.\
-Users can follow plates.\
-Users can view their posts, comments, and followed plates on their dashboard.\
-Users can search for specific plates or posts using the search box.
+* Users can create a post and attach it to a new license plate or attach the post directly to an existing license plate.
+* When creating a post, users can also attach a photo or provide the location of the incident the post is referring to.
+* If a photo is provided, the photo will be displayed on the post's show page.
+* If a location is provided, a marker that links to the posts's show page will be placed on the map in the landing page at the provided location.
+* Users can leave comments on posts.
+* Users can follow plates.
+* Users can view their posts, comments, and followed plates on their dashboard.
+* Users can search for specific plates or posts using the search box.
 
-##OAuth
+## OAuth
 This app makes use of the 'omniauth-google-oauth2' gem.
 The 'omniauth-google-oauth2' gem is a specific strategy for OmniAuth that implements Google OAuth 2.0.
 
-*Step 1: The user clicks on the 'Login' button, which triggers a GET request to the "/auth/google_oauth2" route 
+* Step 1: The user clicks on the 'Login' button, which triggers a GET request to the "/auth/google_oauth2" route 
 
-*Step 2: The OmniAuth middleware intercepts this request and redirects the user to the Google sign-in page. It attaches some parameters to the URL, such as 'client_id' (your app's ID from Google), 'redirect_uri' (where Google should redirect users after they decide whether or not to authenticate your app).
+* Step 2: The OmniAuth middleware intercepts this request and redirects the user to the Google sign-in page. It attaches some parameters to the URL, such as 'client_id' (your app's ID from Google), 'redirect_uri' (where Google should redirect users after they decide whether or not to authenticate your app).
 
-*Step 3: User Authenticates: The user inputs their Google username and password, then decides whether they want to grant platebook the permissions it requests.
+* Step 3: User Authenticates: The user inputs their Google username and password, then decides whether they want to grant platebook the permissions it requests.
 
-*Step 4: Google Redirects Back: If the user chooses to authenticate, Google redirects them back to platebook's 'redirect_uri', including an authorization 'code' parameter.
+* Step 4: Google Redirects Back: If the user chooses to authenticate, Google redirects them back to platebook's 'redirect_uri', including an authorization 'code' parameter.
 
-*Step 5: Platebook Retrieves User Info: The OmniAuth middleware intercepts this request, extracts the authorization code, and exchanges it for an access token by making a POST request to Google. The response of this request includes the user's info, such as uid, email, etc., and an access token.
+* Step 5: Platebook Retrieves User Info: The OmniAuth middleware intercepts this request, extracts the authorization code, and exchanges it for an access token by making a POST request to Google. The response of this request includes the user's info, such as uid, email, etc., and an access token.
 
-*Step 6: OmniAuth Calls Callback Function and then OmniAuth calls the create method in our application where you can use the user's info to sign the user in, sign them up, etc.
+* Step 6: OmniAuth Calls Callback Function and then OmniAuth calls the create method in our application where you can use the user's info to sign the user in, sign them up, etc.
 
 ## Language Filtering
 Platebook uses Google Cloud's Perspective API sentiment analysis to evaluate incoming posts and comments on three factors:

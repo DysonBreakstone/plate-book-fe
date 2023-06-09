@@ -26,9 +26,9 @@ The 'omniauth-google-oauth2' gem is a specific strategy for OmniAuth that implem
 
 * Step 2: The OmniAuth middleware intercepts this request and redirects the user to the Google sign-in page. It attaches some parameters to the URL, such as 'client_id' (your app's ID from Google), 'redirect_uri' (where Google should redirect users after they decide whether or not to authenticate your app).
 
-* Step 3: User Authenticates: The user inputs their Google username and password, then decides whether they want to grant platebook the permissions it requests.
+* Step 3: User Authenticates: The user inputs their Google username and password, then decides whether they want to grant Platebook the permissions it requests.
 
-* Step 4: Google Redirects Back: If the user chooses to authenticate, Google redirects them back to platebook's 'redirect_uri', including an authorization 'code' parameter.
+* Step 4: Google Redirects Back: If the user chooses to authenticate, Google redirects them back to Platebook's 'redirect_uri', including an authorization 'code' parameter.
 
 * Step 5: Platebook Retrieves User Info: The OmniAuth middleware intercepts this request, extracts the authorization code, and exchanges it for an access token by making a POST request to Google. The response of this request includes the user's info, such as uid, email, etc., and an access token.
 

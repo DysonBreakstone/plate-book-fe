@@ -78,7 +78,7 @@ Applications can be packaged into Docker containers for deployment by creating a
 
 Docker containers are a modern virtualization solution that hold several advantages over traditional virtual machines. The core of its benefits largely stems from its ability to directly rely on the host operating system kernel so that it does not need to package the kernel itself. Instead, it only uses a minimal set of libraries that it needs to execute with the host operating system. This keeps Docker containers more lightweight, fast, efficient and portable than its virtual machine counterpart.
 
-![The Anatomy of a Docker Container]("https://github.com/DysonBreakstone/plate-book-fe/assets/86636108/0c0942b7-412a-49c9-acd3-25fc9bba78f8")
+![The Anatomy of a Docker Container]("https://github.com/DysonBreakstone/plate-book-fe/assets/86636108/d16246ba-6542-4698-9513-276ab03d783e")
 
 The following tools were used in our Docker workflow:
 
@@ -98,7 +98,7 @@ Back End: https://plate-book-be.onrender.com/
 
 Our first deployment was done on Render, with 2 separate containers for the front end and back end, using a PostgreSQL database.
 
-![Render Deployment]("https://github.com/DysonBreakstone/plate-book-fe/assets/86636108/40401dd8-7287-46cf-81b1-e6190a2a80db")
+![Render Deployment]("https://github.com/DysonBreakstone/plate-book-fe/assets/86636108/57388188-9f52-41f3-b3b8-3991991fbf39")
 
 ### AWS Deployment
 
@@ -119,7 +119,7 @@ The application load balancer serves as the gateway to the application. The appl
 
 Additionally, our deployment using AWS required additional HTTPS configuration so that the OAuth for our application would work. So we used AWS Route 53 to purchase the domain `platebook.net` and validate the Secure Sockets Layer (SSL) certificate for it. We then added our application load balancer's DNS name as a DNS A Record in our hosting zone for the domain on Route 53. This would handle the automatically HTTPS redirect to our application load balancer for the traffic to continue through the rest of our routing inside of our Virtual Private Cloud (VPC).
 
-![AWS Deployment]("https://github.com/DysonBreakstone/plate-book-fe/assets/86636108/17315102-d661-4fed-a838-cd063bc08755")
+![AWS Deployment]("https://github.com/DysonBreakstone/plate-book-fe/assets/86636108/a7e8a921-80f6-4d3e-8c9d-9b391335af88")
 
 Our AWS workflow looked something like this:
 
@@ -128,7 +128,7 @@ Our AWS workflow looked something like this:
 3) Create a task definition for instantiating and configuring the containers
 4) Create a service on the cluster, configured to use the task definition, and set up the application load balancer, listener, and target
 
-![AWS Workflow and Services]("https://github.com/DysonBreakstone/plate-book-fe/assets/86636108/0220e0c5-6d6d-4522-ba29-bd5f1f789e17")
+![AWS Workflow and Services]("https://github.com/DysonBreakstone/plate-book-fe/assets/86636108/3a0aaab2-32b4-4333-aff6-86289f34d891")
 
 Unfortunately, we ran out of time to finish troubleshooting DNS issues while waiting for DNS changes to resolve, so currently the AWS deployment is not finished. The only permanent domain name we have to use is the application load balancer at: https://plate-book-alb-56310979.us-east-2.elb.amazonaws.com
 
